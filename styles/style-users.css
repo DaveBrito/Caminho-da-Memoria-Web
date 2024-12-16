@@ -74,7 +74,12 @@ menu, ol, ul {
   position: absolute;
   left: 500px;
   top: 0px;
+  transition: color 0.3s; /* Transição suave para a mudança de cor */
 }
+.tab:hover {
+  color: #27c0c2; /* Cor do texto ao passar o mouse */
+}
+
 .tab1 {
   color: #000000;
   text-align: left;
@@ -85,6 +90,10 @@ menu, ol, ul {
   position: absolute;
   left: 600px;
   top: 0px;
+  transition: color 0.3s; /* Transição suave para a mudança de cor */
+}
+.tab1:hover {
+  color: #27c0c2; /* Cor do texto ao passar o mouse */
 }
 .tab2 {
   color: #000000;
@@ -96,6 +105,10 @@ menu, ol, ul {
   position: absolute;
   left: 640px;
   top: 0px;
+  transition: color 0.3s; /* Transição suave para a mudança de cor */
+}
+.tab2:hover {
+  color: #27c0c2; /* Cor do texto ao passar o mouse */
 }
 .navigation2 {
   background: #ffffff;
@@ -115,6 +128,10 @@ menu, ol, ul {
   position: absolute;
   left: 1200px;
   top: 39px;
+  transition: color 0.3s; /* Transição suave para a mudança de cor */
+}
+.tab3:hover {
+  color: #27c0c2; /* Cor do texto ao passar o mouse */
 }
 .tab4 {
   color: #000000;
@@ -126,6 +143,10 @@ menu, ol, ul {
   position: absolute;
   left: 1380px;
   top: 39px;
+  transition: color 0.3s; /* Transição suave para a mudança de cor */
+}
+.tab4:hover {
+  color: #27c0c2; /* Cor do texto ao passar o mouse */
 }
 .logoo-removebg-preview-3 {
   width: 155px;
@@ -157,16 +178,74 @@ menu, ol, ul {
   left: 350px;
   top: 60px;
 }
+@keyframes typing {
+  from {
+    width: 0; /* Começa com largura 0 */
+  }
+  to {
+    width: 100%; /* Termina com a largura total do texto */
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    background-color: transparent; /* O cursor fica invisível no início e no fim */
+  }
+  50% {
+    background-color: black; /* O cursor fica visível na metade do tempo */
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1; /* Totalmente visível */
+  }
+  to {
+    opacity: 0; /* Totalmente invisível */
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0; /* Totalmente invisível */
+  }
+  to {
+    opacity: 1; /* Totalmente visível */
+  }
+}
+
 .title2 {
   color: #000000;
   text-align: center;
   font-family: "Roboto-Bold", sans-serif;
   font-size: 40px;
-  line-height: 48px;
+  line-height: 100px;
   font-weight: 700;
   position: relative;
   width: 520px;
+  left: 180px;
+  overflow: hidden; /* Impede que o texto seja revelado até a animação */
   white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+  animation: typing 3s steps(40, end) forwards; /* Animação de digitação */
+}
+
+.title2.fade-out {
+  animation: fade-out 1s forwards; /* Animação de desvanecimento */
+}
+
+.title2.fade-in {
+  animation: fade-in 1s forwards; /* Animação de reaparecimento */
+}
+
+.title2::after {
+  content: ''; /* Necessário para criar um pseudo-elemento */
+  display: inline-block; /* Permite que o cursor se comporte como um elemento em linha */
+  width: 3px; /* Comprimento do cursor (ajuste conforme necessário) */
+  height: 50%; /* Altura do cursor */
+  background-color: black; /* Cor do cursor */
+  animation: blink-caret 0.75s step-end infinite; /* Animação de piscar */
+  margin-left: 2px; /* Espaço entre o texto e o cursor */
+  transform: translateY(10%); /* Move o cursor para baixo (ajuste conforme necessário) */
 }
 .description {
   color: #000000;
@@ -535,6 +614,7 @@ menu, ol, ul {
   align-self: stretch;
   flex-shrink: 0;
   position: relative;
+  left: 100px;
 }
 .row2 {
   display: flex;
