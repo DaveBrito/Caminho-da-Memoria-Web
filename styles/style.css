@@ -1,0 +1,1228 @@
+.home,
+.home * {
+  box-sizing: border-box;
+}
+.home {
+  height: 100%;
+  position: relative;
+}
+.page {
+  background: #ffffff;
+  padding: 92px 0px 80px 0px;
+  width: 100%;
+  height: 100%; /* Ocupa 100% da altura da janela do navegador */
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.image-6 {
+  width: 100%; /* Cobre toda a largura da tela */
+  height: 136px; /* Altura fixa */
+  position: absolute; /* Posicionamento absoluto */
+  left: 0; /* Alinha à esquerda */
+  top: 0; /* Alinha ao topo */
+  object-fit: cover; /* Cobre o espaço mantendo a proporção */
+}
+.title {
+  color: #000000;
+  text-align: left;
+  font-family: "Roboto-Medium", sans-serif;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 500;
+  position: absolute;
+  left: 206px;
+  top: 44px;
+  width: 677px;
+  height: 54px;
+}
+.navigation {
+  background: #64748c;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 1780px;
+  top: 44px;
+  z-index: 10; /* Adicione esta linha */
+}
+.tab {
+  color: #000000;
+  text-align: left;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  position: relative;
+  
+}
+.tab2 {
+  color: #000000;
+  text-align: left;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 1510px;
+  top: 44px;
+}
+.tab3 {
+  color: #000000;
+  text-align: left;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 1320px;
+  top: 44px;
+  z-index: 10; /* Adicione esta linha */
+}
+.section {
+  padding: 70px 170px 1000px 1px; /* Padding: topo, direita, baixo, esquerda */
+  width: 1440px;
+  height: 420px;
+  position: absolute;
+  left: 200px;
+  top: 100px;
+  overflow: hidden;
+  margin-bottom: 10px; /* Adicionando espaço abaixo */
+}
+.image-container {
+  padding: 4px 0px 4px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 1100px;
+  height: 284px;
+  position: absolute;
+  left: 170px;
+  top: 60px;
+  overflow: hidden;
+}
+.image {
+  background: rgba(217, 217, 217, 0.5);
+  border-radius: 6px;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  left: 200px; /* Aumente o valor conforme necessário */
+}
+.title2 {
+  color: #000000;
+  text-align: center;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  position: absolute;
+  right: 16px;
+  left: 16px;
+  top: 50%;
+  translate: 0 -50%;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagination {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  bottom: 8px;
+}
+.rectangle-3343 {
+  background: #ffffff;
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 20px;
+  height: 4px;
+  position: relative;
+}
+.rectangle-3344 {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 4px;
+  height: 4px;
+  position: relative;
+}
+.rectangle-3347 {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 4px;
+  height: 4px;
+  position: relative;
+}
+.rectangle-3340 {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 4px;
+  height: 4px;
+  position: relative;
+}
+.vector-200 {
+  height: 0px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  overflow: visible;
+}
+.conectando-cuidadores-e-fam-lias-mem-rias-e-suporte-ao-seu-alcance {
+  color: #000000;
+  text-align: left;
+  font-family: "Roboto-BlackItalic", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 800;
+  font-style: italic;
+  position: absolute;
+  left: 409px;
+  top: 382px;
+  width: 856px;
+  height: 38px;
+}
+.contents {
+  padding: 60px 170px 60px 170px;
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 200px;
+  top: 530px;
+  overflow: hidden;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 459px;
+  position: relative;
+}
+.title3 {
+  color: #000000;
+  text-align: left;
+  font-family: "Roboto-Bold", sans-serif;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+}
+.description {
+  color: #000000;
+  text-align: left;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.button {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.primary {
+  background: #000000;
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 240px;
+  position: relative;
+}
+.title4 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Roboto-Medium", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  position: relative;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: var(--var-sds-size-space-0, 0px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  width: 565px;
+  position: relative;
+}
+.article {
+  border-radius: 8px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.1);
+  border-width: 1px;
+  padding: 16px;
+  flex: 1;
+  height: 220px;
+  left: 100px;
+  position: relative;
+}
+.image-container2 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  overflow: hidden;
+}
+.image2 {
+  background: #64748c;
+  border-radius: 20px;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.logoo-removebg-preview-1 {
+  width: 123px;
+  height: 68px;
+  position: absolute;
+  left: 9px;
+  top: 30px;
+  object-fit: cover;
+}
+.frame-427318906 {
+  width: 433px;
+  height: 192px;
+  position: absolute;
+  left: 145px;
+  top: 16px;
+}
+.title5 {
+  color: #000000;
+  text-align: left;
+  font-family: "Roboto-Medium", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.subtitle {
+  color: #000000;
+  text-align: left;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 36px;
+  width: 433px;
+  height: 185px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.selection {
+  padding: 4px 0px 4px 0px;
+  width: 433px;
+  height: 28px;
+  position: absolute;
+  left: 0px;
+  top: 92px;
+  overflow: hidden;
+}
+
+.vector-2002 {
+  flex-shrink: 0;
+  height: 0px;
+  position: absolute;
+  right: -458px;
+  left: 0px;
+  bottom: 0px;
+  overflow: visible;
+}
+.list {
+  padding: 60px 170px 60px 170px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+  width: 1440px;
+  height: 303px;
+  position: absolute;
+  left: 0px;
+  top: 970px;
+  overflow: hidden;
+}
+.container2 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.title6 {
+  color: #000000;
+  text-align: center;
+  font-family: "Roboto-Bold", sans-serif;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+  position: relative;
+  width: 520px;
+  left: 200px;
+}
+.list2 {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.row2 {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.item {
+  padding: 12px 0px 12px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  position: relative;
+  left: 100px;
+}
+.frame {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 50px;
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+.icon {
+  color: #000000;
+  text-align: center;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 62.5px;
+  line-height: 100px;
+  font-weight: 400;
+  position: absolute;
+  left: 50%;
+  translate: -50% -50%;
+  top: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.frame-4273189062 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.title7 {
+  color: #000000;
+  text-align: center;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.html, body {
+  height: 100%; /* Garante que o body ocupe toda a altura da tela */
+  margin: 0; /* Remove margens padrão */
+}
+.vector-2003 {
+  flex-shrink: 0;
+  height: 0px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  overflow: visible;
+}
+.section2 {
+  padding: 60px;
+  width: 100%; /* A seção ocupará toda a largura da tela */
+  max-width: 1903px; /* Limita a largura máxima a 1903px */
+  height: 322px; /* Altura fixa */
+  position: relative; /* Posiciona a seção em relação ao fluxo normal do documento */
+  margin-top: 1300px; /* Empurra a seção para o final do contêiner pai */
+  margin-right: 470px; /* Mantém 470px de espaço do lado direito */
+  overflow: hidden; /* Ajuste conforme necessário */
+  z-index: 100; /* Aumente o valor conforme necessário */
+}
+.image-62 {
+  width: 100%; /* Ocupa 100% da largura da seção */
+  height: auto; /* Mantém a proporção da imagem */
+  position: absolute; /* Permite posicionamento absoluto */
+  right: 0; /* Alinha a imagem à direita */
+  bottom: 0; /* Posiciona a imagem na parte inferior da seção */
+  object-fit: cover; /* Cobre o espaço mantendo a proporção */
+  clip-path: inset(20% 0 0 0); /* Remove 20% da parte superior da imagem */
+}
+.container3 {
+  width: 1101px;
+  height: 100px;
+  position: absolute;
+  left: 295px;
+  top: 74px;
+}
+.title8 {
+  color: #000000;
+  text-align: center;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  position: absolute;
+  left: -152px;
+  top: 240px;
+  width: 448px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title9 {
+  color: #000000;
+  text-align: center;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  position: absolute;
+  left: 400px;
+  top: 240px;
+  width: 694px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title21 {
+  color: #000000;
+  text-align: center;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  position: absolute;
+  left: 900px;
+  top: 240px;
+  width: 694px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logoo-removebg-preview-12 {
+  width: 155px;
+  height: 92px;
+  position: absolute;
+  left: 51px;
+  top: 15px;
+  object-fit: cover;
+}
+.logoo-removebg-preview-2 {
+  width: 155px;
+  height: 92px;
+  position: absolute;
+  left: 51px;
+  top: 15px;
+  object-fit: cover;
+}
+.gerenciamento {
+  color: rgba(0, 0, 0, 0.95);
+  text-align: left;
+  font-family: "Roboto-Medium", sans-serif;
+  font-size: 16px;
+  line-height: 36px;
+  font-weight: 500;
+  position: absolute;
+  left: 1620px;
+  top: 38px;
+  width: 115px;
+  height: 26px;
+  z-index: 10; /* Adicione esta linha */
+}
+.nosso-sistema-voltado-para-pessoas-com-alzheimer-seus-familiares-e-cuidadores-ele-ajuda-a-estimular-a-mem-ria-organizar-informa-es-importantes-e-facilitar-o-cuidado-promovendo-bem-estar-e-qualidade-de-vida-no-dia-a-dia {
+  color: #000000;
+  text-align: left;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 360px;
+  top: 900px;
+  width: 804px;
+  height: 96px;
+}
+.gerenciar-exercicios {
+  background: #ffffff;
+  padding: 80px 0px 0px 0px;
+  width: 1440px;
+  height: 1851px;
+  position: absolute;
+  left: 3035px;
+  top: 1912px;
+}
+.top-bar {
+  background: #ffffff;
+  padding: 20px;
+  height: 80px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+.title10 {
+  color: #000000;
+  text-align: left;
+  font-family: "Roboto-Medium", sans-serif;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 500;
+  position: absolute;
+  left: 235px;
+  top: 44px;
+  width: 458px;
+}
+.navigation2 {
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 1087px;
+  top: 44px;
+}
+.logoo-removebg-preview-3 {
+  width: 155px;
+  height: 92px;
+  position: absolute;
+  left: 55px;
+  top: 10px;
+  object-fit: cover;
+}
+.section3 {
+  background: rgba(26, 132, 148, 0.6);
+  padding: 60px 170px 60px 170px;
+  width: 1440px;
+  height: 286px;
+  position: absolute;
+  left: 0px;
+  top: 113px;
+  overflow: hidden;
+}
+.container4 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 1100px;
+  height: 144px;
+  position: absolute;
+  left: 170px;
+  top: 60px;
+}
+.title11 {
+  color: #000000;
+  text-align: center;
+  font-family: "Roboto-Bold", sans-serif;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+  position: relative;
+  width: 622px;
+}
+.description2 {
+  color: #000000;
+  text-align: center;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  position: relative;
+  width: 520px;
+}
+.vector-2004 {
+  height: 0px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  overflow: visible;
+}
+.section4 {
+  padding: 60px 170px 60px 170px;
+  width: 1440px;
+  height: 339px;
+  position: absolute;
+  left: 0px;
+  top: 436px;
+  overflow: hidden;
+}
+.download-premium-png-of-account-png-line-icon-user-symbol-by-aew-about-profile-icon-person-icon-png-person-icon-profile-png-and-profile-3012376-1 {
+  width: 111px;
+  height: 114px;
+  position: absolute;
+  left: 359px;
+  top: 112px;
+  object-fit: cover;
+}
+.avatar {
+  background: rgba(188, 196, 220, 0.5);
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 364px;
+  top: 119.5px;
+  overflow: hidden;
+}
+.container5 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 566px;
+  height: 100px;
+  position: absolute;
+  left: 504px;
+  top: 119.5px;
+}
+.title12 {
+  color: #000000;
+  text-align: left;
+  font-family: "Roboto-Bold", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+}
+.selection2 {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.label-normal2 {
+  background: rgba(217, 217, 217, 0.5);
+  border-radius: 2px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.1);
+  border-width: 0.5px;
+  padding: 2px 4px 2px 4px;
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.label-text {
+  color: #000000;
+  text-align: left;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.button2 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 1110px;
+  top: 85.5px;
+  overflow: hidden;
+}
+.primary2 {
+  background: #000000;
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 160px;
+  position: relative;
+}
+.seconday {
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 160px;
+  position: relative;
+}
+.title13 {
+  color: #000000;
+  text-align: left;
+  font-family: "Roboto-Medium", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  position: relative;
+}
+.vector-2005 {
+  height: 0px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  overflow: visible;
+}
+.list3 {
+  padding: 60px 170px 60px 170px;
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+  width: 1440px;
+  height: 380px;
+  position: absolute;
+  left: 0px;
+  top: 775px;
+  overflow: hidden;
+}
+.container6 {
+  flex: 1;
+  height: 168px;
+  position: relative;
+}
+.primary3 {
+  background: #000000;
+  border-radius: 8px;
+  padding: 12px;
+  width: 160px;
+  height: 48px;
+  position: absolute;
+  left: 348px;
+  top: 15px;
+}
+.title14 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Roboto-Medium", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  position: absolute;
+  left: 44px;
+  top: 12px;
+}
+.title15 {
+  color: #000000;
+  text-align: left;
+  font-family: "Roboto-Bold", sans-serif;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+  position: absolute;
+  left: -12px;
+  top: 15px;
+  width: 520px;
+}
+.description3 {
+  color: #000000;
+  text-align: left;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: -12px;
+  top: 108px;
+  width: 520px;
+}
+.list4 {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  position: relative;
+}
+.subtitle2 {
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.subtitle3 {
+  color: #000000;
+  text-align: center;
+  font-family: "Roboto-Medium", sans-serif;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 500;
+  position: relative;
+  align-self: stretch;
+}
+.vector-2006 {
+  flex-shrink: 0;
+  height: 0px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  overflow: visible;
+}
+.form {
+  padding: 60px 170px 60px 170px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+  width: 1440px;
+  position: absolute;
+  left: 0px;
+  top: 1155px;
+  overflow: hidden;
+}
+.row3 {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 510px;
+  position: relative;
+  overflow: hidden;
+}
+.title16 {
+  color: #000000;
+  text-align: left;
+  font-family: "Roboto-Medium", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  position: relative;
+  align-self: stretch;
+}
+.textfield {
+  background: #ffffff;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.1);
+  border-width: 1px;
+  padding: 8px 12px 8px 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.text {
+  color: rgba(0, 0, 0, 0.5);
+  text-align: left;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  position: relative;
+  flex: 1;
+  height: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.selection3 {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 510px;
+  position: relative;
+  overflow: hidden;
+}
+.chip-group {
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 36px;
+  position: relative;
+}
+.chip {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  padding: 8px;
+  width: 510px;
+  height: 36px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+}
+.text2 {
+  background: linear-gradient(to left, #000000, #000000),
+    linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: left;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 13px;
+  top: 10px;
+  width: 109px;
+}
+.amigo {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(to left, #000000, #000000);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: left;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 149px;
+  top: 10px;
+  width: 94px;
+  height: 19px;
+}
+.chip2 {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  padding: 8px;
+  width: 232px;
+  height: 36px;
+  position: absolute;
+  left: 278px;
+  top: 0px;
+  overflow: hidden;
+}
+.text3 {
+  color: #000000;
+  text-align: left;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 99px;
+  top: 8px;
+}
+.button3 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.seconday2 {
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 240px;
+  position: relative;
+}
+.vector-2007 {
+  flex-shrink: 0;
+  height: 0px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  overflow: visible;
+}
+.section5 {
+  padding: 60px;
+  width: 1440px;
+  height: 192px;
+  position: absolute;
+  left: 6px;
+  top: 1659px;
+  overflow: hidden;
+}
+.section6 {
+  background: rgba(26, 132, 148, 0.6);
+  padding: 60px 170px 60px 170px;
+  width: 1440px;
+  height: 192px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+}
+.vector-2008 {
+  height: 0px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  overflow: visible;
+}
+.container7 {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  position: absolute;
+  left: 262px;
+  top: 46px;
+}
+.title17 {
+  color: #000000;
+  text-align: center;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+  width: 408px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title18 {
+  color: #000000;
+  text-align: center;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+  width: 135px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title19 {
+  color: #000000;
+  text-align: center;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+  width: 203px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
