@@ -26,15 +26,25 @@
 .title {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Medium", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 28px;
   line-height: 36px;
   font-weight: 500;
   position: absolute;
   left: 206px;
-  top: 44px;
-  width: 677px;
+  top: 4%;
+  width: 270px;
   height: 54px;
+  white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+}
+.title a {
+  color: black; /* Cor do texto padrão do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+}
+
+.title:hover a {
+  color: white; /* Cor do texto do link ao passar o mouse sobre a div */
 }
 .navigation {
   background: #64748c;
@@ -51,36 +61,56 @@
 .tab {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   position: relative;
+ 
   
 }
 .tab2 {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   position: absolute;
   left: 1510px;
-  top: 44px;
+  top: calc(10% - 65px); /* Move 10 pixels para cima */
+}
+.tab2 a {
+  color: black; /* Cor do texto padrão do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+}
+
+.tab2:hover a {
+  color: white; /* Cor do texto do link ao passar o mouse sobre a div */
 }
 .tab3 {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   position: absolute;
   left: 1320px;
-  top: 44px;
+  top: calc(10% - 65px); /* Move 10 pixels para cima */
   z-index: 10; /* Adicione esta linha */
 }
+.tab3 a {
+  color: black; /* Cor do texto padrão do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+}
+
+.tab3:hover a {
+  color: white; /* Cor do texto do link ao passar o mouse sobre a div */
+}
+
 .section {
   padding: 70px 170px 1000px 1px; /* Padding: topo, direita, baixo, esquerda */
   width: 1440px;
@@ -102,7 +132,7 @@
   height: 284px;
   position: absolute;
   left: 170px;
-  top: 60px;
+  top: 4%;
   overflow: hidden;
 }
 .image {
@@ -116,7 +146,7 @@
 .title2 {
   color: #000000;
   text-align: center;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
@@ -184,16 +214,17 @@
 .conectando-cuidadores-e-fam-lias-mem-rias-e-suporte-ao-seu-alcance {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-BlackItalic", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 24px;
   line-height: 24px;
   font-weight: 800;
   font-style: italic;
   position: absolute;
   left: 409px;
-  top: 382px;
+  top: 28%;
   width: 856px;
   height: 38px;
+  white-space: nowrap; /* Impede que o texto quebre em várias linhas */
 }
 .contents {
   padding: 60px 170px 60px 170px;
@@ -204,7 +235,7 @@
   justify-content: center;
   position: absolute;
   left: 200px;
-  top: 530px;
+  top: 50%;
   overflow: hidden;
 }
 .container {
@@ -220,7 +251,7 @@
 .title3 {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Bold", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 40px;
   line-height: 48px;
   font-weight: 700;
@@ -230,7 +261,7 @@
 .description {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -263,7 +294,7 @@
 .title4 {
   color: #ffffff;
   text-align: left;
-  font-family: "Roboto-Medium", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
@@ -287,8 +318,8 @@
   border-width: 1px;
   padding: 16px;
   flex: 1;
-  height: 220px;
-  left: 100px;
+  height: 230px;
+  left: 130px;
   position: relative;
 }
 .image-container2 {
@@ -326,7 +357,7 @@
 .title5 {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Medium", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 20px;
   line-height: 28px;
   font-weight: 500;
@@ -337,14 +368,15 @@
 .subtitle {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Regular", sans-serif;
-  font-size: 16px;
+  font-family: "Merriweather", sans-serif;
+  font-size: 14px;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: 0;
   position: absolute;
   left: 0px;
+  right: 590px;
   top: 36px;
-  width: 433px;
+  width: 423px;
   height: 185px;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -395,7 +427,7 @@
 .title6 {
   color: #000000;
   text-align: center;
-  font-family: "Roboto-Bold", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 40px;
   line-height: 48px;
   font-weight: 700;
@@ -445,7 +477,7 @@
 .icon {
   color: #000000;
   text-align: center;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 62.5px;
   line-height: 100px;
   font-weight: 400;
@@ -461,6 +493,16 @@
   text-overflow: ellipsis;
   overflow: hidden;
 }
+
+.icon a {
+  color: black; /* Cor do texto padrão do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+}
+
+.icon:hover a {
+  color: #64748c; /* Cor do texto do link ao passar o mouse sobre a div */
+}
 .frame-4273189062 {
   display: flex;
   flex-direction: column;
@@ -474,12 +516,21 @@
 .title7 {
   color: #000000;
   text-align: center;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 20px;
   line-height: 28px;
   font-weight: 400;
   position: relative;
   align-self: stretch;
+}
+.title7 a {
+  color: black; /* Cor do texto padrão do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+}
+
+.title7:hover a {
+  color: #64748c; /* Cor do texto do link ao passar o mouse sobre a div */
 }
 .html, body {
   height: 100%; /* Garante que o body ocupe toda a altura da tela */
@@ -524,7 +575,7 @@
 .title8 {
   color: #000000;
   text-align: center;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 20px;
   line-height: 28px;
   font-weight: 400;
@@ -537,10 +588,19 @@
   align-items: center;
   justify-content: center;
 }
+.title8 a {
+  color: #ffffff; /* Cor do texto padrão do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+}
+
+.title8:hover a {
+  color: #ffffff; /* Change to a different color on hover */
+}
 .title9 {
   color: #000000;
   text-align: center;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 20px;
   line-height: 28px;
   font-weight: 400;
@@ -556,7 +616,7 @@
 .title21 {
   color: #000000;
   text-align: center;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 20px;
   line-height: 28px;
   font-weight: 400;
@@ -568,6 +628,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.title21 a {
+  color: black; /* Cor do texto padrão do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+}
+
+.title21:hover a {
+  color: white; /* Cor do texto do link ao passar o mouse sobre a div */
 }
 .logoo-removebg-preview-12 {
   width: 155px;
@@ -584,31 +654,83 @@
   left: 51px;
   top: 15px;
   object-fit: cover;
-}
-.gerenciamento {
+}.gerenciamento {
   color: rgba(0, 0, 0, 0.95);
   text-align: left;
-  font-family: "Roboto-Medium", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   line-height: 36px;
   font-weight: 500;
   position: absolute;
-  left: 1620px;
-  top: 38px;
+  left: 1620px; /* Ajuste conforme necessário */
+  top: calc(4% - 3px); /* Move 10 pixels para cima */
   width: 115px;
   height: 26px;
   z-index: 10; /* Adicione esta linha */
 }
+
+.gerenciamento a {
+  color: black; /* Cor do texto padrão do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+}
+
+.gerenciamento:hover a {
+  color: white; /* Cor do texto do link ao passar o mouse sobre a div */
+}
+.tab31, .tab32 {
+  color: rgba(0, 0, 0, 0.95);
+  text-align: left;
+  font-family: "Merriweather", sans-serif;
+  font-size: 16px;
+  line-height: 36px;
+  font-weight: 500;
+  position: absolute; /* Mantenha isso se você precisar de posicionamento absoluto */
+  z-index: 10; /* Adicione esta linha */
+}
+.tab31 a {
+  color: black; /* Cor do texto padrão do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+}
+
+.tab31:hover a {
+  color: white; /* Cor do texto do link ao passar o mouse sobre a div */
+}
+
+.tab31 {
+  left: 20%;
+  top: 10%;
+  width: 115px;
+  height: 26px;
+}
+
+.tab32 {
+  left: calc(20% + 120px); /* Ajuste a posição para ficar ao lado de .tab31 */
+  top: 10%;
+  width: 115px;
+  height: 26px;
+}
+
+.tab32 a {
+  color: black; /* Cor do texto padrão do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+}
+
+.tab32:hover a {
+  color: white; /* Cor do texto do link ao passar o mouse sobre a div */
+}
 .nosso-sistema-voltado-para-pessoas-com-alzheimer-seus-familiares-e-cuidadores-ele-ajuda-a-estimular-a-mem-ria-organizar-informa-es-importantes-e-facilitar-o-cuidado-promovendo-bem-estar-e-qualidade-de-vida-no-dia-a-dia {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   position: absolute;
   left: 360px;
-  top: 900px;
+  top: 95%;
   width: 804px;
   height: 96px;
 }
@@ -635,7 +757,7 @@
 .title10 {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Medium", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 28px;
   line-height: 36px;
   font-weight: 500;
@@ -688,7 +810,7 @@
 .title11 {
   color: #000000;
   text-align: center;
-  font-family: "Roboto-Bold", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 40px;
   line-height: 48px;
   font-weight: 700;
@@ -698,7 +820,7 @@
 .description2 {
   color: #000000;
   text-align: center;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -755,7 +877,7 @@
 .title12 {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Bold", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 24px;
   line-height: 32px;
   font-weight: 700;
@@ -792,7 +914,7 @@
 .label-text {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
@@ -840,7 +962,7 @@
 .title13 {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Medium", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
@@ -865,7 +987,7 @@
   height: 380px;
   position: absolute;
   left: 0px;
-  top: 775px;
+  top: 110%;
   overflow: hidden;
 }
 .container6 {
@@ -886,7 +1008,7 @@
 .title14 {
   color: #ffffff;
   text-align: center;
-  font-family: "Roboto-Medium", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
@@ -897,7 +1019,7 @@
 .title15 {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Bold", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 40px;
   line-height: 48px;
   font-weight: 700;
@@ -909,7 +1031,7 @@
 .description3 {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -930,7 +1052,7 @@
 .subtitle2 {
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -940,7 +1062,7 @@
 .subtitle3 {
   color: #000000;
   text-align: center;
-  font-family: "Roboto-Medium", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 28px;
   line-height: 36px;
   font-weight: 500;
@@ -993,7 +1115,7 @@
 .title16 {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Medium", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 500;
@@ -1019,7 +1141,7 @@
 .text {
   color: rgba(0, 0, 0, 0.5);
   text-align: left;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
@@ -1064,7 +1186,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: left;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
@@ -1080,7 +1202,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: left;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
@@ -1104,7 +1226,7 @@
 .text3 {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
@@ -1187,7 +1309,7 @@
 .title17 {
   color: #000000;
   text-align: center;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 20px;
   line-height: 28px;
   font-weight: 400;
@@ -1201,7 +1323,7 @@
 .title18 {
   color: #000000;
   text-align: center;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 20px;
   line-height: 28px;
   font-weight: 400;
@@ -1215,7 +1337,7 @@
 .title19 {
   color: #000000;
   text-align: center;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 20px;
   line-height: 28px;
   font-weight: 400;

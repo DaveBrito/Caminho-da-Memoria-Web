@@ -47,7 +47,7 @@ menu, ol, ul {
 .title {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Medium", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 28px;
   line-height: 36px;
   font-weight: 500;
@@ -55,6 +55,31 @@ menu, ol, ul {
   left: 235px;
   top: 44px;
   width: 458px;
+}
+.title8 {
+  color: #000000;
+  text-align: center;
+  font-family: "Merriweather", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  position: absolute;
+  left: -152px;
+  top: 240px;
+  width: 408px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title a {
+  color: black; /* Cor do texto padrão do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+}
+
+.title:hover a {
+  color: #27c0c2; /* Cor do texto do link ao passar o mouse sobre a div */
 }
 .navigation {
   background: #ffffff;
@@ -67,48 +92,65 @@ menu, ol, ul {
 .tab {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   position: absolute;
   left: 500px;
-  top: 0px;
-  transition: color 0.3s; /* Transição suave para a mudança de cor */
+  top: 22%;
 }
-.tab:hover {
-  color: #27c0c2; /* Cor do texto ao passar o mouse */
+.tab a {
+  color: black; /* Cor do texto padrão do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+}
+
+.tab:hover a {
+  color: #27c0c2; /* Cor do texto do link ao passar o mouse sobre a div */
 }
 
 .tab1 {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   position: absolute;
-  left: 600px;
-  top: 0px;
-  transition: color 0.3s; /* Transição suave para a mudança de cor */
+  left: 910%;
+  top: 20%;
+  
 }
-.tab1:hover {
-  color: #27c0c2; /* Cor do texto ao passar o mouse */
+.tab1 a {
+  color: black; /* Cor do texto padrão do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+}
+
+.tab1:hover a {
+  color: #27c0c2; /* Cor do texto do link ao passar o mouse sobre a div */
 }
 .tab2 {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   position: absolute;
   left: 640px;
-  top: 0px;
-  transition: color 0.3s; /* Transição suave para a mudança de cor */
+  top: 26%;
+  
 }
-.tab2:hover {
-  color: #27c0c2; /* Cor do texto ao passar o mouse */
+.tab2 a {
+  color: black; /* Cor do texto padrão do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+}
+
+.tab2:hover a {
+  color: #27c0c2; /* Cor do texto do link ao passar o mouse sobre a div */
 }
 .navigation2 {
   background: #ffffff;
@@ -119,34 +161,46 @@ menu, ol, ul {
   top: 39px;
 }
 .tab3 {
-  color: #000000;
+  color: #000000; /* Cor padrão do texto */
   text-align: left;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   position: absolute;
-  left: 1200px;
-  top: 39px;
-  transition: color 0.3s; /* Transição suave para a mudança de cor */
+  left: 60%;
+  top: 55%;
 }
-.tab3:hover {
-  color: #27c0c2; /* Cor do texto ao passar o mouse */
+
+.tab3 a {
+  color: black; /* Cor do texto padrão do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+}
+
+.tab3:hover a {
+  color: #27c0c2; /* Cor do texto do link ao passar o mouse sobre a div */
 }
 .tab4 {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   position: absolute;
-  left: 1380px;
-  top: 39px;
-  transition: color 0.3s; /* Transição suave para a mudança de cor */
+  left: 70%;
+  top: 55%;
+  
 }
-.tab4:hover {
-  color: #27c0c2; /* Cor do texto ao passar o mouse */
+.tab4 a {
+  color: black; /* Cor do texto padrão do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+}
+
+.tab4:hover a {
+  color: #27c0c2; /* Cor do texto do link ao passar o mouse sobre a div */
 }
 .logoo-removebg-preview-3 {
   width: 155px;
@@ -217,7 +271,7 @@ menu, ol, ul {
 .title2 {
   color: #000000;
   text-align: center;
-  font-family: "Roboto-Bold", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 40px;
   line-height: 100px;
   font-weight: 700;
@@ -253,7 +307,7 @@ menu, ol, ul {
 .title21 {
   color: #000000;
   text-align: center;
-  font-family: "Roboto-Bold", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 40px;
   line-height: 100px;
   font-weight: 700;
@@ -266,7 +320,7 @@ menu, ol, ul {
 .description {
   color: #000000;
   text-align: center;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 20px;
   line-height: 24px;
   font-weight: 400;
@@ -326,7 +380,7 @@ menu, ol, ul {
 .title3 {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Bold", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 24px;
   line-height: 32px;
   font-weight: 700;
@@ -347,7 +401,7 @@ menu, ol, ul {
 .label-text {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
@@ -356,7 +410,7 @@ menu, ol, ul {
 .description2 {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -390,7 +444,7 @@ menu, ol, ul {
 .title4 {
   color: #ffffff;
   text-align: left;
-  font-family: "Roboto-Medium", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
@@ -414,7 +468,7 @@ menu, ol, ul {
 .title5 {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Medium", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
@@ -462,7 +516,7 @@ menu, ol, ul {
 .title6 {
   color: #ffffff;
   text-align: center;
-  font-family: "Roboto-Medium", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
@@ -473,7 +527,7 @@ menu, ol, ul {
 .title7 {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Bold", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 40px;
   line-height: 48px;
   font-weight: 700;
@@ -485,7 +539,7 @@ menu, ol, ul {
 .description3 {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -534,7 +588,7 @@ menu, ol, ul {
 .icon {
   color: #000000;
   text-align: center;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 62.5px;
   line-height: 100px;
   font-weight: 400;
@@ -563,7 +617,7 @@ menu, ol, ul {
 .title8 {
   color: #000000;
   text-align: center;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 20px;
   line-height: 28px;
   font-weight: 400;
@@ -573,7 +627,7 @@ menu, ol, ul {
 .subtitle {
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -583,7 +637,7 @@ menu, ol, ul {
 .subtitle2 {
   color: #000000;
   text-align: center;
-  font-family: "Roboto-Medium", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 28px;
   line-height: 36px;
   font-weight: 500;
@@ -657,7 +711,7 @@ menu, ol, ul {
 .title9 {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Medium", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 500;
@@ -683,7 +737,7 @@ menu, ol, ul {
 .text {
   color: rgba(0, 0, 0, 0.5);
   text-align: left;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
@@ -728,7 +782,7 @@ menu, ol, ul {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: left;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
@@ -744,7 +798,7 @@ menu, ol, ul {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: left;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
@@ -853,7 +907,7 @@ menu, ol, ul {
 .title10 {
   color: #000000;
   text-align: center;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 20px;
   line-height: 28px;
   font-weight: 400;
@@ -863,11 +917,13 @@ menu, ol, ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  left: 1%;
+  white-space: nowrap; /* Impede que o texto quebre em várias linhas */
 }
 .title11 {
   color: #000000;
   text-align: center;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 20px;
   line-height: 28px;
   font-weight: 400;
@@ -877,11 +933,22 @@ menu, ol, ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+}
+
+.title11 a {
+  color: black; /* Cor do texto padrão do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+}
+
+.title11:hover a {
+  color: white; /* Cor do texto do link ao passar o mouse sobre a div */
 }
 .title12 {
   color: #000000;
   text-align: center;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 20px;
   line-height: 28px;
   font-weight: 400;
@@ -889,6 +956,18 @@ menu, ol, ul {
   align-self: stretch;
   width: 203px;
   display: flex;
+  left: 10%;
   align-items: center;
   justify-content: center;
+  white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+}
+
+.title12 a {
+  color: black; /* Cor do texto padrão do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+}
+
+.title12:hover a {
+  color: white; /* Cor do texto do link ao passar o mouse sobre a div */
 }
