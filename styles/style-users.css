@@ -163,7 +163,7 @@ menu, ol, ul {
   height: 286px;
   position: absolute;
   left: 0; /* Começa na borda esquerda */
-  top: 113px;
+  top: 6%;
   overflow: hidden;
 }
 .container {
@@ -247,6 +247,22 @@ menu, ol, ul {
   margin-left: 2px; /* Espaço entre o texto e o cursor */
   transform: translateY(10%); /* Move o cursor para baixo (ajuste conforme necessário) */
 }
+
+
+
+.title21 {
+  color: #000000;
+  text-align: center;
+  font-family: "Roboto-Bold", sans-serif;
+  font-size: 40px;
+  line-height: 100px;
+  font-weight: 700;
+  position: relative;
+  width: 520px;
+  left: 180px;
+  overflow: hidden; /* Impede que o texto seja revelado até a animação */
+  white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+}
 .description {
   color: #000000;
   text-align: center;
@@ -274,7 +290,7 @@ menu, ol, ul {
   height: 339px;
   position: absolute;
   left: 200px;
-  top: 436px;
+  top: 24%;
   overflow: hidden;
 }
 .download-premium-png-of-account-png-line-icon-user-symbol-by-aew-about-profile-icon-person-icon-png-person-icon-profile-png-and-profile-3012376-1 {
@@ -403,6 +419,7 @@ menu, ol, ul {
   line-height: 24px;
   font-weight: 500;
   position: relative;
+  top: 50%;
   white-space: nowrap; /* Impede que o texto quebre em várias linhas */
 }
 .vector-2002 {
@@ -424,7 +441,7 @@ menu, ol, ul {
   height: 380px;
   position: absolute;
   left: 260px;
-  top: 775px;
+  top: 40%;
   overflow: hidden;
 }
 .container3 {
@@ -592,7 +609,7 @@ menu, ol, ul {
   width: 1440px;
   position: absolute;
   left: 200px;
-  top: 1155px;
+  top: 60%;
   overflow: hidden;
 }
 .container4 {
@@ -812,7 +829,7 @@ menu, ol, ul {
   height: 220px;
   position: absolute;
   left: 0px;
-  top: 1631px;
+  top: 89%;
   overflow: hidden;
 }
 .image-6 {
