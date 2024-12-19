@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/vars.css">
+  <link rel="stylesheet" href="../styles/style-login-register.css">
+  
+  <title>Login</title>
+</head>
+<body>
+  <div class="gerenciar-login-registro">
+    <div class="top-bar">
+      <div class="title"><a href="../views/index.html">Caminho da Memória</a></div>
+      <div class="navigation">
+        <div class="tab"><a href="../views/gerenciar-users.html">Gerenciamento</a></div>
+      </div>
+      <div class="tab2"><a href="../views/index.html">Exercícios</a></div>
+      <div class="tab3"><a href="../views/gerenciar-users.html">Memórias</a></div>
+      <div class="tab4"><a href="../views/index.html">Contato</a></div>
+    </div>
+    <img class="logoo-removebg-preview-3" src="../imgs/logoo-removebg-preview-30.png" />
+    <div class="section">
+      <div class="container">
+        <div class="title2" id="texto">Bem-vindo(a) de volta Usuário</div>
+        <div class="description">
+          Administre cuidadores e familiares de forma eficiente no sistema.
+        </div>
+      </div>
+      <img class="vector-200" src="../vectors/vector-2000.svg" />
+      <div class="tab-group">
+        <div class="tab5">
+          <button class="title3" id="login">Login</button>
+        </div>
+        <div class="tab5">
+          <button class="title3" id="registro">Registro</button>
+        </div>
+      </div>
+    </div>
+    <img class="section2" src="../vectors/section1.svg" />
+    <div class="section3">
+      <div class="container2">
+        <div class="title4">Copyright © 2024 Caminho da Memória</div>
+        <div class="title5"><a href="index.html">Política de Privacidade</a></div>
+        <div class="title6"><a href="../views/index.html">Termos de Uso</a></div>
+      </div>
+    </div>
+    <div class="form" id="form-login">
+      <div class="container3">
+        <div class="title7">Área de Login</div>
+      </div>
+      <div class="list">
+        <div class="row">
+          <div class="input">
+            <div class="title8">E-mail</div>
+            <div class="textfield">
+              <input type="text" id="user-input" class="inpute" placeholder="Digite seu e-mail">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input">
+            <div class="title8">Senha</div>
+            <div class="textfield">
+              <input type="text" id="user-senha" class="senha" placeholder="Digite sua senha">
+            </div>
+          </div>
+        </div>
+        <div class="button">
+          <div class="seconday">
+            <button class="title9">Esqueceu sua senha?</button>
+          </div>
+          <div class="primary">
+            <button class="title10">Entrar</button>
+          </div>
+        </div>
+      </div>
+      <img class="vector-2002" src="../vectors/vector-2001.svg" />
+    </div>
+    <div class="form2" id="form-register">
+      <div class="container3">
+        <div class="title7">Área de Registro</div>
+      </div>
+      <div class="list">
+        <div class="row">
+          <div class="input">
+            <div class="title8">Nome Completo</div>
+            <div class="textfield">
+              <input type="user-nome-completo" id="nome-completo" class="nome-completo" placeholder="Digite seu nome completo">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input">
+            <div class="title8">E-mail</div>
+            <div class="textfield">
+              <input type="registrar-user" id="email-registro" class="registro-user" placeholder="Digite seu e-mail">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input">
+            <div class="title8">Senha</div>
+            <div class="textfield">
+              <input type="senha-user" id="senha-registro" class="registro-senha" placeholder="Crie sua senha">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input">
+            <div class="title8">Confirmação de Senha</div>
+            <div class="textfield">
+              <input type="confirme-senha" id="confirme.senha" class="confirme-senha" placeholder="Confirme sua senha">
+            </div>
+          </div>
+        </div>
+        <div class="button2">
+          <div class="primary2">
+            <button class="title10">Registrar</button>
+          </div>
+        </div>
+      </div>
+      <img class="vector-2003" src="../vectors/vector-2002.svg" />
+    </div>
+  </div>
+  
+</body>
+
+<script>
+// Obtendo referências aos elementos
+const loginForm = document.getElementById("form-login");
+const registerForm = document.getElementById("form-register");
+const showLogin = document.getElementById("login");
+const showRegister = document.getElementById("registro");
+
+// Função para mostrar o login e esconder o registro
+showLogin.addEventListener("click", () => {
+  loginForm.classList.add("active");
+  loginForm.classList.remove("inactive");  // Garante que o login fique visível
+  registerForm.classList.remove("active");
+  registerForm.classList.add("inactive");  // Garante que o registro desapareça
+});
+
+// Função para mostrar o registro e esconder o login
+showRegister.addEventListener("click", () => {
+  registerForm.classList.add("active");
+  registerForm.classList.remove("inactive");  // Garante que o registro fique visível
+  loginForm.classList.remove("active");
+  loginForm.classList.add("inactive");  // Garante que o login desapareça
+});
+
+</script>
+
+<script src="../scripts/script.js"></script>
+
+</html>
