@@ -53,9 +53,11 @@
         <div class="primary">
           <div class="title4">Editar Usuários</div>
         </div>
+        <a href="#adicionar-usuario">
         <div class="seconday">
-          <div class="title5">Adicionar Usuários</div>
+          <button class="title5">Adicionar Usuários</button> 
         </div>
+        </a>
         <div class="primary">
           <div class="title4">Editar Perfil</div>
         </div>
@@ -98,7 +100,7 @@
       </div>
       <img class="vector-2003" src="../vectors/vector-2002.svg" />
     </div>
-    <div class="form">
+    <div class="form" id="adicionar-usuario">
       <div class="container4">
         <div class="title21">Adicionar Usuário</div>
       </div>
@@ -157,8 +159,21 @@
       </div>
     </div>
   </div>
+  <!--- Script para 'Digitação e troca de palavras'. Verifique o código para mais entendimento--> 
     <script src="../scripts/script.js"></script>
-  
+
+    <!--- Script para rolagem suave para a seção de 'Adicionar Usuário' -->
+    <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+    
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>
