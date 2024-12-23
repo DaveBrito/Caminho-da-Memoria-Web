@@ -293,6 +293,7 @@ menu, ol, ul {
   animation: fade-in 1s forwards; /* Animação de reaparecimento */
 }
 
+
 .title2::after {
   content: ''; /* Necessário para criar um pseudo-elemento */
   display: inline-block; /* Permite que o cursor se comporte como um elemento em linha */

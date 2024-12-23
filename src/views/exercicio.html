@@ -13,21 +13,21 @@
 <body>
   <div class="gerenciar-exercicios">
     <div class="top-bar">
-      <div class="title">Caminho da Memória</div>
-      <div class="tab">Registrar-se/Entrar</div>
+      <div class="title"><a href="../views/index.html">Caminho da Memória</a></div>
+      <div class="tab"><a href="../views/Login-Register.html">Registrar/Entrar</a></div>
       <div class="navigation">
-        <div class="tab2">Perfil</div>
+        <div class="tab2"><a href="../views/perfil.html">Perfil</a></div>
       </div>
-      <div class="tab3">Gerenciamento</div>
+      <div class="tab3"><a href="../views/gerenciar-users.html">Gerenciamento</a></div>
       <div class="navigation2">
-        <div class="tab4">Memórias</div>
-        <div class="tab5">Exercícios</div>
+        <div class="tab4"><a href="../views/memorias.html">Memórias</a></div>
+        <div class="tab5"><a href="../views/exercicio.html">Exercícios</a></div>
       </div>
     </div>
     <img class="logoo-removebg-preview-3" src="../imgs/logoo-removebg-preview-30.png" />
     <div class="section">
       <div class="container">
-        <div class="title2">
+        <div class="title2" id="texto">
           Bem-vindo ao Gerenciamento de Exercícios Cognitivos
         </div>
         <div class="description">
@@ -48,18 +48,20 @@
       <div class="container2">
         <div class="title3">Nome do Usuário</div>
         <div class="description2">
-          Gerencie perfis e mantenha informações atualizadas.
+          Gerencie exercícios e mantenha informações atualizadas.
         </div>
       </div>
       <div class="button">
         <div class="primary">
-          <div class="title4">Editar Exercícios</div>
+          <button class="title4">Editar Exercícios</button>
         </div>
+        <a href="#adicionar-exercicio">
         <div class="seconday">
           <div class="title5">Adicionar Exercícios</div>
         </div>
+      </a>
         <div class="primary">
-          <div class="title4">Editar Perfil</div>
+          <button class="title4">Editar Perfil</button>
         </div>
       </div>
       <img class="vector-2002" src="../vectors/vector-2001.svg" />
@@ -86,7 +88,7 @@
               <div class="subtitle">11/05/2021</div>
             </div>
             <div class="item">
-              <div class="frame"></div>
+              <img class="learning" src="../imgs/Exercise.png" />
               <div class="frame-427318906">
                 <div class="title8">#2 Exercício</div>
               </div>
@@ -97,7 +99,8 @@
       </div>
       <img class="vector-2003" src="../vectors/vector-2002.svg" />
     </div>
-    <div class="form">
+    <div class="form"
+    id="adicionar-exercicio">
       <div class="container4">
         <div class="title9">Adicionar Exercício</div>
       </div>
@@ -106,13 +109,20 @@
           <div class="input">
             <div class="title10">Nome do Exercício</div>
             <div class="textfield">
-              <div class="text">Digite o nome</div>
+              <input type="text" id="nome" class="text" placeholder="Digite o nome">
             </div>
           </div>
           <div class="input">
             <div class="title10">Tipo de Exercício</div>
             <div class="textfield">
-              <div class="text">Selecione o tipo do exercício aqui...</div>
+              <select id="exercicio" name="exercicio" class="text">
+                <option value="" disabled selected>Selecione um tipo...</option>
+                <option value="musculacao">Musculação</option>
+                <option value="cardio">Cardio</option>
+                <option value="yoga">Yoga</option>
+                <option value="pilates">Pilates</option>
+                <option value="crossfit">Crossfit</option>
+            </select>
             </div>
           </div>
         </div>
@@ -120,7 +130,7 @@
           <div class="input">
             <div class="title10">Descrição</div>
             <div class="textfield">
-              <div class="text">Deixe um lembrete sobre a atividade</div>
+              <input type="descricao" id="descricao" class="text"  placeholder="Deixe uma descrição do exercício">
             </div>
           </div>
         </div>
@@ -140,12 +150,27 @@
         <img class="vector-2005" src="../vectors/vector-2004.svg" />
         <div class="container5">
           <div class="title11">Copyright © 2024 Caminho da Memória</div>
-          <div class="title12">Termos de Uso</div>
-          <div class="title13">Política de Privacidade</div>
+          <div class="title12"><a href="../views/index.html">Termos de Uso</a></div>
+          <div class="title13"><a href="../views/index.html">Política de Privacidade</div>
         </div>
       </div>
     </div>
   </div>
   
 </body>
+
+  <!--- Script para 'Digitação e troca de palavras'. Verifique o código para mais entendimento--> 
+  <script src="../scripts/script-exercicio.js"></script>
+  <!--- Script de rolagem suave para a seção de 'Adicionar Exercícios' -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+    
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
 </html>

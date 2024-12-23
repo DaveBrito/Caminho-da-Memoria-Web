@@ -39,19 +39,29 @@ menu, ol, ul {
 .title {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Medium", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 28px;
   line-height: 36px;
   font-weight: 500;
   position: absolute;
-  left: 235px;
-  top: 49px;
-  width: 285px;
+  left: 10%;
+  top: 57%;
+  width: 370px;
 }
+.title a {
+  color: black; /* Cor do texto padrão do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+}
+
+.title:hover a {
+  color: #1A8494; /* Cor do texto do link ao passar o mouse sobre a div */
+}
+
 .tab {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -60,6 +70,16 @@ menu, ol, ul {
   top: 60%;
   z-index: 5; /* Ajuste conforme necessário */
 }
+.tab a {
+  color: black; /* Cor do texto padrão do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+}
+
+.tab:hover a {
+color: #1A8494; /* Cor do texto do link ao passar o mouse sobre a div */
+}
+
 .navigation {
   background: #ffffff;
   width: 62px;
@@ -81,7 +101,7 @@ menu, ol, ul {
 .tab2 {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -90,16 +110,35 @@ menu, ol, ul {
   top: 4%;
   z-index: 5; /* Ajuste conforme necessário */
 }
+.tab2 a {
+  color: black; /* Cor do texto padrão do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+}
+
+.tab2:hover a {
+  color: #1A8494; /* Cor do texto do link ao passar o mouse sobre a div */
+}
+
 .tab3 {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   position: absolute;
   left: 74%;
   top: 63%;
+}
+.tab3 a {
+  color: black; /* Cor do texto padrão do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+}
+
+.tab3:hover a {
+  color: #1A8494; /* Cor do texto do link ao passar o mouse sobre a div */
 }
 .navigation2 {
   background: #ffffff;
@@ -112,7 +151,7 @@ menu, ol, ul {
 .tab4 {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -120,16 +159,34 @@ menu, ol, ul {
   left: 230%;
   top: 4%;
 }
+.tab4 a {
+  color: black; /* Cor do texto padrão do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+}
+
+.tab4:hover a {
+  color: #1A8494; /* Cor do texto do link ao passar o mouse sobre a div */
+}
 .tab5 {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   position: absolute;
   left: 310%;
   top: 4%;
+}
+.tab5 a {
+  color: black; /* Cor do texto padrão do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+}
+
+.tab5:hover a {
+  color: #1A8494; /* Cor do texto do link ao passar o mouse sobre a div */
 }
 .logoo-removebg-preview-3 {
   width: 155px;
@@ -164,22 +221,42 @@ menu, ol, ul {
 .title2 {
   color: #000000;
   text-align: center;
-  font-family: "Roboto-Bold", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 40px;
   line-height: 48px;
   font-weight: 700;
   position: relative;
   width: 622px;
+  
+}
+.title2.fade-out {
+  animation: fade-out 1s forwards; /* Animação de desvanecimento */
+}
+
+.title2.fade-in {
+  animation: fade-in 1s forwards; /* Animação de reaparecimento */
+}
+
+
+.title12 a {
+  color: black; /* Cor do texto padrão do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+}
+
+.title12:hover a {
+  color: #ffffff; /* Cor do texto do link ao passar o mouse sobre a div */
 }
 .description {
   color: #000000;
   text-align: center;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   position: relative;
   width: 520px;
+  white-space: nowrap;
 }
 .vector-200 {
   height: 0px;
@@ -229,7 +306,7 @@ menu, ol, ul {
 .title3 {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Bold", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 24px;
   line-height: 32px;
   font-weight: 700;
@@ -239,7 +316,7 @@ menu, ol, ul {
 .description2 {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -273,7 +350,7 @@ menu, ol, ul {
 .title4 {
   color: #ffffff;
   text-align: left;
-  font-family: "Roboto-Medium", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
@@ -297,11 +374,12 @@ menu, ol, ul {
 .title5 {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Medium", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
   position: relative;
+  white-space: nowrap;
 }
 .vector-2002 {
   height: 0px;
@@ -312,12 +390,12 @@ menu, ol, ul {
   overflow: visible;
 }
 .avatar {
-  background: rgba(188, 196, 220, 0.5);
+  background: rgba(26, 132, 148, 0.6);
   border-radius: 50px;
   width: 108px;
   height: 104px;
   position: absolute;
-  left: 360px;
+  left: calc(25% + 1px); /* 1px a mais que 25% */
   top: 116px;
   overflow: hidden;
 }
@@ -353,7 +431,7 @@ menu, ol, ul {
 .title6 {
   color: #ffffff;
   text-align: center;
-  font-family: "Roboto-Medium", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
@@ -364,7 +442,7 @@ menu, ol, ul {
 .title7 {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Bold", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 40px;
   line-height: 48px;
   font-weight: 700;
@@ -376,7 +454,7 @@ menu, ol, ul {
 .description3 {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -442,7 +520,7 @@ menu, ol, ul {
 .title8 {
   color: #000000;
   text-align: center;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 20px;
   line-height: 28px;
   font-weight: 400;
@@ -452,7 +530,7 @@ menu, ol, ul {
 .subtitle {
   color: #000000;
   text-align: center;
-  font-family: "Roboto-Medium", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 28px;
   line-height: 36px;
   font-weight: 500;
@@ -502,7 +580,7 @@ menu, ol, ul {
 .title9 {
   color: #000000;
   text-align: center;
-  font-family: "Roboto-Bold", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 40px;
   line-height: 48px;
   font-weight: 700;
@@ -544,7 +622,7 @@ menu, ol, ul {
 .title10 {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Medium", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 500;
@@ -554,10 +632,8 @@ menu, ol, ul {
 .textfield {
   background: #ffffff;
   border-radius: 6px;
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0.1);
-  border-width: 1px;
-  padding: 8px 12px 8px 12px;
+  border: none; /* Remove a borda */
+  padding: 8px 12px;
   display: flex;
   flex-direction: row;
   gap: 4px;
@@ -567,18 +643,20 @@ menu, ol, ul {
   flex-shrink: 0;
   position: relative;
 }
+
 .text {
-  color: rgba(0, 0, 0, 0.5);
-  text-align: left;
-  font-family: "Roboto-Regular", sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
+  background: #ffffff;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: #000000; /* Borda preta fina */
+  border-width: 1px; /* Espessura fina da borda */
+  padding: 12px 16px; /* Espaçamento interno maior para área de digitação */
+  width: 100%; /* Faz o input se ajustar ao container pai */
+  font-size: 16px; /* Aumenta o tamanho da fonte */
+  display: block; /* Remove display flex para inputs */
+  align-self: stretch;
+  flex-shrink: 0;
   position: relative;
-  flex: 1;
-  height: 20px;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 .button2 {
   display: flex;
@@ -668,7 +746,7 @@ menu, ol, ul {
 .title11 {
   color: #000000;
   text-align: center;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 20px;
   line-height: 28px;
   font-weight: 400;
@@ -682,7 +760,7 @@ menu, ol, ul {
 .title12 {
   color: #000000;
   text-align: center;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 20px;
   line-height: 28px;
   font-weight: 400;
@@ -692,11 +770,12 @@ menu, ol, ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  white-space: nowrap;
 }
 .title13 {
   color: #000000;
   text-align: center;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 20px;
   line-height: 28px;
   font-weight: 400;
@@ -708,3 +787,49 @@ menu, ol, ul {
   justify-content: center;
   white-space: nowrap;
 }
+.title13 a {
+  color: black; /* Cor do texto padrão do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+}
+
+.title13:hover a {
+  color: #ffffff; /* Cor do texto do link ao passar o mouse sobre a div */
+}
+
+@keyframes typing {
+  from {
+    width: 0; /* Começa com largura 0 */
+  }
+  to {
+    width: 100%; /* Termina com a largura total do texto */
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    background-color: transparent; /* O cursor fica invisível no início e no fim */
+  }
+  50% {
+    background-color: black; /* O cursor fica visível na metade do tempo */
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1; /* Totalmente visível */
+  }
+  to {
+    opacity: 0; /* Totalmente invisível */
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0; /* Totalmente invisível */
+  }
+  to {
+    opacity: 1; /* Totalmente visível */
+  }
+}
+
