@@ -2,6 +2,9 @@
 .gerenciar-users * {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 a,
 button,
 input,
