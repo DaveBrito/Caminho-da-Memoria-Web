@@ -8,19 +8,19 @@
   <link rel="stylesheet" href="../styles/vars.css">
   <link rel="stylesheet" href="../styles/style-memorias.css">
   
-  <title>Gerenciar Usuários</title>
+  <title>Gerenciar Memórias</title>
 
 </head>
 <body>
   <div class="gerenciar-users">
     <div class="top-bar">
-      <div class="title"><a href="index.html">Caminho da Memória</a></div>
+      <div class="title"><a href="../views/index.html">Caminho da Memória</a></div>
       <div class="navigation">
-        <div class="tab"><a href="index.html">Memórias</a></div>
-        <div class="tab2"><a href="index.html">Exercícios</a></div>
+        <div class="tab"><a href="../views/memorias.html">Memórias</a></div>
+        <div class="tab2"><a href="../views/exercicio.html">Exercícios</a></div>
       </div>
       <div class="navigation2">
-        <div class="tab1"><a href="index.html">Contato</a></div>
+        <div class="tab1"><a href="../views/perfil.html">Perfil</a></div>
       </div>
       <div class="tab3"><a href="../views/Login-Register.html">Registrar-se/Entrar</a></div>
       <div class="tab4"><a href="../views/gerenciar-users.html">Gerenciamento</a></div>
@@ -28,9 +28,9 @@
     <img class="logoo-removebg-preview-3" src="../imgs/logoo-removebg-preview-30.png" />
     <div class="section">
       <div class="container">
-        <div class="title2"id="texto">Bem-vindo ao Gerenciamento de Usuário</div>
+        <div class="title2"id="texto">Bem-vindo ao Gerenciamento de Memórias</div>
         <div class="description">
-          Administre cuidadores e familiares de forma eficiente no sistema.
+          Administre memórias de forma eficiente no sistema.
         </div>
       </div>
       <img class="vector-200" src="../vectors/vector-2000.svg" />
@@ -46,53 +46,89 @@
         <div class="selection">
         </div>
         <div class="description2">
-          Gerencie perfis e mantenha informações atualizadas.
+          Gerencie memórias e mantenha informações atualizadas no sistema.
         </div>
       </div>
       <div class="button">
         <div class="primary">
-          <div class="title4">Editar Usuários</div>
+          <div class="title4">Editar Memórias</div>
         </div>
         <a href="#adicionar-usuario">
         <div class="seconday">
-          <button class="title5">Adicionar Usuários</button> 
+          <button class="title5">Adicionar Memória</button> 
         </div>
         </a>
+        <a href="../views/perfil.html">
         <div class="primary">
           <div class="title4">Editar Perfil</div>
         </div>
+        </a>
       </div>
       <img class="vector-2002" src="../vectors/vector-2001.svg" />
     </div>
     <div class="list">
       <div class="container3">
-        <div class="primary2">
-          <div class="title6">Visualizar</div>
+        <div class="primary2"  id="openModal">
+          <button class="title6">Visualizar</button>
         </div>
-        <div class="title7">Lista de Usuários</div>
+    
+        <!-- Modal para visualizar memórias -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+        <span id="closeModal" class="close">&times;</span>
+        <h2>Lista de Memórias</h2>
+        <div class="memory-list">
+            <div class="memory-item">
+            <div class="memory-info">
+                <p>Memória #1 - Descrição da memória</p>
+            </div>
+            <div class="memory-actions">
+                <button class="edit-button">Editar</button>
+                <button class="delete-button">Excluir</button>
+            </div>
+            </div>
+            <div class="memory-item">
+            <div class="memory-info">
+                <p>Memória #2 - Descrição da memória</p>
+            </div>
+            <div class="memory-actions">
+                <button class="edit-button">Editar</button>
+                <button class="delete-button">Excluir</button>
+            </div>
+            </div>
+        <!-- Adicione mais memórias conforme necessário -->
+
+      </div>
+    </div>
+  </div>
+        <div class="title7">Lista de Memórias</div>
         <div class="description3">
           Visualize todos os registros cadastrados no sistema.
         </div>
       </div>
-      <div class="list2">
+      <div class="#">
         <div class="row">
           <div class="item">
             <div class="frame">
-              <div class="icon">😀</div>
+              <div class="icon">
+                <img src="../imgs/Head With Brain.png"/>
+              </div>
             </div>
             <div class="frame-427318906">
               <div class="title8">Cuidador 1</div>
-              <div class="subtitle">Cuidando de João</div>
+              <div class="subtitle">Memória #1</div>
             </div>
             <div class="subtitle2">11/05/2021</div>
           </div>
           <div class="item">
             <div class="frame">
-              <div class="icon">😊</div>
+              <div class="icon">
+                <img src="../imgs/Brain.png"/>
+              </div>
             </div>
             <div class="frame-427318906">
               <div class="title8">Familiar 2</div>
-              <div class="subtitle">Parente de Maria</div>
+              <div class="subtitle">Memória #2</div>
             </div>
             <div class="subtitle2">21/06/2021</div>
           </div>
@@ -102,7 +138,7 @@
     </div>
     <div class="form" id="adicionar-usuario">
       <div class="container4">
-        <div class="title21">Adicionar Usuário</div>
+        <div class="title21">Adicionar Memória</div>
       </div>
       <div class="list3">
         <div class="row2">
@@ -160,7 +196,7 @@
     </div>
   </div>
   <!--- Script para 'Digitação e troca de palavras'. Verifique o código para mais entendimento--> 
-    <script src="../scripts/script.js"></script>
+    <script src="../scripts/script-memoria.js"></script>
 
     <!--- Script para rolagem suave para a seção de 'Adicionar Memórias' -->
     <script>
@@ -173,6 +209,35 @@
         });
       });
     });
+  </script>
+
+       <!-- Script para abrir e fechar modal de visualizar memória -->
+<script>
+    // Obtém o modal
+    var modal = document.getElementById("myModal");
+  
+    // Obtém o botão que abre o modal
+    var btn = document.getElementById("openModal");
+  
+    // Obtém o elemento <span> que fecha o modal
+    var span = document.getElementById("closeModal");
+  
+    // Quando o usuário clica no botão, abre o modal 
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+  
+    // Quando o usuário clica no <span> (x), fecha o modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+  
+    // Quando o usuário clica em qualquer lugar fora do modal, fecha o modal
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
   </script>
 </body>
 

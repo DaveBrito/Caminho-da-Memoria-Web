@@ -149,7 +149,7 @@ a,
   overflow: hidden;
 }
 .download-premium-png-of-account-png-line-icon-user-symbol-by-aew-about-profile-icon-person-icon-png-person-icon-profile-png-and-profile-3012376-1 {
-  background: #ffffff;
+   background: #ffffff;
   width: 125px;
   height: 122px;
   position: absolute;
@@ -200,10 +200,13 @@ a,
   position: absolute;
   left: 861px;
   top: 62px;
-  display: flex; /* Usar flexbox para alinhar os botões lado a lado */
-  align-items: center; /* Alinhar verticalmente ao centro */
+  transition: background-color 0.3s, transform 0.3s; /* Transição suave para a cor de fundo e transformação */
 }
 
+.primary:hover {
+  background-color: #000000; /* Cor de fundo ao passar o mouse */
+  transform: scale(1.05); /* Aumenta o tamanho do botão em 5% */
+}
 
 .title2 {
   color: #ffffff;
