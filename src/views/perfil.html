@@ -14,12 +14,12 @@
   <div class="alzheimers-profile">
     <div class="header">
       <img class="logoo-removebg-preview-4" src="../imgs/logoo-removebg-preview-40.png" />
-      <div class="title">Caminho da Memória</div>
-      <div class="tab">Registrar-se/Entrar</div>
+      <div class="title"><a href="../views/index.html">Caminho da Memória</a></div> 
+      <div class="tab"><a href="../views/Login-Register.html">Registrar-se/Entrar</a></div>
       <div class="navigation">
-        <div class="tab2">Perfil</div>
+        <div class="tab2"><a href="../views/perfil.html">Perfil</a></div>
       </div>
-      <div class="tab3">Gerenciamento</div>
+      <div class="tab3"><a href="../views/gerenciar-users.html">Gerenciamento</a></div>
     </div>
     <div class="profile-summary">
       <img
@@ -36,7 +36,26 @@
       </div>
       <div class="avatar"></div>
       <div class="primary">
-        <button class="title2">Editar Perfil</button>
+        <button class="title2" id="openModal">Editar Perfil</button>
+      </div>
+      <!-- Modal -->
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Editar Perfil</h2>
+            <form>
+                <label for="fullName">Nome Completo:</label>
+                <input type="text" id="fullName" value="Maria Carmen de Souza"><br><br>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" value="exem****@gmail.com"><br><br>
+                <label for="phone">Telefone:</label>
+                <input type="text" id="phone" value="11 9999-9999"><br><br>
+                <label for="address">Endereço:</label>
+                <input type="text" id="address" value="Rua Manoel Guilherme Braga"><br><br>
+                <button type="submit">Salvar</button>
+                <button type="button" class="delete">Deletar</button>
+            </form>
+        </div>
       </div>
       
     </div>
@@ -89,8 +108,8 @@
       Suas informações pessoais em um lugar só!
     </div>
     <div class="navigation2">
-      <div class="tab2">Memórias</div>
-      <div class="tab4">Exercícios</div>
+      <div class="tab2"><a href="../views/memorias.html">Memórias</a></div>
+      <div class="tab4"><a href="../views/exercicio.html"> Exercícios</a></div>
     </div>
     <div class="list">
       <div class="row">
@@ -129,4 +148,34 @@
   </div>
   
 </body>
+
+
+   <!-- Script para abrir e fechar modal de editar perfil -->
+<script>
+  // Obtém o modal
+  var modal = document.getElementById("myModal");
+
+  // Obtém o botão que abre o modal
+  var btn = document.getElementById("openModal");
+
+  // Obtém o elemento <span> que fecha o modal
+  var span = document.getElementById("closeModal");
+
+  // Quando o usuário clica no botão, abre o modal 
+  btn.onclick = function() {
+      modal.style.display = "block";
+  }
+
+  // Quando o usuário clica no <span> (x), fecha o modal
+  span.onclick = function() {
+      modal.style.display = "none";
+  }
+
+  // Quando o usuário clica em qualquer lugar fora do modal, fecha o modal
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+</script>
 </html>

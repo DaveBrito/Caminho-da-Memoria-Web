@@ -29,7 +29,6 @@ a,
   box-sizing: border-box;
 }
 .alzheimers-profile {
-  background: #f5f5f5;
   height: 1200px;
   position: relative;
   overflow: hidden;
@@ -54,25 +53,43 @@ a,
 .title {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Medium", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 28px;
   line-height: 36px;
   font-weight: 500;
   position: absolute;
   left: 192px;
   top: 42px;
-  width: 285px;
+  width: 300px;
+}
+.title a {
+  color: black; /* Cor do texto padrão do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+}
+
+.title:hover a {
+  color: #ffffff; /* Cor do texto do link ao passar o mouse sobre a div */
 }
 .tab {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   position: absolute;
   left: 63%;
   top: 46px;
+}
+.tab a {
+  color: black; /* Cor do texto padrão do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+}
+
+.tab:hover a {
+  color: #ffffff; /* Cor do texto do link ao passar o mouse sobre a div */
 }
 .navigation {
   background: #64748c;
@@ -85,7 +102,7 @@ a,
 .tab2 {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -93,16 +110,34 @@ a,
   left: 0px;
   top: 0px;
 }
+.tab2 a {
+  color: black; /* Cor do texto padrão do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+}
+
+.tab2:hover a {
+  color: #ffffff; /* Cor do texto do link ao passar o mouse sobre a div */
+}
 .tab3 {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   position: absolute;
   left: 77%;
   top: 46px;
+}
+.tab3 a {
+  color: black; /* Cor do texto padrão do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+}
+
+.tab3:hover a {
+  color: #ffffff; /* Cor do texto do link ao passar o mouse sobre a div */
 }
 .profile-summary {
   background: #ffffff;
@@ -114,6 +149,7 @@ a,
   overflow: hidden;
 }
 .download-premium-png-of-account-png-line-icon-user-symbol-by-aew-about-profile-icon-person-icon-png-person-icon-profile-png-and-profile-3012376-1 {
+  background: #ffffff;
   width: 125px;
   height: 122px;
   position: absolute;
@@ -124,7 +160,7 @@ a,
 .maria-carmen {
   color: #333333;
   text-align: left;
-  font-family: "Roboto-Bold", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 24px;
   font-weight: 700;
   position: absolute;
@@ -134,15 +170,14 @@ a,
 .idade-72-nome-completo-maria-carmen-de-souza-email-exem-gmail-com {
   color: #4d4d4d;
   text-align: left;
-  font-family: "Inter-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   font-weight: 400;
   position: absolute;
   left: 200px;
   top: 80px;
 }
-.avatar {
-  background: rgba(188, 196, 220, 0.5);
+.avatar { 
   border-radius: 50px;
   width: 111px;
   height: 107px;
@@ -173,14 +208,13 @@ a,
 .title2 {
   color: #ffffff;
   text-align: left;
-  font-family: "Roboto-Medium", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
   position: relative;
 }
 .info-tabs {
-  background: #ffffff;
   border-style: solid;
   border-color: transparent;
   border-width: 1px;
@@ -190,12 +224,11 @@ a,
   left: 10%;
   top: 30%;
   overflow: hidden;
-  z-index: 5;
 }
 .linha-do-tempo {
   color: #4a8fe3;
   text-align: left;
-  font-family: "Inter-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   font-weight: 400;
   position: absolute;
@@ -205,7 +238,7 @@ a,
 .div {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 24px;
   font-weight: 400;
   position: absolute;
@@ -217,7 +250,7 @@ a,
 .informa-es-pessoais {
   color: #4a8fe3;
   text-align: left;
-  font-family: "Inter-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   font-weight: 400;
   position: absolute;
@@ -236,7 +269,7 @@ a,
 .atividades-feitas {
   color: #333333;
   text-align: left;
-  font-family: "Roboto-Bold", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 20px;
   font-weight: 700;
   position: absolute;
@@ -244,7 +277,6 @@ a,
   top: 20px;
 }
 .timeline-entry-0 {
-  background: #f5f5f5;
   width: 1112px;
   height: 100px;
   position: absolute;
@@ -255,7 +287,7 @@ a,
 ._2023-5-15 {
   color: #808080;
   text-align: left;
-  font-family: "Inter-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 14px;
   font-weight: 400;
   position: absolute;
@@ -265,7 +297,7 @@ a,
 .exerc-cio-de-mem-ria-sess-o-3 {
   color: #333333;
   text-align: left;
-  font-family: "Inter-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 18px;
   font-weight: 400;
   position: absolute;
@@ -275,7 +307,7 @@ a,
 .conclu-atividades-di-rias-de-quebra-cabe-a-e-de-recorda-o-de-nomes {
   color: #4d4d4d;
   text-align: left;
-  font-family: "Inter-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 14px;
   font-weight: 400;
   position: absolute;
@@ -283,7 +315,6 @@ a,
   top: 75px;
 }
 .timeline-entry-1 {
-  background: #f5f5f5;
   width: 1112px;
   height: 100px;
   position: absolute;
@@ -294,7 +325,7 @@ a,
 ._2022-4-14 {
   color: #808080;
   text-align: left;
-  font-family: "Inter-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 14px;
   font-weight: 400;
   position: absolute;
@@ -304,7 +335,7 @@ a,
 .exerc-cio-de-mem-ria-sess-o-2 {
   color: #333333;
   text-align: left;
-  font-family: "Inter-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 18px;
   font-weight: 400;
   position: absolute;
@@ -312,7 +343,6 @@ a,
   top: 50px;
 }
 .timeline-entry-2 {
-  background: #f5f5f5;
   width: 1112px;
   height: 100px;
   position: absolute;
@@ -323,7 +353,7 @@ a,
 ._2021-3-13 {
   color: #808080;
   text-align: left;
-  font-family: "Inter-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 14px;
   font-weight: 400;
   position: absolute;
@@ -333,7 +363,7 @@ a,
 .exerc-cio-de-mem-ria-sess-o-1 {
   color: #333333;
   text-align: left;
-  font-family: "Inter-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 18px;
   font-weight: 400;
   position: absolute;
@@ -343,7 +373,7 @@ a,
 .informa-es-apenas-para-exibi-o {
   color: #4d4d4d;
   text-align: left;
-  font-family: "Inter-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 14px;
   font-weight: 400;
   position: absolute;
@@ -353,7 +383,7 @@ a,
 .suas-informa-es-pessoais-em-um-lugar-s {
   color: #333333;
   text-align: left;
-  font-family: "Roboto-Bold", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 20px;
   font-weight: 700;
   position: absolute;
@@ -371,13 +401,22 @@ a,
 .tab4 {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   position: absolute;
   left: 112px;
   top: 0px;
+}
+.tab4 a {
+  color: black; /* Cor do texto padrão do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+}
+
+.tab4:hover a {
+  color: #ffffff; /* Cor do texto do link ao passar o mouse sobre a div */
 }
 .list {
   display: flex;
@@ -414,7 +453,7 @@ a,
 .title3 {
   color: #000000;
   text-align: left;
-  font-family: "Roboto-Medium", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 500;
@@ -440,7 +479,7 @@ a,
 .text {
   color: rgba(0, 0, 0, 0.5);
   text-align: left;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
@@ -449,4 +488,97 @@ a,
   height: 20px;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+
+/* CSS do modal */
+/* Estilo do modal */
+.modal {
+  display: none; /* Escondido por padrão */
+  position: fixed; /* Fica em cima da tela */
+  z-index: 1; /* Fica na frente */
+  left: 0;
+  top: 0;
+  width: 100%; /* Largura total */
+  height: 100%; /* Altura total */
+  background-color: rgba(0,0,0,0.7); /* Fundo com opacidade */
+}
+
+/* Estilo do conteúdo do modal */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% do topo e centralizado */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Largura do modal */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para o modal */
+  overflow: hidden; /* Remover a rolagem */
+  z-index: 1;
+}
+
+/* Estilo do formulário */
+form {
+  display: flex;
+  flex-direction: column; /* Coloca os elementos em coluna */
+  max-height: 70vh; /* Limita a altura do formulário */
+  overflow-y: hidden; /* Remove a rolagem do formulário */
+}
+/* Estilo dos rótulos */
+label {
+  margin-bottom: 5px; /* Espaço abaixo do rótulo */
+  font-weight: bold; /* Rótulo em negrito */
+}
+
+/* Estilo dos campos de entrada */
+input[type="text"],
+input[type="email"] {
+  padding: 10px; /* Espaçamento interno */
+  margin-bottom: 15px; /* Espaço abaixo do campo */
+  border: 1px solid #ccc; /* Borda cinza */
+  border-radius: 4px; /* Bordas arredondadas */
+  font-size: 16px; /* Tamanho da fonte */
+}
+
+/* Estilo do botão de salvar */
+button[type="submit"] {
+  background-color: #4CAF50; /* Cor de fundo verde */
+  color: white; /* Cor do texto */
+  padding: 10px; /* Espaçamento interno */
+  border: none; /* Sem borda */
+  border-radius: 4px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de mão ao passar o mouse */
+  font-size: 16px; /* Tamanho da fonte */
+  margin-right: 10px; /* Espaço à direita para o botão de deletar */
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049; /* Cor de fundo mais escura ao passar o mouse */
+}
+
+/* Estilo do botão de deletar */
+button[type="button"].delete {
+  background-color: #f44336; /* Cor de fundo vermelho */
+  color: white; /* Cor do texto */
+  padding: 10px; /* Espaçamento interno */
+  border: none; /* Sem borda */
+  border-radius: 4px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de mão ao passar o mouse */
+}
+
+button[type="button"].delete:hover {
+  background-color: #d32f2f; /* Cor de fundo mais escura ao passar o mouse */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
