@@ -14,6 +14,7 @@
   position: absolute;
   left: 0px;
   top: 0px;
+  overflow: visible; /* Permite que o conteúdo saia do contêiner */
 }
 .image-6 {
   width: 100%; /* Cobre toda a largura da tela */
@@ -54,9 +55,9 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  left: 1780px;
+  left: 1400px; /* Ajuste conforme necessário */
   top: 44px;
-  z-index: 10; /* Adicione esta linha */
+  z-index: 10;
 }
 .tab {
   color: #000000;
@@ -66,9 +67,9 @@
   line-height: 24px;
   font-weight: 400;
   position: relative;
- 
-  
+  margin-right: 20px; /* Espaçamento entre as abas */
 }
+
 .tab2 {
   color: #000000;
   text-align: left;
@@ -77,8 +78,8 @@
   line-height: 24px;
   font-weight: 400;
   position: absolute;
-  left: 1510px;
-  top: calc(10% - 65px); /* Move 10 pixels para cima */
+  left: 67%;
+  top: calc(11% - 65px); /* Move 10 pixels para cima */
 }
 .tab2 a {
   color: black; /* Cor do texto padrão do link */
@@ -97,8 +98,8 @@
   line-height: 24px;
   font-weight: 400;
   position: absolute;
-  left: 1320px;
-  top: calc(10% - 65px); /* Move 10 pixels para cima */
+  left: 55%;
+  top: calc(11% - 65px); /* Move 10 pixels para cima */
   z-index: 10; /* Adicione esta linha */
 }
 .tab3 a {
@@ -116,7 +117,7 @@
   width: 1440px;
   height: 420px;
   position: absolute;
-  left: 200px;
+  left: 100px;
   top: 100px;
   overflow: hidden;
   margin-bottom: 10px; /* Adicionando espaço abaixo */
@@ -220,7 +221,7 @@
   font-weight: 800;
   font-style: italic;
   position: absolute;
-  left: 409px;
+  left: 309px;
   top: 28%;
   width: 856px;
   height: 38px;
@@ -234,8 +235,8 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  left: 200px;
-  top: 50%;
+  left: 160px;
+  top: 55%;
   overflow: hidden;
 }
 .container {
@@ -316,9 +317,9 @@
   border-style: solid;
   border-color: rgba(0, 0, 0, 0.1);
   border-width: 1px;
-  padding: 16px;
+  padding: 10px;
   flex: 1;
-  height: 230px;
+  height: 200px;
   left: 130px;
   position: relative;
 }
@@ -410,7 +411,7 @@
   width: 1440px;
   height: 303px;
   position: absolute;
-  left: 0px;
+  right: 15px;
   top: 970px;
   overflow: hidden;
 }
@@ -532,9 +533,12 @@
 .title7:hover a {
   color: #64748c; /* Cor do texto do link ao passar o mouse sobre a div */
 }
-.html, body {
-  height: 100%; /* Garante que o body ocupe toda a altura da tela */
-  margin: 0; /* Remove margens padrão */
+body, html {
+  overflow-x: hidden; /* Remove a rolagem horizontal */
+  overflow-y: auto;   /* Mantém a rolagem vertical */
+  width: 100%;        /* Garante que o body ocupe toda a largura da tela */
+  margin: 0;          /* Remove margens padrão */
+  padding: 0;         /* Remove paddings padrão */
 }
 .vector-2003 {
   flex-shrink: 0;
@@ -662,8 +666,8 @@
   line-height: 36px;
   font-weight: 500;
   position: absolute;
-  left: 1620px; /* Ajuste conforme necessário */
-  top: calc(4% - 3px); /* Move 10 pixels para cima */
+  left: 1230px; /* Ajuste conforme necessário */
+  top: calc(5% - 9px); /* Move 10 pixels para cima */
   width: 115px;
   height: 26px;
   z-index: 10; /* Adicione esta linha */
@@ -685,8 +689,8 @@
   font-size: 16px;
   line-height: 36px;
   font-weight: 500;
-  position: absolute; /* Mantenha isso se você precisar de posicionamento absoluto */
   z-index: 10; /* Adicione esta linha */
+  left: 12%;
 }
 .tab31 a {
   color: black; /* Cor do texto padrão do link */
@@ -729,8 +733,8 @@
   line-height: 24px;
   font-weight: 400;
   position: absolute;
-  left: 360px;
-  top: 95%;
+  left: 340px;
+  top: 105%;
   width: 804px;
   height: 96px;
 }
