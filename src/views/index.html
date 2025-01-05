@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=0.8, user-scalable=no">
     <title>Home</title>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/vars.css">
@@ -141,5 +141,15 @@
       no dia a dia.
     </div>
   </div>
+  <script>
+    // Função para ajustar o zoom para 80%
+    function setZoom() {
+      document.body.style.zoom = 0.8;
+    }
+    // Ajusta o zoom ao carregar a página
+    window.addEventListener("load", setZoom);
+    // Ajusta o zoom ao redimensionar a janela
+    window.addEventListener("resize", setZoom);
+  </script>
  </html> 
   
