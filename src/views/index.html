@@ -14,11 +14,14 @@
       <div class="tab31"><a href="../views/memorias.html">Memórias</a></div>
       <div class="tab32"><a href="../views/exercicio.html">Exercícios</a></div>
     </div>
+    <div class="navigation3">
     <div class="tab3"><a href="../views/Login-Register.html">Registrar-se/Entrar</a></div>
     <div class="gerenciamento"><a href="../views/gerenciar-users.html">Gerenciamento</a></div>
+    <div class="tab2"><a href="../views/perfil.html">Perfil</a></div>
+    </div>
     <img class="image-6" src="../imgs/image-60.png" />
     <div class="title"><a href="../views/index.html">Caminho da Memória</a></div>
-    <div class="tab2"><a href="../views/perfil.html">Perfil</a></div>
+
     <div class="section">
       <div class="image-container">
         <div class="image">
@@ -48,10 +51,48 @@
           descubra o que temos para oferecer!
         </div>
         <div class="button">
-          <div class="primary">
-            <div class="title4">Ler Mais</div>
+          <div class="primary" onclick="openModal()">
+            <button class="title4" >Ler Mais</button>
           </div>
         </div>
+        <!-- Modal -->
+      <div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>Bem-vindo ao Caminho da Memória!</h2>
+    <p>
+      Estamos felizes em tê-lo conosco. O <strong>Caminho da Memória</strong> é uma plataforma dedicada a ajudar cuidadores, familiares e pacientes a gerenciar memórias, exercícios cognitivos e informações importantes de forma prática e eficiente.
+    </p>
+    <h3>Nosso Objetivo</h3>
+    <p>
+      Nosso objetivo é proporcionar uma plataforma fácil e acessível que permita cuidadores e familiares gerenciar informações essenciais de forma prática, centralizando o controle de memórias, usuários e exercícios cognitivos, promovendo assim um suporte mais eficaz e uma melhor qualidade de vida para os usuários.
+    </p>
+    <h3>Como Funciona</h3>
+    <p>
+      Aqui você pode:
+    </p>
+    <ul>
+      <li>📸 <strong>Guardar memórias</strong> preciosas.</li>
+      <li>🧠 <strong>Praticar exercícios</strong> para estimular a mente.</li>
+      <li>👩‍⚕️ <strong>Gerenciar usuários</strong> e informações essenciais.</li>
+    </ul>
+    <p>
+      Explore todas as funcionalidades e descubra como podemos ajudar a melhorar a qualidade de vida de todos os envolvidos.
+    </p>
+    <h3>Por que Escolher o Caminho da Memória?</h3>
+    <p>
+      O Caminho da Memória é uma plataforma inovadora que oferece uma solução completa para gerenciar memórias e informações importantes. Com nossa plataforma, você pode:
+    </p>
+    <ul>
+      <li>📈 <strong>Aumentar a eficiência</strong> no gerenciamento de memórias e informações.</li>
+      <li>📊 <strong>Reduzir o estresse</strong> e a ansiedade relacionados ao gerenciamento de memórias.</li>
+      <li>👥 <strong>Melhorar a comunicação</strong> entre cuidadores, familiares e pacientes.</li>
+    </ul>
+    <p>
+      Junte-se a nós e descubra como o Caminho da Memória pode ajudar a melhorar a qualidade de vida de todos os envolvidos.
+    </p>
+  </div>
+</div>
       </div>
       <div class="row">
         <div class="article">
@@ -97,18 +138,24 @@
           </div>
           <div class="item">
             <div class="frame">
+            <a href="memorias.html">
               <div class="icon">📸</div>
+            </a>
             </div>
+            
             <div class="frame-4273189062">
-              <div class="title7">Guarde Memórias</div>
+              <div class="title7"><a href="memorias.html">Guarde Memórias</a></div>
+              </a>
             </div>
           </div>
           <div class="item">
             <div class="frame">
+              <a href="exercicio.html">
               <div class="icon">🧠</div>
-            </div>
+              </div>
+            </a>
             <div class="frame-4273189062">
-              <div class="title7">Pratique Exercícios</div>
+              <div class="title7"> <a href="exercicio.html">Pratique Exercícios</a></div>
             </div>
           </div>
         </div>
@@ -125,9 +172,42 @@
         <div class="title9">
           © 2024 Caminho da Memória 
         </div>
+       <!-- Link Política de Privacidade -->
         <div class="title21">
-          <a href="index.html">Política de Privacidade</a>
+          <a href="#" onclick="openModalPoliticaPrivacidade(event)">Política de Privacidade</a>
         </div>
+
+        <!-- Modal Política de Privacidade -->
+        <div id="modalPoliticaPrivacidade" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModalPoliticaPrivacidade()">&times;</span>
+            <h2>Política de Privacidade</h2>
+            <p>
+              A Caminho da Memória é comprometida em proteger a privacidade e a segurança dos dados dos nossos usuários. Esta política de privacidade descreve como coletamos, usamos e protegemos as informações pessoais dos nossos usuários.
+            </p>
+            <h3>Coleta de Dados</h3>
+            <p>
+              Coletamos informações pessoais dos nossos usuários quando eles se registram no nosso site ou aplicativo, incluindo nome, e-mail e senha. Também coletamos informações sobre o uso do nosso site e aplicativo, incluindo dados de navegação e interações com o conteúdo.
+            </p>
+            <h3>Uso de Dados</h3>
+            <p>
+              Usamos as informações coletadas para fornecer e melhorar os nossos serviços, incluindo a personalização do conteúdo e a comunicação com os nossos usuários. Também usamos as informações para fins de marketing e publicidade.
+            </p>
+            <h3>Proteção de Dados</h3>
+            <p>
+              Tomamos medidas para proteger as informações pessoais dos nossos usuários, incluindo a criptografia de dados e a implementação de medidas de segurança para prevenir o acesso não autorizado.
+            </p>
+            <h3>Direitos dos Usuários</h3>
+            <p>
+              Os nossos usuários têm o direito de acessar, corrigir e excluir as suas informações pessoais. Eles também têm o direito de se opor ao uso das suas informações para fins de marketing e publicidade.
+            </p>
+            <h3>Alterações à Política de Privacidade</h3>
+            <p>
+              Podemos alterar esta política de privacidade a qualquer momento. Se fizermos alterações significativas, notificaremos os nossos usuários por e-mail ou por meio de um aviso no nosso site ou aplicativo.
+            </p>
+          </div>
+        </div>
+</div>
       </div>
     </div>
     <img class="logoo-removebg-preview-12" src="../imgs/logoo-removebg-preview-11.png" />
@@ -141,6 +221,7 @@
       no dia a dia.
     </div>
   </div>
+</body>
   <script>
     // Função para ajustar o zoom para 80%
     function setZoom() {
@@ -151,5 +232,42 @@
     // Ajusta o zoom ao redimensionar a janela
     window.addEventListener("resize", setZoom);
   </script>
+
+<script>
+// Função para abrir o modal 'Ler Mais'
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Função para fechar o modal 'Ler Mais'
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+// Fechar o modal 'Ler Mais' ao clicar fora dele
+document.getElementById("myModal").addEventListener("click", function (event) {
+  if (event.target === document.getElementById("myModal")) {
+    document.getElementById("myModal").style.display = "none";
+  }
+});
+
+// Função para abrir o modal de política de privacidade
+function openModalPoliticaPrivacidade(event) {
+  event.preventDefault(); // Impede a rolagem para o topo
+  document.getElementById("modalPoliticaPrivacidade").style.display = "block";
+}
+
+// Função para fechar o modal de política de privacidade
+function closeModalPoliticaPrivacidade() {
+  document.getElementById("modalPoliticaPrivacidade").style.display = "none";
+}
+
+// Fechar o modal de política de privacidade ao clicar fora dele
+document.getElementById("modalPoliticaPrivacidade").addEventListener("click", function (event) {
+  if (event.target === document.getElementById("modalPoliticaPrivacidade")) {
+    document.getElementById("modalPoliticaPrivacidade").style.display = "none";
+  }
+});
+</script> 
  </html> 
   

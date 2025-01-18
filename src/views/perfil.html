@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=0.8, user-scalable=no">
   <link rel="stylesheet" href="../styles/vars.css">
   <link rel="stylesheet" href="../styles/perfil.css">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
@@ -15,11 +15,13 @@
     <div class="header">
       <img class="logoo-removebg-preview-4" src="../imgs/logoo-removebg-preview-40.png" />
       <div class="title"><a href="../views/index.html">Caminho da Memória</a></div> 
-      <div class="tab"><a href="../views/Login-Register.html">Registrar-se/Entrar</a></div>
       <div class="navigation">
-        <div class="tab2"><a href="../views/perfil.html">Perfil</a></div>
-      </div>
-      <div class="tab3"><a href="../views/gerenciar-users.html">Gerenciamento</a></div>
+        <div class="tab4"><a href="../views/Login-Register.html">Registrar-se/Entrar</a></div>
+        <div class="tab"><a href="../views/gerenciar-users.html">Gerenciamento</a></div>
+        <div class="tab4"><a href="../views/perfil.html">Perfil</a></div>
+        <div class="tab3"><a href="../views/memorias.html">Memórias</a></div>
+        <div class="tab2"><a href="../views/exercicio.html">Exercícios</a></div>
+    </div>
     </div>
     <div class="profile-summary">
       <img
@@ -51,13 +53,35 @@
                 <input type="text" id="phone" value="11 9999-9999"><br><br>
                 <label for="address">Endereço:</label>
                 <input type="text" id="address" value="Rua Manoel Guilherme Braga"><br><br>
-                <button type="submit">Salvar</button>
-                <button type="button" class="delete">Deletar</button>
+               <!-- Botões de salvar e cancelar -->
+                <div class="modal-buttons">
+                  <button type="button" class="delete-btn">Excluir Conta</button>
+                </div>
+                  <div class="action-buttons">
+                    <button type="button" class="cancel-btn" onclick="closeModal()">Cancelar</button>
+                    <button type="submit" class="save-btn">Salvar</button>
+                  </div>
             </form>
         </div>
       </div>
-      
+     <!-- Modal de Confirmação de Exclusão -->
+  <div id="deleteConfirmModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeDeleteConfirmModal()">&times;</span>
+      <h2>Confirmar Exclusão</h2>
+      <p>Tem certeza de que deseja excluir sua conta? Esta ação não pode ser desfeita.</p>
+      <div class="modal-buttons">
+        <button type="button" class="cancel-btn" onclick="closeDeleteConfirmModal()">Cancelar</button>
+        <button type="button" class="delete-btn" onclick="deleteAccount()">Excluir</button>
+      </div>
     </div>
+  </div>
+
+  <!-- Mensagem de Sucesso -->
+  <div id="successMessage" class="success-message" style="display: none;">
+    <p>Dados atualizados com sucesso!</p>
+  </div>
+</div>
 
     <div class="info-tabs">
       <div class="linha-do-tempo">Linha do Tempo</div>
@@ -106,10 +130,6 @@
     <div class="suas-informa-es-pessoais-em-um-lugar-s">
       Suas informações pessoais em um lugar só!
     </div>
-    <div class="navigation2">
-      <div class="tab2"><a href="../views/memorias.html">Memórias</a></div>
-      <div class="tab4"><a href="../views/exercicio.html"> Exercícios</a></div>
-    </div>
     <div class="list">
       <div class="row">
         <div class="input">
@@ -149,32 +169,81 @@
 </body>
 
 
-   <!-- Script para abrir e fechar modal de editar perfil -->
 <script>
-  // Obtém o modal
-  var modal = document.getElementById("myModal");
-
-  // Obtém o botão que abre o modal
-  var btn = document.getElementById("openModal");
-
-  // Obtém o elemento <span> que fecha o modal
-  var span = document.getElementById("closeModal");
-
-  // Quando o usuário clica no botão, abre o modal 
-  btn.onclick = function() {
-      modal.style.display = "block";
+  // Função para ajustar o zoom para 80%
+  function setZoom() {
+    document.body.style.zoom = 0.8;
   }
-
-  // Quando o usuário clica no <span> (x), fecha o modal
-  span.onclick = function() {
-      modal.style.display = "none";
-  }
-
-  // Quando o usuário clica em qualquer lugar fora do modal, fecha o modal
-  window.onclick = function(event) {
-      if (event.target == modal) {
-          modal.style.display = "none";
-      }
-  }
+  // Ajusta o zoom ao carregar a página
+  window.addEventListener("load", setZoom);
+  // Ajusta o zoom ao redimensionar a janela
+  window.addEventListener("resize", setZoom);
 </script>
+
+
+
+   <!-- Script para abrir e fechar modal de editar perfil -->
+
+   <script>
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("openModal");
+    var span = document.getElementById("closeModal");
+    
+    function openModal() {
+      modal.style.display = "block";
+    }
+    
+    function closeModal() {
+      modal.style.display = "none";
+    }
+    
+    function openDeleteConfirmModal() {
+      document.getElementById("deleteConfirmModal").style.display = "block";
+    }
+    
+    function closeDeleteConfirmModal() {
+      document.getElementById("deleteConfirmModal").style.display = "none";
+    }
+    
+    function deleteAccount() {
+      // Adicione aqui a lógica para excluir a conta
+      alert("Conta excluída com sucesso!");
+      closeDeleteConfirmModal();
+      closeModal();
+    }
+    
+    function saveChanges() {
+      // Adicione aqui a lógica para salvar as alterações
+      closeModal();
+      showSuccessMessage();
+    }
+    
+    function showSuccessMessage() {
+      var successMessage = document.getElementById("successMessage");
+      successMessage.style.display = "block";
+      setTimeout(function() {
+        successMessage.style.display = "none";
+      }, 3000); // Exibe a mensagem por 3 segundos
+    }
+    
+    // Fecha o modal quando o usuário clica fora dele
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        closeModal();
+      }
+      if (event.target == document.getElementById("deleteConfirmModal")) {
+        closeDeleteConfirmModal();
+      }
+    }
+    
+    // Quando o usuário clica no botão, abre o modal
+    btn.onclick = function() {
+      openModal();
+    }
+    
+    // Quando o usuário clica no <span> (x), fecha o modal
+    span.onclick = function() {
+      closeModal();
+    }
+    </script>
 </html>

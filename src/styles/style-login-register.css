@@ -26,18 +26,19 @@ menu, ol, ul {
     padding: 0;
 }
 
-
+body {
+  overflow-x: hidden; /* Remover rolagem lateral */
+}
 .gerenciar-login-registro,
 .gerenciar-login-registro * {
   box-sizing: border-box;
 }
 .gerenciar-login-registro {
   background: #ffffff;
-  padding: 20px 0px 10px 0px; /* Diminui o padding inferior (de 0px para 20px ou menos) */
+  padding: 92px 0px 80px 0px;
   height: 1300px; /* Altura desejada */
-  position: absolute; /* Posicionamento relativo */
+  position: relative; /* Posicionamento relativo */
   width: 100%; /* Largura total */
-  
 }
 
 .top-bar {
@@ -59,7 +60,7 @@ menu, ol, ul {
   font-weight: 500;
   position: absolute;
   left: 221px;
-  top: 40px;
+  top: 27px;
   width: 340px;
 }
 .title a {
@@ -76,14 +77,16 @@ menu, ol, ul {
   background: #ffffff;
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  gap: 80px; /* Espaçamento entre os links */
   align-items: center;
   justify-content: center;
   position: absolute;
-  left: 55%;
-  top: 63%;
+  left: 70%;
+  top: 40%;
+  transform: translateX(-50%); /* Centraliza horizontalmente */
 }
-.tab {
+
+.tab, .tab2, .tab3, .tab4 {
   color: #000000;
   text-align: left;
   font-family: "Merriweather", sans-serif;
@@ -91,82 +94,18 @@ menu, ol, ul {
   line-height: 24px;
   font-weight: 400;
   position: relative;
-  left: 300%;
-  top: 150%;
+  white-space: nowrap;
 }
-.tab a {
+
+.tab a, .tab2 a, .tab3 a, .tab4 a {
   color: black; /* Cor do texto padrão do link */
   text-decoration: none; /* Remove o sublinhado */
   transition: color 0.3s; /* Transição suave para a mudança de cor do link */
 }
 
-.tab:hover a {
+.tab:hover a, .tab2:hover a, .tab3:hover a, .tab4:hover a {
   color: #a4c3d6; /* Cor do texto do link ao passar o mouse sobre a div */
 }
-
-.tab2 {
-  color: #000000;
-  text-align: left;
-  font-family: "Merriweather", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  position: absolute;
-  left: 90%;
-  top: 64%;
-}
-.tab2 a {
-  color: black; /* Cor do texto padrão do link */
-  text-decoration: none; /* Remove o sublinhado */
-  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
-}
-
-.tab2:hover a {
-  color: #a4c3d6; /* Cor do texto do link ao passar o mouse sobre a div */
-}
-
-.tab3 {
-  color: #000000;
-  text-align: left;
-  font-family: "Merriweather", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  position: absolute;
-  left: 82%;
-  top: 64%;
-}
-.tab3 a {
-  color: black; /* Cor do texto padrão do link */
-  text-decoration: none; /* Remove o sublinhado */
-  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
-}
-
-.tab3:hover a {
-  color: #a4c3d6; /* Cor do texto do link ao passar o mouse sobre a div */
-}
-
-.tab4 {
-  color: #000000;
-  text-align: left;
-  font-family: "Merriweather", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  position: absolute;
-  left: 66%;
-  top: 63%;
-}
-.tab4 a {
-  color: black; /* Cor do texto padrão do link */
-  text-decoration: none; /* Remove o sublinhado */
-  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
-}
-
-.tab4:hover a {
-  color: #a4c3d6; /* Cor do texto do link ao passar o mouse sobre a div */
-}
-
 
 .logoo-removebg-preview-3 {
   width: 155px;
@@ -201,7 +140,7 @@ body {
   width: 1100px;
   height: 144px;
   position: absolute;
-  left: 170px;
+  left: 5px;
   top: 60px;
 }
 .title2 {
@@ -319,24 +258,13 @@ body {
   outline: none; /* Remove o contorno ao focar no botão */
 }
 .section2 {
-  padding: 0px; /* Padding uniforme para todos os lados */
-  width: 100%; /* Ocupar toda a largura da página */
-  height: 280px; /* Altura desejada */
-  position: absolute; /* Posicionamento absoluto */
-  left: 0; /* Início no canto esquerdo */
-  top: 82%; /* Ajuste conforme necessário */
-  overflow: hidden; /* Controle de overflow */
-  box-sizing: border-box; /* Inclui padding na largura */
-}
-
-.section3 {
-  padding: 60px;
-  width: 1440px;
-  height: 220px;
-  position: absolute;
-  left:15%;
-  top: 85%;
-  overflow: hidden;
+  width: 100%; /* Ocupa 100% da largura da seção */
+  height: auto; /* Mantém a proporção da imagem */
+  position: absolute; /* Permite posicionamento absoluto */
+  right: 0; /* Alinha a imagem à direita */
+  bottom: 0; /* Posiciona a imagem na parte inferior da seção */
+  object-fit: cover; /* Cobre o espaço mantendo a proporção */
+  clip-path: inset(20% 0 0 0); /* Remove 20% da parte superior da imagem */
 }
 .container2 {
   display: flex;
@@ -346,8 +274,8 @@ body {
   justify-content: center;
   height: 100px;
   position: absolute;
-  left: 285px;
-  top: 0%;
+  left: 420px;
+  top: 90%;
 }
 .title4 {
   color: #000000;
@@ -734,14 +662,14 @@ body {
 /* Inicialmente, o formulário de login está visível e o de registro escondido */
 #form-login {
   display: flex; /* Formulário de login visível por padrão */
-  top: 35%;
+  top: 55%;
 }
 
 #form-register {
   display: none; /* Formulário de cadastro inicialmente escondido */
   position: absolute;  /* Posicionamento absoluto para alinhar ao formulário de login */
   left: 10%;  /* Alinha à mesma posição do formulário de login */
-  top: 30%;   /* Alinha à mesma posição do formulário de login */
+  top: 55%;   /* Alinha à mesma posição do formulário de login */
   width: 80%;  /* Tamanho igual ao do formulário de login */
   max-width: 1440px;  /* Limita o tamanho máximo */
 }
@@ -794,4 +722,86 @@ body {
   left: 0px;
   bottom: 0px;
   overflow: visible;
+}
+
+
+
+
+/* Estilo do modal */
+.modal {
+  display: none; /* Esconde o modal por padrão */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo escurecido */
+}
+
+.modal-content {
+  background-color: white;
+  margin: 5% auto; /* Centraliza o modal */
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  width: 80%; /* Largura do modal */
+  max-width: 600px; /* Largura máxima */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  max-height: 80vh; /* Define a altura máxima do modal */
+  overflow-y: auto; /* Permite rolagem vertical se o conteúdo for maior que a altura máxima */
+}
+
+/* Botão de fechar */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+}
+
+/* Estilo do conteúdo do modal */
+.modal-content h2 {
+  color: #007bff;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.modal-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.modal-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.modal-content ul li {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.modal-content ul li strong {
+  color: #007bff;
+}
+
+.modal-content h3 {
+  color: #007bff;
+  font-size: 18px;
+  margin-bottom: 10px;
 }

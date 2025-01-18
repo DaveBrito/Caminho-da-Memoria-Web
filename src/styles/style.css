@@ -17,7 +17,7 @@
   overflow: visible; /* Permite que o conteúdo saia do contêiner */
 }
 .image-6 {
-  width: 100%; /* Cobre toda a largura da tela */
+  width: 110%; /* Cobre toda a largura da tela */
   height: 136px; /* Altura fixa */
   position: absolute; /* Posicionamento absoluto */
   left: 0; /* Alinha à esquerda */
@@ -59,6 +59,46 @@
   top: 44px;
   z-index: 10;
 }
+.navigation3 {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 48%; /* Ajuste conforme necessário */
+  top: 44px;
+  z-index: 10;
+}
+
+.tab3, .gerenciamento, .tab2 {
+  color: #000000;
+  text-align: left;
+  font-family: "Merriweather", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  position: relative;
+  padding: 10px 20px; /* Adicione um pouco de padding para separar os itens */
+}
+
+.tab3 {
+  background-color: #64748c; /* Adicione um fundo para o item */
+  border-radius: 5px; /* Adicione um arredondamento para o item */
+  padding: 10px 20px; /* Adicione um pouco de padding para separar os itens */
+}
+
+.gerenciamento {
+  background-color: #64748c; /* Adicione um fundo para o item */
+  border-radius: 5px; /* Adicione um arredondamento para o item */
+  padding: 10px 20px; /* Adicione um pouco de padding para separar os itens */
+}
+
+.tab2 {
+  background-color: #64748c; /* Adicione um fundo para o item */
+  border-radius: 5px; /* Adicione um arredondamento para o item */
+  padding: 10px 20px; /* Adicione um pouco de padding para separar os itens */
+}
 .tab {
   color: #000000;
   text-align: left;
@@ -70,17 +110,7 @@
   margin-right: 20px; /* Espaçamento entre as abas */
 }
 
-.tab2 {
-  color: #000000;
-  text-align: left;
-  font-family: "Merriweather", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  position: absolute;
-  left: 67%;
-  top: calc(11% - 65px); /* Move 10 pixels para cima */
-}
+
 .tab2 a {
   color: black; /* Cor do texto padrão do link */
   text-decoration: none; /* Remove o sublinhado */
@@ -90,18 +120,7 @@
 .tab2:hover a {
   color: white; /* Cor do texto do link ao passar o mouse sobre a div */
 }
-.tab3 {
-  color: #000000;
-  text-align: left;
-  font-family: "Merriweather", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  position: absolute;
-  left: 55%;
-  top: calc(11% - 65px); /* Move 10 pixels para cima */
-  z-index: 10; /* Adicione esta linha */
-}
+
 .tab3 a {
   color: black; /* Cor do texto padrão do link */
   text-decoration: none; /* Remove o sublinhado */
@@ -411,7 +430,7 @@
   width: 1440px;
   height: 303px;
   position: absolute;
-  right: 15px;
+  left: -120px;
   top: 970px;
   overflow: hidden;
 }
@@ -434,7 +453,7 @@
   font-weight: 700;
   position: relative;
   width: 520px;
-  left: 200px;
+  left: 140px;
 }
 .list2 {
   display: flex;
@@ -570,10 +589,10 @@ body, html {
   clip-path: inset(20% 0 0 0); /* Remove 20% da parte superior da imagem */
 }
 .container3 {
-  width: 1101px;
+  width: 100px;
   height: 100px;
   position: absolute;
-  left: 295px;
+  left: 12%;
   top: 74px;
 }
 .title8 {
@@ -658,20 +677,8 @@ body, html {
   left: 51px;
   top: 15px;
   object-fit: cover;
-}.gerenciamento {
-  color: rgba(0, 0, 0, 0.95);
-  text-align: left;
-  font-family: "Merriweather", sans-serif;
-  font-size: 16px;
-  line-height: 36px;
-  font-weight: 500;
-  position: absolute;
-  left: 1230px; /* Ajuste conforme necessário */
-  top: calc(5% - 9px); /* Move 10 pixels para cima */
-  width: 115px;
-  height: 26px;
-  z-index: 10; /* Adicione esta linha */
 }
+
 
 .gerenciamento a {
   color: black; /* Cor do texto padrão do link */
@@ -780,6 +787,7 @@ body, html {
   left: 1087px;
   top: 44px;
 }
+
 .logoo-removebg-preview-3 {
   width: 155px;
   height: 92px;
@@ -1350,4 +1358,97 @@ body, html {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+/* Estilo do botão */
+.primary button {
+  background-color: #000000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.primary button:hover {
+  background-color: #000000;
+}
+
+/* Estilo do modal */
+.modal {
+  display: none; /* Esconde o modal por padrão */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo escurecido */
+}
+
+.modal-content {
+  background-color: white;
+  margin: 5% auto; /* Centraliza o modal */
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  width: 80%; /* Largura do modal */
+  max-width: 600px; /* Largura máxima */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  max-height: 80vh; /* Define a altura máxima do modal */
+  overflow-y: auto; /* Permite rolagem vertical se o conteúdo for maior que a altura máxima */
+}
+
+/* Botão de fechar */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+}
+
+/* Estilo do conteúdo do modal */
+.modal-content h2 {
+  color: #007bff;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.modal-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.modal-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.modal-content ul li {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.modal-content ul li strong {
+  color: #007bff;
+}
+
+.modal-content h3 {
+  color: #007bff;
+  font-size: 18px;
+  margin-bottom: 10px;
 }

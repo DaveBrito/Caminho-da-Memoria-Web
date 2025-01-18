@@ -71,74 +71,42 @@ a,
 .title:hover a {
   color: #ffffff; /* Cor do texto do link ao passar o mouse sobre a div */
 }
-.tab {
-  color: #000000;
-  text-align: left;
-  font-family: "Merriweather", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  position: absolute;
-  left: 63%;
-  top: 46px;
-}
-.tab a {
-  color: black; /* Cor do texto padrão do link */
-  text-decoration: none; /* Remove o sublinhado */
-  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
-}
 
-.tab:hover a {
-  color: #ffffff; /* Cor do texto do link ao passar o mouse sobre a div */
-}
+
 .navigation {
   background: #64748c;
-  width: 69px;
-  height: 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 80px; /* Espaçamento entre os links */
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  left: 72%;
-  top: 46px;
+  left: 70%;
+  top: 40%;
+  transform: translateX(-50%); /* Centraliza horizontalmente */
 }
-.tab2 {
+
+.tab, .tab2, .tab3, .tab4 {
   color: #000000;
   text-align: left;
   font-family: "Merriweather", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  position: absolute;
-  left: 0px;
-  top: 0px;
+  position: relative;
+  white-space: nowrap;
 }
-.tab2 a {
+
+.tab a, .tab2 a, .tab3 a, .tab4 a {
   color: black; /* Cor do texto padrão do link */
   text-decoration: none; /* Remove o sublinhado */
   transition: color 0.3s; /* Transição suave para a mudança de cor do link */
 }
 
-.tab2:hover a {
+.tab:hover a, .tab2:hover a, .tab3:hover a, .tab4:hover a {
   color: #ffffff; /* Cor do texto do link ao passar o mouse sobre a div */
-}
-.tab3 {
-  color: #000000;
-  text-align: left;
-  font-family: "Merriweather", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  position: absolute;
-  left: 77%;
-  top: 46px;
-}
-.tab3 a {
-  color: black; /* Cor do texto padrão do link */
-  text-decoration: none; /* Remove o sublinhado */
-  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
 }
 
-.tab3:hover a {
-  color: #ffffff; /* Cor do texto do link ao passar o mouse sobre a div */
-}
 .profile-summary {
   background: #ffffff;
   width: 1152px;
@@ -393,34 +361,8 @@ a,
   left: 766px;
   top: 39%;
 }
-.navigation2 {
-  background: #64748c;
-  width: 185px;
-  height: 24px;
-  position: absolute;
-  left: 85%;
-  top: 46px;
-}
-.tab4 {
-  color: #000000;
-  text-align: left;
-  font-family: "Merriweather", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  position: absolute;
-  left: 112px;
-  top: 0px;
-}
-.tab4 a {
-  color: black; /* Cor do texto padrão do link */
-  text-decoration: none; /* Remove o sublinhado */
-  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
-}
 
-.tab4:hover a {
-  color: #ffffff; /* Cor do texto do link ao passar o mouse sobre a div */
-}
+
 .list {
   display: flex;
   flex-direction: column;
@@ -505,11 +447,10 @@ a,
   height: 100%; /* Altura total */
   background-color: rgba(0,0,0,0.7); /* Fundo com opacidade */
 }
-
-/* Estilo do conteúdo do modal */
+/* Estilo do modal */
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto; /* 15% do topo e centralizado */
+  margin: 5% auto; /* Ajuste a margem superior para 5% */
   padding: 20px;
   border: 1px solid #888;
   width: 50%; /* Largura do modal */
@@ -524,8 +465,9 @@ form {
   display: flex;
   flex-direction: column; /* Coloca os elementos em coluna */
   max-height: 70vh; /* Limita a altura do formulário */
-  overflow-y: hidden; /* Remove a rolagem do formulário */
+  overflow-y: auto; /* Permitir rolagem vertical se necessário */
 }
+
 /* Estilo dos rótulos */
 label {
   margin-bottom: 5px; /* Espaço abaixo do rótulo */
@@ -536,52 +478,62 @@ label {
 input[type="text"],
 input[type="email"] {
   padding: 10px; /* Espaçamento interno */
-  margin-bottom: 15px; /* Espaço abaixo do campo */
+  margin-bottom: 5px; /* Espaço reduzido abaixo do campo */
   border: 1px solid #ccc; /* Borda cinza */
   border-radius: 4px; /* Bordas arredondadas */
   font-size: 16px; /* Tamanho da fonte */
 }
 
-/* Estilo do botão de salvar */
-button[type="submit"] {
+/* Estilo dos botões */
+.modal-buttons {
+  display: flex;
+  justify-content: space-between; /* Espaço entre os botões */
+  align-items: center; /* Alinha os botões verticalmente */
+  margin-top: -20px; /* Espaço acima dos botões */
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px; /* Espaço entre os botões */
+  margin-left: auto; /* Alinha os botões à direita */
+  margin-top: -40px; /* Espaço acima dos botões */
+}
+
+/* Estilo da mensagem de sucesso */
+.success-message {
   background-color: #4CAF50; /* Cor de fundo verde */
-  color: white; /* Cor do texto */
-  padding: 10px; /* Espaçamento interno */
-  border: none; /* Sem borda */
+  color: black; /* Cor do texto branca */
+  padding: 10px;
   border-radius: 4px; /* Bordas arredondadas */
-  cursor: pointer; /* Cursor de mão ao passar o mouse */
+  text-align: center;
+  margin-top: 20px;
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  width: 80%;
+}
+
+button {
+  padding: 10px 20px; /* Espaçamento interno dos botões */
+  border: none;
+  border-radius: 4px; /* Bordas arredondadas */
   font-size: 16px; /* Tamanho da fonte */
-  margin-right: 10px; /* Espaço à direita para o botão de deletar */
+  cursor: pointer; /* Cursor de ponteiro */
 }
 
-button[type="submit"]:hover {
-  background-color: #45a049; /* Cor de fundo mais escura ao passar o mouse */
+.cancel-btn {
+  background-color: #f44336; /* Cor de fundo vermelha */
+  color: white; /* Cor do texto branca */
 }
 
-/* Estilo do botão de deletar */
-button[type="button"].delete {
-  background-color: #f44336; /* Cor de fundo vermelho */
-  color: white; /* Cor do texto */
-  padding: 10px; /* Espaçamento interno */
-  border: none; /* Sem borda */
-  border-radius: 4px; /* Bordas arredondadas */
-  cursor: pointer; /* Cursor de mão ao passar o mouse */
+.save-btn {
+  background-color: #4CAF50; /* Cor de fundo verde */
+  color: white; /* Cor do texto branca */
 }
 
-button[type="button"].delete:hover {
-  background-color: #d32f2f; /* Cor de fundo mais escura ao passar o mouse */
-}
-
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+.delete-btn {
+  background-color: #f44336; /* Cor de fundo vermelha */
+  color: white; /* Cor do texto branca */
 }
