@@ -16,12 +16,12 @@
     <div class="top-bar">
       <div class="title"><a href="../views/index.html">Caminho da Memória</a></div>
       <div class="navigation">
-        <div class="tab4"><a href="../views/Login-Register.html">Registrar-se/Entrar</a></div>
-        <div class="tab"><a href="../views/gerenciar-users.html">Gerenciamento</a></div>
-        <div class="tab4"><a href="../views/perfil.html">Perfil</a></div>
-        <div class="tab3"><a href="../views/memorias.html">Memórias</a></div>
+        <div class="tab3"><a href="../views/Login-Register.html">Registrar-se/Entrar</a></div>
+        <div class="tab4"><a href="../views/gerenciar-users.html">Gerenciamento</a></div>
+        <div class="tab1"><a href="../views/perfil.html">Perfil</a></div>
+        <div class="tab"><a href="../views/memorias.html">Memórias</a></div>
         <div class="tab2"><a href="../views/exercicio.html">Exercícios</a></div>
-    </div>
+      </div>
     </div>
     <img class="logoo-removebg-preview-3" src="../imgs/logoo-removebg-preview-30.png" />
     <div class="section">
@@ -56,9 +56,11 @@
           <button class="title5">Adicionar Usuários</button> 
         </div>
         </a>
+        <a href="perfil.html">
         <div class="primary">
-          <div class="title4">Editar Perfil</div>
+          <div class="title4">Perfil</div>
         </div>
+        <a href="perfil.html"></a>
       </div>
       <img class="vector-2002" src="../vectors/vector-2001.svg" />
     </div>
@@ -102,50 +104,49 @@
       <div class="container4">
         <div class="title21">Adicionar Usuário</div>
       </div>
-      <div class="list3">
+      <form class="list3">
         <div class="row2">
           <div class="input">
             <div class="title9">Nome</div>
-            <div class="textfield">
-              <div class="text">Digite o nome</div>
-            </div>
+            <label class="textfield">
+              <input type="text" name="nome" placeholder="Digite o nome">
+            </label>
           </div>
           <div class="input">
             <div class="title9">E-mail</div>
-            <div class="textfield">
-              <div class="text">Digite o e-mail</div>
-            </div>
+            <label class="textfield">
+              <input type="email" name="email" placeholder="Digite o e-mail">
+            </label>
           </div>
         </div>
         <div class="row2">
           <div class="input">
             <div class="title9">Telefone</div>
-            <div class="textfield">
-              <div class="text">Digite o telefone</div>
-            </div>
+            <label class="textfield">
+              <input type="text" name="telefone" placeholder="Digite o telefone">
+            </label>
           </div>
           <div class="selection2">
             <div class="title9">Relação</div>
-            <div class="chip-group">
-              <div class="chip">
-                <div class="text2">Familiar</div>
-                <div class="amigo">Amigo</div>
-              </div>
-              <div class="chip2">
-                <div class="text3">Cuidador</div>
-              </div>
+            <div class="textfield2">
+              <select id="exercicio" name="exercicio" class="text">
+                <option value="" disabled selected>Selecione um tipo...</option>
+                <option value="familiar">Familiar</option>
+                <option value="amigo">Amigo</option>
+                <option value="cuidador">Cuidador</option>
+            </select>
             </div>
           </div>
         </div>
         <div class="button2">
           <div class="seconday2">
-            <div class="title5">Cancelar</div>
+            <button type="button" class="title5" onclick="cancelarAdicao()">Cancelar</button>
           </div>
           <div class="primary3">
-            <div class="title4">Salvar Alterações</div>
+            <button type="submit" class="title4">Salvar Alterações</button>
           </div>
         </div>
-      </div>
+      </form>
       <img class="vector-2004" src="../vectors/vector-2003.svg" />
     </div>
     <div class="section3">
@@ -299,4 +300,3 @@ document.getElementsByClassName("close")[0].onclick = closeModal;
   });
   </script> 
 </html>
-

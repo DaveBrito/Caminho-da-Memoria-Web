@@ -18,6 +18,18 @@ h5,
     -webkit-font-smoothing: antialiased;
 }
 
+/* Garantir que o body e html não tenham rolagem extra */
+html, body {
+  overflow-x: hidden; /* Remove a rolagem horizontal */
+  overflow-y: auto; /* Garante que a rolagem vertical funcione corretamente */
+  height: 100%;
+  margin: 0;
+  width: 100%; /* Garante que o body ocupe toda a largura da tela */
+  padding: 0;
+}
+
+
+
 menu, ol, ul {
     list-style-type: none;
     margin: 0;
@@ -31,8 +43,8 @@ menu, ol, ul {
 .gerenciar-exercicios {
   background: #ffffff;
   height: 1851px;
+  padding: 80px 0px 0px 0px;
   position: relative;
-  overflow: hidden;
 }
 
 .title {
@@ -43,8 +55,8 @@ menu, ol, ul {
   line-height: 36px;
   font-weight: 500;
   position: absolute;
-  left: 10%;
-  top: 57%;
+  left: 13%;
+  top: 2%;
   width: 370px;
 }
 .title a {
@@ -64,7 +76,6 @@ menu, ol, ul {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  position: absolute;
   left: 59%;
   top: 60%;
   z-index: 5; /* Ajuste conforme necessário */
@@ -78,25 +89,19 @@ menu, ol, ul {
 .tab:hover a {
 color: #1A8494; /* Cor do texto do link ao passar o mouse sobre a div */
 }
-
 .navigation {
   background: #ffffff;
-  width: 62px;
-  height: 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 80px; /* Espaçamento entre os links */
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  left: 59%;
-  top: 60%;
+  left: 70%;
+  top: 3%;
+  transform: translateX(-50%); /* Centraliza horizontalmente */
 }
-.top-bar {
-  background: #ffffff;
-  padding: 20px;
-  height: 80px;
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  top: 0%;
-  overflow: hidden;
-}
+
 .tab2 {
   color: #000000;
   text-align: left;
@@ -104,7 +109,6 @@ color: #1A8494; /* Cor do texto do link ao passar o mouse sobre a div */
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  position: absolute;
   left: 300%;
   top: 4%;
   z-index: 5; /* Ajuste conforme necessário */
@@ -126,7 +130,6 @@ color: #1A8494; /* Cor do texto do link ao passar o mouse sobre a div */
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  position: absolute;
   left: 74%;
   top: 63%;
 }
@@ -154,7 +157,6 @@ color: #1A8494; /* Cor do texto do link ao passar o mouse sobre a div */
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  position: absolute;
   left: 230%;
   top: 4%;
 }
@@ -174,7 +176,6 @@ color: #1A8494; /* Cor do texto do link ao passar o mouse sobre a div */
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  position: absolute;
   left: 310%;
   top: 4%;
 }
@@ -198,7 +199,7 @@ color: #1A8494; /* Cor do texto do link ao passar o mouse sobre a div */
 .section {
   background: rgba(26, 132, 148, 0.6);
   padding: 60px 170px 60px 170px;
-  width: 100%;
+  width: 110%;
   height: 286px;
   position: absolute;
   left: 0px;
@@ -214,7 +215,7 @@ color: #1A8494; /* Cor do texto do link ao passar o mouse sobre a div */
   width: 1100px;
   height: 144px;
   position: absolute;
-  left: 25%;
+  left: 20%;
   top: 19%;
 }
 .title2 {
@@ -246,7 +247,16 @@ color: #1A8494; /* Cor do texto do link ao passar o mouse sobre a div */
 .title12:hover a {
   color: #ffffff; /* Cor do texto do link ao passar o mouse sobre a div */
 }
-.description {
+.title16 a {
+  color: black; /* Cor do texto padrão do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+}
+
+.title16:hover a {
+  color: #ffffff; /* Cor do texto do link ao passar o mouse sobre a div */
+}
+.descripton{
   color: #000000;
   text-align: center;
   font-family: "Merriweather", sans-serif;
@@ -715,13 +725,13 @@ color: #1A8494; /* Cor do texto do link ao passar o mouse sobre a div */
 }
 .section4 {
   background: rgba(26, 132, 148, 0.6);
-  padding: 60px 170px 60px 170px;
-  width: 100%;
+  padding: 60px 0; /* Remove o padding lateral */
   height: 192px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  overflow: hidden;
+  position: absolute; /* Mantém o elemento absoluto */
+  left: 0; /* Garante que o elemento comece na borda esquerda */
+  top: 0;
+  width: 100%; /* Garante que o elemento ocupe toda a largura da tela */
+  box-sizing: border-box; /* Inclui padding e border na largura total */
 }
 .vector-2005 {
   height: 0px;
@@ -734,12 +744,12 @@ color: #1A8494; /* Cor do texto do link ao passar o mouse sobre a div */
 .container5 {
   display: flex;
   flex-direction: row;
-  gap: 60px;
+  gap: 120px;
   align-items: center;
   justify-content: center;
   height: 100px;
   position: absolute;
-  left: 30%;
+  left: 27%;
   top: 46px;
 }
 .title11 {
@@ -832,3 +842,81 @@ color: #1A8494; /* Cor do texto do link ao passar o mouse sobre a div */
   }
 }
 
+/* Estilo do modal */
+.modal {
+  display: none; /* Esconde o modal por padrão */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo escurecido */
+}
+
+.modal-content {
+  background-color: white;
+  margin: 5% auto; /* Centraliza o modal */
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  width: 80%; /* Largura do modal */
+  max-width: 600px; /* Largura máxima */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  max-height: 80vh; /* Define a altura máxima do modal */
+  overflow-y: auto; /* Permite rolagem vertical se o conteúdo for maior que a altura máxima */
+}
+
+/* Botão de fechar */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+}
+
+/* Estilo do conteúdo do modal */
+.modal-content h2 {
+  color: #007bff;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.modal-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.modal-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.modal-content ul li {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.modal-content ul li strong {
+  color: #007bff;
+}
+
+.modal-content h3 {
+  color: #007bff;
+  font-size: 18px;
+  margin-bottom: 10px;
+}

@@ -25,6 +25,18 @@ h5,
     -webkit-font-smoothing: antialiased;
 }
 
+
+/* Resolve o problema de rolagem horizontal na página */
+
+/* Garantir que o body e html não tenham rolagem extra */
+html, body {
+  overflow-x: hidden; /* Remove a rolagem horizontal */
+  overflow-y: auto; /* Garante que a rolagem vertical funcione corretamente */
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 menu, ol, ul {
     list-style-type: none;
     margin: 0;
@@ -35,17 +47,9 @@ menu, ol, ul {
   padding: 80px 0px 0px 0px;
   height: 1851px;
   position: relative;
+  
 }
-.top-bar {
-  background: #ffffff;
-  padding: 20px;
-  height: 80px;
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  top: 0px;
-  overflow: hidden;
-}
+
 .title {
   color: #000000;
   text-align: left;
@@ -83,14 +87,31 @@ menu, ol, ul {
 .title:hover a {
   color: #27c0c2; /* Cor do texto do link ao passar o mouse sobre a div */
 }
+
 .navigation {
   background: #ffffff;
-  width: 185px;
-  height: 24px;
-  position: absolute;
-  left: 1213px;
-  top: 39px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px; /* Espaçamento entre os links */
+  align-items: center;
+  justify-content: center;
+  position: absolute; /* Change from relative to absolute */
+  top: 58px; /* Ajusta a posição vertical da barra de navegação */
+  left: 73%;
+  transform: translateX(-50%); /* Centraliza horizontalmente */
 }
+
+.tab, .tab1, .tab2, .tab3, .tab4 {
+  color: #000000;
+  text-align: left;
+  font-family: "Merriweather", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  white-space: nowrap;
+  margin-top: 0; /* Remove qualquer margem superior */
+}
+
 .tab {
   color: #000000;
   text-align: left;
@@ -98,9 +119,7 @@ menu, ol, ul {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  position: absolute;
-  left: 500px;
-  top: 22%;
+  left: 130%;
 }
 .tab a {
   color: black; /* Cor do texto padrão do link */
@@ -119,10 +138,7 @@ menu, ol, ul {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  position: absolute;
-  left: 910%;
-  top: 20%;
-  
+  left: 122%;  
 }
 .tab1 a {
   color: black; /* Cor do texto padrão do link */
@@ -140,10 +156,7 @@ menu, ol, ul {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  position: absolute;
-  left: 640px;
-  top: 26%;
-  
+  left: 168%;  
 }
 .tab2 a {
   color: black; /* Cor do texto padrão do link */
@@ -154,14 +167,7 @@ menu, ol, ul {
 .tab2:hover a {
   color: #27c0c2; /* Cor do texto do link ao passar o mouse sobre a div */
 }
-.navigation2 {
-  background: #ffffff;
-  width: 69px;
-  height: 24px;
-  position: absolute;
-  left: 966px;
-  top: 39px;
-}
+
 .tab3 {
   color: #000000; /* Cor padrão do texto */
   text-align: left;
@@ -169,9 +175,7 @@ menu, ol, ul {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  position: absolute;
-  left: 60%;
-  top: 55%;
+  left: 98%;
 }
 
 .tab3 a {
@@ -190,10 +194,7 @@ menu, ol, ul {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  position: absolute;
-  left: 70%;
-  top: 55%;
-  
+  left: 110%;  
 }
 .tab4 a {
   color: black; /* Cor do texto padrão do link */
@@ -231,7 +232,7 @@ menu, ol, ul {
   width: 1100px;
   height: 144px;
   position: absolute;
-  left: 350px;
+  left: 200px;
   top: 60px;
 }
 @keyframes typing {
@@ -346,7 +347,7 @@ menu, ol, ul {
   width: 1440px;
   height: 339px;
   position: absolute;
-  left: 200px;
+  left: 130px;
   top: 24%;
   overflow: hidden;
 }
@@ -497,7 +498,7 @@ menu, ol, ul {
   width: 1440px;
   height: 380px;
   position: absolute;
-  left: 260px;
+  left: 100px;
   top: 40%;
   overflow: hidden;
 }
@@ -657,7 +658,7 @@ menu, ol, ul {
   justify-content: center;
   width: 1440px;
   position: absolute;
-  left: 200px;
+  left: 60px;
   top: 60%;
   overflow: hidden;
 }
@@ -716,10 +717,8 @@ menu, ol, ul {
 .textfield {
   background: #ffffff;
   border-radius: 6px;
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0.1);
-  border-width: 1px;
-  padding: 8px 12px 8px 12px;
+  border: none; /* Remove a borda */
+  padding: 8px 12px;
   display: flex;
   flex-direction: row;
   gap: 4px;
@@ -728,6 +727,21 @@ menu, ol, ul {
   align-self: stretch;
   flex-shrink: 0;
   position: relative;
+}
+.textfield2 {
+  background: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #acacac;
+  padding: 8px 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 10;
 }
 .text {
   color: rgba(0, 0, 0, 0.5);
@@ -896,7 +910,7 @@ menu, ol, ul {
   justify-content: center;
   height: 100px;
   position: absolute;
-  left: 590px;
+  left: 370px;
   top: 90px;
 }
 .title10 {
@@ -1004,3 +1018,121 @@ menu, ol, ul {
     text-decoration: none;
     cursor: pointer;
   }
+
+/* Estilo do modal */
+.modal {
+  display: none; /* Esconde o modal por padrão */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo escurecido */
+}
+
+.modal-content {
+  background-color: white;
+  margin: 5% auto; /* Centraliza o modal */
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  width: 80%; /* Largura do modal */
+  max-width: 600px; /* Largura máxima */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  max-height: 80vh; /* Define a altura máxima do modal */
+  overflow-y: auto; /* Permite rolagem vertical se o conteúdo for maior que a altura máxima */
+}
+
+/* Botão de fechar */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+}
+
+/* Estilo do conteúdo do modal */
+.modal-content h2 {
+  color: #007bff;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.modal-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.modal-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.modal-content ul li {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.modal-content ul li strong {
+  color: #007bff;
+}
+
+.modal-content h3 {
+  color: #007bff;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+  /* Estilo para os campos de input */
+.textfield input[type="text"],
+.textfield input[type="email"] {
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Remover borda preta ao focar nos campos de input */
+.textfield input[type="text"]:focus,
+.textfield input[type="email"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+/* Estilo original para o campo de seleção "Relação" */
+.selection2 .textfield select {
+  font-family: 'Merriweather', serif;
+  font-size: 14px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.5);
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1; /* Garante que o campo de seleção fique acima de outros elementos */
+}
