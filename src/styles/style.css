@@ -1,3 +1,199 @@
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  .page, .section, .contents, .list, .section2, .list3, .form {
+    padding: 5%;
+    width: 90%;
+  }
+  .title, .title2, .title3, .title4, .title5, .title6, .title7, .title8, .title9, .title21 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .page, .section, .contents, .list, .section2, .list3, .form {
+    padding: 60px 20px;
+    width: 100%;
+  }
+
+  .image-6, .image-62 {
+    width: 100%;
+  }
+
+  .title, .title2, .title3, .title4, .title5, .title6, .title7, .title8, .title9, .title21 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .navigation, .navigation3 {
+    flex-direction: column;
+    align-items: center;
+    left: 0;
+    top: auto;
+    position: relative;
+  }
+
+  .tab3, .gerenciamento, .tab2, .tab31, .tab32 {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .page, .section, .contents, .list, .section2, .list3, .form {
+    padding: 4%;
+    width: 90%;
+  }
+  .title, .title2, .title3, .title4, .title5, .title6, .title7, .title8, .title9, .title21 {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+  .page, .section, .contents, .list, .section2, .list3, .form {
+    padding: 40px 10px;
+    width: 100%;
+  }
+
+  .title, .title2, .title3, .title4, .title5, .title6, .title7, .title8, .title9, .title21 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .button .primary {
+    padding: 8px 16px;
+  }
+
+  .container, .container2, .container3, .container4, .container5, .container6, .container7 {
+    width: 100%;
+  }
+
+  .image-container, .image-container2 {
+    width: 100%;
+    height: auto;
+  }
+
+  .article {
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .page, .section, .contents, .list, .section2, .list3, .form {
+    padding: 3%;
+    width: 95%;
+  }
+  .title, .title2, .title3, .title4, .title5, .title6, .title7, .title8, .title9, .title21 {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+  .page, .section, .contents, .list, .section2, .list3, .form {
+    padding: 20px 5px;
+    width: 100%;
+  }
+
+  .title, .title2, .title3, .title4, .title5, .title6, .title7, .title8, .title9, .title21 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .button .primary {
+    padding: 6px 12px;
+  }
+
+  .image-6, .image-62 {
+    height: auto;
+  }
+
+  .container, .container2, .container3, .container4, .container5, .container6, .container7 {
+    width: 100%;
+  }
+
+  .image-container, .image-container2 {
+    width: 100%;
+    height: auto;
+  }
+
+  .article {
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .page, .section, .contents, .list, .section2, .list3, .form {
+    padding: 2%;
+    width: 100%;
+  }
+  .title, .title2, .title3, .title4, .title5, .title6, .title7, .title8, .title9, .title21 {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+  .page, .section, .contents, .list, .section2, .list3, .form {
+    padding: 10px 5px;
+    width: 100%;
+  }
+
+  .title, .title2, .title3, .title4, .title5, .title6, .title7, .title8, .title9, .title21 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .button .primary {
+    padding: 4px 8px;
+  }
+
+  .image-6, .image-62 {
+    height: auto;
+  }
+
+  .container, .container2, .container3, .container4, .container5, .container6, .container7 {
+    width: 100%;
+  }
+
+  .image-container, .image-container2 {
+    width: 100%;
+    height: auto;
+  }
+
+  .article {
+    height: auto;
+  }
+}
+
+/* Adjust zoom for different screen sizes */
+@media (min-width: 1200px) {
+  body {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+  body {
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  body {
+    width: 85%;
+    height: auto;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 576px) {
+  body {
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media (max-width: 575px) {
+  body {
+    width: 75%;
+    height: auto;
+  }
+}
+
+
+
 .home,
 .home * {
   box-sizing: border-box;
@@ -11,9 +207,7 @@
   padding: 92px 0px 80px 0px;
   width: 100%;
   height: 100%; /* Ocupa 100% da altura da janela do navegador */
-  position: absolute;
-  left: 0px;
-  top: 0px;
+  position: absolute; /* Alterado de absolute para relative */
   overflow: visible; /* Permite que o conteúdo saia do contêiner */
 }
 .image-6 {
@@ -54,8 +248,7 @@
   gap: 40px;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  left: 1400px; /* Ajuste conforme necessário */
+  position: relative; /* Alterado de absolute para relative */
   top: 44px;
   z-index: 10;
 }
@@ -132,12 +325,10 @@
 }
 
 .section {
-  padding: 70px 170px 1000px 1px; /* Padding: topo, direita, baixo, esquerda */
-  width: 1440px;
-  height: 420px;
-  position: absolute;
-  left: 100px;
-  top: 100px;
+  padding: 70px 5%; /* Alterado de 170px para 5% para responsividade */
+  width: 90%; /* Alterado de 1440px para 90% para responsividade */
+  height: auto; /* Alterado de 420px para auto para responsividade */
+  position: relative; /* Alterado de absolute para relative */
   overflow: hidden;
   margin-bottom: 10px; /* Adicionando espaço abaixo */
 }
@@ -148,11 +339,9 @@
   gap: 0px;
   align-items: flex-start;
   justify-content: flex-start;
-  width: 1100px;
-  height: 284px;
-  position: absolute;
-  left: 170px;
-  top: 4%;
+  width: 90%; /* Alterado de 1100px para 90% para responsividade */
+  height: auto; /* Alterado de 284px para auto para responsividade */
+  position: relative; /* Alterado de absolute para relative */
   overflow: hidden;
 }
 .image {
@@ -247,15 +436,13 @@
   white-space: nowrap; /* Impede que o texto quebre em várias linhas */
 }
 .contents {
-  padding: 60px 170px 60px 170px;
+  padding: 60px 5%; /* Alterado de 170px para 5% para responsividade */
   display: flex;
   flex-direction: row;
   gap: 60px;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  left: 160px;
-  top: 55%;
+  position: relative; /* Alterado de absolute para relative */
   overflow: hidden;
 }
 .container {
@@ -1439,6 +1626,15 @@ body, html {
 .modal-content ul li {
   font-size: 16px;
   line-height: 1.6;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.modal-content ul li strong {
+  color: #007bff;
+}
+
+.modal-content h3 {
   color: #333;
   margin-bottom: 10px;
 }
