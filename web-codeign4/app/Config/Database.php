@@ -23,7 +23,9 @@ class Database extends Config
      * The default database connection.
      *
      * @var array<string, mixed>
-     */
+     */ 
+
+    //   Banco de dados padrão para o projeto, vinculado com Supabase.
     public array $default = [
         'DSN'          => '',
         'hostname'     => 'localhost',

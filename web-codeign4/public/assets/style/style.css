@@ -1,0 +1,1657 @@
+/* Media queries for responsiveness */
+/* Container principal */
+.navigation-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; /* Alinha à direita */
+  margin: -90px 0 10px -70px; /* top | right | bottom | left */
+  padding-right: 30px; /* Espaçamento da borda direita */
+}
+@media (max-width: 1200px) {
+  .page, .section, .contents, .list, .section2, .list3, .form {
+    padding: 5%;
+    width: 90%;
+  }
+  .title, .title2, .title3, .title4, .title5, .title6, .title7, .title8, .title9, .title21 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .page, .section, .contents, .list, .section2, .list3, .form {
+    padding: 60px 20px;
+    width: 100%;
+  }
+
+  .image-6, .image-62 {
+    width: 100%;
+  }
+
+  .title, .title2, .title3, .title4, .title5, .title6, .title7, .title8, .title9, .title21 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+/* Navegação */
+.navigation {
+  display: flex;
+  gap: 15px; /* Espaço entre os itens */
+  flex-wrap: wrap; /* Permite quebra de linha em telas pequenas */
+  justify-content: center;
+  align-items: center;
+ 
+}
+  .tab3, .gerenciamento, .tab2, .tab31, .tab32 {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .page, .section, .contents, .list, .section2, .list3, .form {
+    padding: 4%;
+    width: 90%;
+  }
+  .title, .title2, .title3, .title4, .title5, .title6, .title7, .title8, .title9, .title21 {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+  .page, .section, .contents, .list, .section2, .list3, .form {
+    padding: 40px 10px;
+    width: 100%;
+  }
+
+  .title, .title2, .title3, .title4, .title5, .title6, .title7, .title8, .title9, .title21 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .button .primary {
+    padding: 8px 16px;
+  }
+
+  .container, .container2, .container3, .container4, .container5, .container6, .container7 {
+    width: 100%;
+  }
+
+  .image-container, .image-container2 {
+    width: 100%;
+    height: auto;
+  }
+
+  .article {
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .page, .section, .contents, .list, .section2, .list3, .form {
+    padding: 3%;
+    width: 95%;
+  }
+  .title, .title2, .title3, .title4, .title5, .title6, .title7, .title8, .title9, .title21 {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+  .page, .section, .contents, .list, .section2, .list3, .form {
+    padding: 20px 5px;
+    width: 100%;
+  }
+
+  .title, .title2, .title3, .title4, .title5, .title6, .title7, .title8, .title9, .title21 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .button .primary {
+    padding: 6px 12px;
+  }
+
+  .image-6, .image-62 {
+    height: auto;
+  }
+
+  .container, .container2, .container3, .container4, .container5, .container6, .container7 {
+    width: 100%;
+  }
+
+  .image-container, .image-container2 {
+    width: 100%;
+    height: auto;
+  }
+
+  .article {
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .page, .section, .contents, .list, .section2, .list3, .form {
+    padding: 2%;
+    width: 100%;
+  }
+  .title, .title2, .title3, .title4, .title5, .title6, .title7, .title8, .title9, .title21 {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+  .page, .section, .contents, .list, .section2, .list3, .form {
+    padding: 10px 5px;
+    width: 100%;
+  }
+
+  .title, .title2, .title3, .title4, .title5, .title6, .title7, .title8, .title9, .title21 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .button .primary {
+    padding: 4px 8px;
+  }
+
+  .image-6, .image-62 {
+    height: auto;
+  }
+
+  .container, .container2, .container3, .container4, .container5, .container6, .container7 {
+    width: 100%;
+  }
+
+  .image-container, .image-container2 {
+    width: 100%;
+    height: auto;
+  }
+
+  .article {
+    height: auto;
+  }
+}
+
+/* Adjust zoom for different screen sizes */
+@media (min-width: 1200px) {
+  body {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+  body {
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  body {
+    width: 85%;
+    height: auto;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 576px) {
+  body {
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media (max-width: 575px) {
+  body {
+    width: 75%;
+    height: auto;
+  }
+}
+
+
+
+.home,
+.home * {
+  box-sizing: border-box;
+}
+.home {
+  height: 100%;
+  position: relative;
+}
+.page {
+  background: #ffffff;
+  padding: 92px 0px 80px 0px;
+  width: 100%;
+  height: 100%; /* Ocupa 100% da altura da janela do navegador */
+  position: absolute; /* Alterado de absolute para relative */
+}
+.image-6 {
+  width: 110%; /* Cobre toda a largura da tela */
+  height: 136px; /* Altura fixa */
+  position: absolute; /* Posicionamento absoluto */
+  left: 0; /* Alinha à esquerda */
+  top: 0; /* Alinha ao topo */
+  object-fit: cover; /* Cobre o espaço mantendo a proporção */
+}
+.title {
+  color: #000000;
+  text-align: left;
+  font-family: "Merriweather", sans-serif;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 500;
+  position: absolute;
+  left: 206px;
+  top: 4%;
+  width: 270px;
+  height: 54px;
+  white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+}
+.title a {
+  color: black; /* Cor do texto padrão do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+}
+
+.title:hover a {
+  color: white; /* Cor do texto do link ao passar o mouse sobre a div */
+}
+.navigation {
+  background: #64748c;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Alterado de absolute para relative */
+  top: 44px;
+  z-index: 10;
+}
+.navigation3 {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 48%; /* Ajuste conforme necessário */
+  top: 44px;
+  z-index: 10;
+}
+
+.tab3, .gerenciamento, .tab2 {
+  color: #000000;
+  text-align: left;
+  font-family: "Merriweather", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  position: relative;
+  padding: 10px 20px; /* Adicione um pouco de padding para separar os itens */
+}
+
+.tab3 {
+  background-color: #64748c; /* Adicione um fundo para o item */
+  border-radius: 5px; /* Adicione um arredondamento para o item */
+  padding: 10px 20px; /* Adicione um pouco de padding para separar os itens */
+}
+
+.gerenciamento {
+  background-color: #64748c; /* Adicione um fundo para o item */
+  border-radius: 5px; /* Adicione um arredondamento para o item */
+  padding: 10px 20px; /* Adicione um pouco de padding para separar os itens */
+}
+
+.tab2 {
+  background-color: #64748c; /* Adicione um fundo para o item */
+  border-radius: 5px; /* Adicione um arredondamento para o item */
+  padding: 10px 20px; /* Adicione um pouco de padding para separar os itens */
+}
+.tab {
+  color: #000000;
+  text-align: left;
+  font-family: "Merriweather", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  position: relative;
+  margin-right: 20px; /* Espaçamento entre as abas */
+}
+
+
+.tab2 a {
+  color: black; /* Cor do texto padrão do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+}
+
+.tab2:hover a {
+  color: white; /* Cor do texto do link ao passar o mouse sobre a div */
+}
+
+.tab3 a {
+  color: black; /* Cor do texto padrão do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+}
+
+.tab3:hover a {
+  color: white; /* Cor do texto do link ao passar o mouse sobre a div */
+}
+
+.section {
+  padding: 70px 5%; /* Alterado de 170px para 5% para responsividade */
+  width: 90%; /* Alterado de 1440px para 90% para responsividade */
+  height: auto; /* Alterado de 420px para auto para responsividade */
+  position: relative; /* Alterado de absolute para relative */
+  overflow: hidden;
+  margin-bottom: 1px; /* Adicionando espaço abaixo */
+  top: 120px;
+  left: 120px; /* Ajuste a posição conforme necessário */
+}
+.image-container {
+  padding: 4px 0px 4px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 90%; /* Alterado de 1100px para 90% para responsividade */
+  height: auto; /* Alterado de 284px para auto para responsividade */
+  position: relative; /* Alterado de absolute para relative */
+  overflow: hidden;
+}
+.image {
+  background: rgba(217, 217, 217, 0.5);
+  border-radius: 6px;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  left: 200px; /* Aumente o valor conforme necessário */
+}
+.title2 {
+  color: #000000;
+  text-align: center;
+  font-family: "Merriweather", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  position: absolute;
+  right: 16px;
+  left: 16px;
+  top: 50%;
+  translate: 0 -50%;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagination {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  bottom: 8px;
+}
+.rectangle-3343 {
+  background: #ffffff;
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 20px;
+  height: 4px;
+  position: relative;
+}
+.rectangle-3344 {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 4px;
+  height: 4px;
+  position: relative;
+}
+.rectangle-3347 {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 4px;
+  height: 4px;
+  position: relative;
+}
+.rectangle-3340 {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 4px;
+  height: 4px;
+  position: relative;
+}
+.vector-200 {
+  height: 0px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  overflow: visible;
+}
+.conectando-cuidadores-e-fam-lias-mem-rias-e-suporte-ao-seu-alcance {
+  color: #000000;
+  text-align: left;
+  font-family: "Merriweather", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 800;
+  font-style: italic;
+  position: absolute;
+  left: 309px;
+  top: 28%;
+  width: 856px;
+  height: 38px;
+  white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+}
+.contents {
+  padding: 60px 5%; /* Alterado de 170px para 5% para responsividade */
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Alterado de absolute para relative */
+  overflow: hidden;
+  top: 170px; /* Ajuste a posição conforme necessário */
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 459px;
+  position: relative;
+}
+.title3 {
+  color: #000000;
+  text-align: left;
+  font-family: "Merriweather", sans-serif;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+}
+.description {
+  color: #000000;
+  text-align: left;
+  font-family: "Merriweather", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.button {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.primary {
+  background: #000000;
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 240px;
+  position: relative;
+}
+.title4 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Merriweather", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  position: relative;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: var(--var-sds-size-space-0, 0px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  width: 565px;
+  position: relative;
+}
+.article {
+  border-radius: 8px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.1);
+  border-width: 1px;
+  padding: 10px;
+  flex: 1;
+  height: 200px;
+  left: 130px;
+  position: relative;
+}
+.image-container2 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  overflow: hidden;
+}
+.image2 {
+  background: #64748c;
+  border-radius: 20px;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.logoo-removebg-preview-1 {
+  width: 123px;
+  height: 68px;
+  position: absolute;
+  left: 9px;
+  top: 30px;
+  object-fit: cover;
+}
+.frame-427318906 {
+  width: 433px;
+  height: 192px;
+  position: absolute;
+  left: 145px;
+  top: 16px;
+}
+.title5 {
+  color: #000000;
+  text-align: left;
+  font-family: "Merriweather", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.subtitle {
+  color: #000000;
+  text-align: left;
+  font-family: "Merriweather", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 0;
+  position: absolute;
+  left: 0px;
+  right: 590px;
+  top: 36px;
+  width: 423px;
+  height: 185px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.selection {
+  padding: 4px 0px 4px 0px;
+  width: 433px;
+  height: 28px;
+  position: absolute;
+  left: 0px;
+  top: 92px;
+  overflow: hidden;
+}
+
+.vector-2002 {
+  flex-shrink: 0;
+  height: 0px;
+  position: absolute;
+  right: -458px;
+  left: 0px;
+  bottom: 0px;
+  overflow: visible;
+}
+.list {
+  padding: 60px 170px 60px 170px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+  width: 1440px;
+  height: 303px;
+  position: absolute;
+  left: -120px;
+  top: 640px;
+  overflow: hidden;
+}
+.container2 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.title6 {
+  color: #000000;
+  text-align: center;
+  font-family: "Merriweather", sans-serif;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+  position: relative;
+  width: 520px;
+  left: 140px;
+}
+.list2 {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.row2 {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.item {
+  padding: 12px 0px 12px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  position: relative;
+  left: 100px;
+}
+.frame {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 50px;
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+.icon {
+  color: #000000;
+  text-align: center;
+  font-family: "Merriweather", sans-serif;
+  font-size: 62.5px;
+  line-height: 100px;
+  font-weight: 400;
+  position: absolute;
+  left: 50%;
+  translate: -50% -50%;
+  top: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.icon a {
+  color: black; /* Cor do texto padrão do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+}
+
+.icon:hover a {
+  color: #64748c; /* Cor do texto do link ao passar o mouse sobre a div */
+}
+.frame-4273189062 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.title7 {
+  color: #000000;
+  text-align: center;
+  font-family: "Merriweather", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.title7 a {
+  color: black; /* Cor do texto padrão do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+}
+
+.title7:hover a {
+  color: #64748c; /* Cor do texto do link ao passar o mouse sobre a div */
+}
+body, html {
+  overflow-x: hidden; /* Remove a rolagem horizontal */
+  overflow-y: auto;   /* Mantém a rolagem vertical */
+  width: 100%;        /* Garante que o body ocupe toda a largura da tela */
+  margin: 0;          /* Remove margens padrão */
+  padding: 0;         /* Remove paddings padrão */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.main-content {
+  flex: 1;
+}
+.vector-2003 {
+  flex-shrink: 0;
+  height: 0px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  overflow: visible;
+}/* Container principal da section2 */
+
+.footer-azul {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background-color: #000000;
+  top: 1110px;
+}
+
+/* Ajuste de conteúdo para não ficar atrás */
+.container3 {
+  position: relative;
+  z-index: 20; /* Garante que o conteúdo fique acima */
+  padding-bottom: 100px; /* Espaçamento extra */
+}
+.title8 {
+  color: #000000;
+  text-align: center;
+  font-family: "Merriweather", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  position: absolute;
+  left: -152px;
+  top: 240px;
+  width: 448px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title8 a {
+  color: #ffffff; /* Cor do texto padrão do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+}
+
+.title8:hover a {
+  color: #ffffff; /* Change to a different color on hover */
+}
+.title9 {
+  color: #000000;
+  text-align: center;
+  font-family: "Merriweather", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  position: absolute;
+  left: 400px;
+  top: 240px;
+  width: 694px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title21 {
+  color: #000000;
+  text-align: center;
+  font-family: "Merriweather", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  position: absolute;
+  left: 900px;
+  top: 240px;
+  width: 694px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title21 a {
+  color: black; /* Cor do texto padrão do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+}
+
+.title21:hover a {
+  color: white; /* Cor do texto do link ao passar o mouse sobre a div */
+}
+.logoo-removebg-preview-12 {
+  width: 155px;
+  height: 92px;
+  position: absolute;
+  left: 51px;
+  top: 15px;
+  object-fit: cover;
+}
+.logoo-removebg-preview-2 {
+  width: 155px;
+  height: 92px;
+  position: absolute;
+  left: 51px;
+  top: 15px;
+  object-fit: cover;
+}
+
+
+.gerenciamento a {
+  color: black; /* Cor do texto padrão do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+}
+
+.gerenciamento:hover a {
+  color: white; /* Cor do texto do link ao passar o mouse sobre a div */
+}
+.tab31, .tab32 {
+  color: rgba(0, 0, 0, 0.95);
+  text-align: left;
+  font-family: "Merriweather", sans-serif;
+  font-size: 16px;
+  line-height: 36px;
+  font-weight: 500;
+  z-index: 10; /* Adicione esta linha */
+  left: 12%;
+}
+.tab31 a {
+  color: black; /* Cor do texto padrão do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+}
+
+.tab31:hover a {
+  color: white; /* Cor do texto do link ao passar o mouse sobre a div */
+}
+
+.tab31 {
+  left: 20%;
+  top: 10%;
+  width: 115px;
+  height: 26px;
+}
+
+.tab32 {
+  left: calc(20% + 120px); /* Ajuste a posição para ficar ao lado de .tab31 */
+  top: 10%;
+  width: 115px;
+  height: 26px;
+}
+
+.tab32 a {
+  color: black; /* Cor do texto padrão do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+}
+
+.tab32:hover a {
+  color: white; /* Cor do texto do link ao passar o mouse sobre a div */
+}
+.nosso-sistema-voltado-para-pessoas-com-alzheimer-seus-familiares-e-cuidadores-ele-ajuda-a-estimular-a-mem-ria-organizar-informa-es-importantes-e-facilitar-o-cuidado-promovendo-bem-estar-e-qualidade-de-vida-no-dia-a-dia {
+  color: #000000;
+  text-align: left;
+  font-family: "Merriweather", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 340px;
+  top: 105%;
+  width: 804px;
+  height: 96px;
+}
+.gerenciar-exercicios {
+  background: #ffffff;
+  padding: 80px 0px 0px 0px;
+  width: 1440px;
+  height: 1851px;
+  position: absolute;
+  left: 3035px;
+  top: 1912px;
+}
+.top-bar {
+  background: #ffffff;
+  padding: 20px;
+  height: 80px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+}
+.title10 {
+  color: #000000;
+  text-align: left;
+  font-family: "Merriweather", sans-serif;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 500;
+  position: absolute;
+  left: 235px;
+  top: 44px;
+  width: 458px;
+}
+.navigation2 {
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 1087px;
+  top: 44px;
+}
+
+.logoo-removebg-preview-3 {
+  width: 155px;
+  height: 92px;
+  position: absolute;
+  left: 55px;
+  top: 10px;
+  object-fit: cover;
+}
+.section3 {
+  background: rgba(26, 132, 148, 0.6);
+  padding: 60px 170px 60px 170px;
+  width: 1440px;
+  height: 286px;
+  position: absolute;
+  left: 0px;
+  top: 113px;
+  overflow: hidden;
+}
+.container4 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 1100px;
+  height: 144px;
+  position: absolute;
+  left: 170px;
+  top: 60px;
+}
+.title11 {
+  color: #000000;
+  text-align: center;
+  font-family: "Merriweather", sans-serif;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+  position: relative;
+  width: 622px;
+}
+.description2 {
+  color: #000000;
+  text-align: center;
+  font-family: "Merriweather", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  position: relative;
+  width: 520px;
+}
+.vector-2004 {
+  height: 0px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  overflow: visible;
+}
+.section4 {
+  padding: 60px 170px 60px 170px;
+  width: 1440px;
+  height: 339px;
+  position: absolute;
+  left: 0px;
+  top: 436px;
+  overflow: hidden;
+}
+.download-premium-png-of-account-png-line-icon-user-symbol-by-aew-about-profile-icon-person-icon-png-person-icon-profile-png-and-profile-3012376-1 {
+  width: 111px;
+  height: 114px;
+  position: absolute;
+  left: 359px;
+  top: 112px;
+  object-fit: cover;
+}
+.avatar {
+  background: rgba(188, 196, 220, 0.5);
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 364px;
+  top: 119.5px;
+  overflow: hidden;
+}
+.container5 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 566px;
+  height: 100px;
+  position: absolute;
+  left: 504px;
+  top: 119.5px;
+}
+.title12 {
+  color: #000000;
+  text-align: left;
+  font-family: "Merriweather", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+}
+.selection2 {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.label-normal2 {
+  background: rgba(217, 217, 217, 0.5);
+  border-radius: 2px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.1);
+  border-width: 0.5px;
+  padding: 2px 4px 2px 4px;
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.label-text {
+  color: #000000;
+  text-align: left;
+  font-family: "Merriweather", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.button2 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 1110px;
+  top: 85.5px;
+  overflow: hidden;
+}
+.primary2 {
+  background: #000000;
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 160px;
+  position: relative;
+}
+.seconday {
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 160px;
+  position: relative;
+}
+.title13 {
+  color: #000000;
+  text-align: left;
+  font-family: "Merriweather", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  position: relative;
+}
+.vector-2005 {
+  height: 0px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  overflow: visible;
+}
+.list3 {
+  padding: 60px 170px 60px 170px;
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+  width: 1440px;
+  height: 380px;
+  position: absolute;
+  left: 0px;
+  top: 110%;
+  overflow: hidden;
+}
+.container6 {
+  flex: 1;
+  height: 168px;
+  position: relative;
+}
+.primary3 {
+  background: #000000;
+  border-radius: 8px;
+  padding: 12px;
+  width: 160px;
+  height: 48px;
+  position: absolute;
+  left: 348px;
+  top: 15px;
+}
+.title14 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Merriweather", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  position: absolute;
+  left: 44px;
+  top: 12px;
+}
+.title15 {
+  color: #000000;
+  text-align: left;
+  font-family: "Merriweather", sans-serif;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+  position: absolute;
+  left: -12px;
+  top: 15px;
+  width: 520px;
+}
+.description3 {
+  color: #000000;
+  text-align: left;
+  font-family: "Merriweather", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: -12px;
+  top: 108px;
+  width: 520px;
+}
+.list4 {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  position: relative;
+}
+.subtitle2 {
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-family: "Merriweather", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.subtitle3 {
+  color: #000000;
+  text-align: center;
+  font-family: "Merriweather", sans-serif;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 500;
+  position: relative;
+  align-self: stretch;
+}
+.vector-2006 {
+  flex-shrink: 0;
+  height: 0px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  overflow: visible;
+}
+.form {
+  padding: 60px 170px 60px 170px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+  width: 1440px;
+  position: absolute;
+  left: 0px;
+  top: 1155px;
+  overflow: hidden;
+}
+.row3 {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 510px;
+  position: relative;
+  overflow: hidden;
+}
+.title16 {
+  color: #000000;
+  text-align: left;
+  font-family: "Merriweather", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  position: relative;
+  align-self: stretch;
+}
+.textfield {
+  background: #ffffff;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.1);
+  border-width: 1px;
+  padding: 8px 12px 8px 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.text {
+  color: rgba(0, 0, 0, 0.5);
+  text-align: left;
+  font-family: "Merriweather", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  position: relative;
+  flex: 1;
+  height: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.selection3 {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 510px;
+  position: relative;
+  overflow: hidden;
+}
+.chip-group {
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 36px;
+  position: relative;
+}
+.chip {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  padding: 8px;
+  width: 510px;
+  height: 36px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+}
+.text2 {
+  background: linear-gradient(to left, #000000, #000000),
+    linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: left;
+  font-family: "Merriweather", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 13px;
+  top: 10px;
+  width: 109px;
+}
+.amigo {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(to left, #000000, #000000);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: left;
+  font-family: "Merriweather", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 149px;
+  top: 10px;
+  width: 94px;
+  height: 19px;
+}
+.chip2 {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  padding: 8px;
+  width: 232px;
+  height: 36px;
+  position: absolute;
+  left: 278px;
+  top: 0px;
+  overflow: hidden;
+}
+.text3 {
+  color: #000000;
+  text-align: left;
+  font-family: "Merriweather", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 99px;
+  top: 8px;
+}
+.button3 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.seconday2 {
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 240px;
+  position: relative;
+}
+.vector-2007 {
+  flex-shrink: 0;
+  height: 0px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  overflow: visible;
+}
+.section5 {
+  padding: 60px;
+  width: 1440px;
+  height: 192px;
+  position: absolute;
+  left: 6px;
+  top: 1659px;
+  overflow: hidden;
+}
+.section6 {
+  background: rgba(26, 132, 148, 0.6);
+  padding: 60px 170px 60px 170px;
+  width: 1440px;
+  height: 192px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+}
+.vector-2008 {
+  height: 0px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  overflow: visible;
+}
+.container7 {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  position: absolute;
+  left: 262px;
+  top: 46px;
+}
+.title17 {
+  color: #000000;
+  text-align: center;
+  font-family: "Merriweather", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+  width: 408px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title18 {
+  color: #000000;
+  text-align: center;
+  font-family: "Merriweather", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+  width: 135px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title19 {
+  color: #000000;
+  text-align: center;
+  font-family: "Merriweather", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+  width: 203px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Estilo do botão */
+.primary button {
+  background-color: #000000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.primary button:hover {
+  background-color: #000000;
+}
+
+/* Estilo do modal */
+.modal {
+  display: none; /* Esconde o modal por padrão */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo escurecido */
+}
+
+.modal-content {
+  background-color: white;
+  margin: 5% auto; /* Centraliza o modal */
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  width: 80%; /* Largura do modal */
+  max-width: 600px; /* Largura máxima */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  max-height: 80vh; /* Define a altura máxima do modal */
+  overflow-y: auto; /* Permite rolagem vertical se o conteúdo for maior que a altura máxima */
+}
+
+/* Botão de fechar */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+}
+
+/* Estilo do conteúdo do modal */
+.modal-content h2 {
+  color: #007bff;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.modal-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.modal-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.modal-content ul li {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.modal-content ul li strong {
+  color: #007bff;
+}
+
+.modal-content h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.modal-content ul li strong {
+  color: #007bff;
+}
+
+.modal-content h3 {
+  color: #007bff;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
