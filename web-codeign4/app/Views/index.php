@@ -168,7 +168,6 @@
       </div>
       <img class="vector-2003" src="<?= base_url('vectors/vector-2002.svg') ?>" />
     </div>
-    </div>
     <div class="section2">
     <!-- Conteúdo textual -->
     <div class="container3">
@@ -199,5 +198,7 @@
     <img class="logoo-removebg-preview-12" src="<?= base_url('assets/img/logoo-removebg-preview-11.png') ?>" />
     <img class="logoo-removebg-preview-2" src="<?= base_url('assets/img/logoo-removebg-preview-20.png') ?>" />
   </div>
+    </div>
+    
 </body>
 </html>

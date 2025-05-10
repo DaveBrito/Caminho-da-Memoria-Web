@@ -340,7 +340,7 @@
   overflow: hidden;
   margin-bottom: 1px; /* Adicionando espaço abaixo */
   top: 120px;
-  left: 120px; /* Ajuste a posição conforme necessário */
+  left: 300px; /* Ajuste a posição conforme necessário */
 }
 .image-container {
   padding: 4px 0px 4px 0px;
@@ -366,19 +366,19 @@
   color: #000000;
   text-align: center;
   font-family: "Merriweather", sans-serif;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 14px;
+  line-height: 1.4; /* ou 20px */
   font-weight: 400;
   position: absolute;
-  right: 16px;
-  left: 16px;
   top: 50%;
-  translate: 0 -50%;
-  height: 16px;
+  left: 24%;
+  transform: translate(-50%, -50%);
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+
 .pagination {
   display: flex;
   flex-direction: row;
@@ -441,8 +441,8 @@
   position: absolute;
   left: 309px;
   top: 28%;
-  width: 856px;
-  height: 38px;
+  width: 956px;
+  height: 238px;
   white-space: nowrap; /* Impede que o texto quebre em várias linhas */
 }
 .contents {
@@ -459,12 +459,13 @@
 .container {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 34px;
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
-  width: 459px;
+  width: 559px;
   position: relative;
+  right: 4%;
 }
 .title3 {
   color: #000000;
@@ -526,7 +527,7 @@
   justify-content: flex-start;
   align-self: stretch;
   flex-shrink: 0;
-  width: 565px;
+  width: 665px;
   position: relative;
 }
 .article {
@@ -537,7 +538,7 @@
   padding: 10px;
   flex: 1;
   height: 200px;
-  left: 130px;
+  left: 230px;
   position: relative;
 }
 .image-container2 {
@@ -594,8 +595,8 @@
   left: 0px;
   right: 590px;
   top: 36px;
-  width: 423px;
-  height: 185px;
+  width: 523px;
+  height: 285px;
   text-overflow: ellipsis;
   overflow: hidden;
 }
@@ -628,8 +629,8 @@
   width: 1440px;
   height: 303px;
   position: absolute;
-  left: -120px;
-  top: 640px;
+  left: 160px;
+  top: 960px;
   overflow: hidden;
 }
 .container2 {
@@ -666,7 +667,7 @@
 .row2 {
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  gap: 70px;
   align-items: flex-start;
   justify-content: flex-start;
   align-self: stretch;
@@ -761,7 +762,11 @@ body, html {
   flex-direction: column;
 }
 .main-content {
-  flex: 1;
+  flex: 1; /* Faz o conteúdo principal ocupar o espaço restante */
+}
+
+.footer-azul {
+  margin-top: auto; /* Empurra o footer para baixo */
 }
 .vector-2003 {
   flex-shrink: 0;
@@ -774,20 +779,13 @@ body, html {
 }/* Container principal da section2 */
 
 .footer-azul {
-  position: absolute;
+  width: 100%;
+  height: 170px;
+  background-color: #64748c;
+  position: relative; /* ou 'absolute' se estiver dentro de um container com position: relative */
   bottom: 0;
   left: 0;
-  width: 100%;
-  height: 120px;
-  background-color: #000000;
-  top: 1110px;
-}
-
-/* Ajuste de conteúdo para não ficar atrás */
-.container3 {
-  position: relative;
-  z-index: 20; /* Garante que o conteúdo fique acima */
-  padding-bottom: 100px; /* Espaçamento extra */
+  margin-top: 50%; /* Garante que ele fique no final */
 }
 .title8 {
   color: #000000;
@@ -797,38 +795,43 @@ body, html {
   line-height: 28px;
   font-weight: 400;
   position: absolute;
-  left: -152px;
-  top: 240px;
+  left: 20%; /* Centraliza horizontalmente */
+  transform: translateX(-50%); /* Ajusta o posicionamento central */
+  bottom: -410px; /* Posiciona acima do footer (ajuste conforme altura do footer) */
   width: 448px;
   height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1001; /* Garante que fique acima do footer */
 }
+
 .title8 a {
-  color: #ffffff; /* Cor do texto padrão do link */
-  text-decoration: none; /* Remove o sublinhado */
-  transition: color 0.3s; /* Transição suave para a mudança de cor do link */
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
 .title8:hover a {
-  color: #ffffff; /* Change to a different color on hover */
+  color: #ffffff;
 }
 .title9 {
-  color: #000000;
+   color: #000000;
   text-align: center;
   font-family: "Merriweather", sans-serif;
   font-size: 20px;
   line-height: 28px;
   font-weight: 400;
   position: absolute;
-  left: 400px;
-  top: 240px;
-  width: 694px;
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translateX(-50%); /* Ajusta o posicionamento central */
+  bottom: -410px; /* Posiciona acima do footer (ajuste conforme altura do footer) */
+  width: 448px;
   height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1001; /* Garante que fique acima do footer */
 }
 .title21 {
   color: #000000;
@@ -838,13 +841,15 @@ body, html {
   line-height: 28px;
   font-weight: 400;
   position: absolute;
-  left: 900px;
-  top: 240px;
-  width: 694px;
+  left: 78%; /* Centraliza horizontalmente */
+  transform: translateX(-50%); /* Ajusta o posicionamento central */
+  bottom: -410px; /* Posiciona acima do footer (ajuste conforme altura do footer) */
+  width: 448px;
   height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1001; /* Garante que fique acima do footer */
 }
 
 .title21 a {
