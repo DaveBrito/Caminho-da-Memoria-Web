@@ -362,23 +362,6 @@
   position: relative;
   left: 200px; /* Aumente o valor conforme necessário */
 }
-.title2 {
-  color: #000000;
-  text-align: center;
-  font-family: "Merriweather", sans-serif;
-  font-size: 14px;
-  line-height: 1.4; /* ou 20px */
-  font-weight: 400;
-  position: absolute;
-  top: 50%;
-  left: 24%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
 .pagination {
   display: flex;
   flex-direction: row;
@@ -439,7 +422,7 @@
   font-weight: 800;
   font-style: italic;
   position: absolute;
-  left: 309px;
+  left: 409px;
   top: 28%;
   width: 956px;
   height: 238px;

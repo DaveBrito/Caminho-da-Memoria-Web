@@ -8,8 +8,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=0.8, user-scalable=no">
-  <link rel="stylesheet" href="../styles/vars.css">
-  <link rel="stylesheet" href="../styles/perfil.css">
+    <link rel="stylesheet" href="<?= base_url('assets/style/vars.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/style/perfil.css') ?>">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
   
   <title>Perfil</title>
@@ -17,20 +17,21 @@
 <body>
   <div class="alzheimers-profile">
     <div class="header">
-      <img class="logoo-removebg-preview-4" src="../imgs/logoo-removebg-preview-40.png" />
-      <div class="title"><a href="../views/index.html">Caminho da Memória</a></div> 
-      <div class="navigation">
-        <div class="tab4"><a href="../views/Login-Register.html">Registrar-se/Entrar</a></div>
-        <div class="tab"><a href="../views/gerenciar-users.html">Gerenciamento</a></div>
-        <div class="tab4"><a href="../views/perfil.html">Perfil</a></div>
-        <div class="tab3"><a href="../views/memorias.html">Memórias</a></div>
-        <div class="tab2"><a href="../views/exercicio.html">Exercícios</a></div>
+        <img class="logoo-removebg-preview-4" src="<?= base_url('assets/img/logoo-removebg-preview-20.png') ?>" alt="Logo Caminho da Memória" />
+        <div class="title"><a href="<?= site_url('/') ?>">Caminho da Memória</a></div> 
+        <div class="navigation">
+            <div class="tab4"><a href="<?= site_url('login-register') ?>">Registrar-se/Entrar</a></div>
+            <div class="tab"><a href="<?= site_url('gerenciar-users') ?>">Gerenciamento</a></div>
+            <div class="tab4"><a href="<?= site_url('perfil') ?>">Perfil</a></div>
+            <div class="tab3"><a href="<?= site_url('memorias') ?>">Memórias</a></div>
+            <div class="tab2"><a href="<?= site_url('exercicio') ?>">Exercícios</a></div>
+        </div>
     </div>
-    </div>
+</div>
     <div class="profile-summary">
       <img
         class="download-premium-png-of-account-png-line-icon-user-symbol-by-aew-about-profile-icon-person-icon-png-person-icon-profile-png-and-profile-3012376-1"
-        src="../imgs/download-premium-png-of-account-png-line-icon-user-symbol-by-aew-about-profile-icon-person-icon-png-person-icon-profile-png-and-profile-3012376-10.png"
+        src="<?= base_url('assets/img/download-premium-png-of-account-png-line-icon-user-symbol-by-aew-about-profile-icon-person-icon-png-person-icon-profile-png-and-profile-3012376-10.png') ?>"
       />
       <div class="maria-carmen">Maria Carmen</div>
       <div
@@ -171,21 +172,6 @@
   </div>
   
 </body>
-
-
-<script>
-  // Função para ajustar o zoom para 80%
-  function setZoom() {
-    document.body.style.zoom = 0.8;
-  }
-  // Ajusta o zoom ao carregar a página
-  window.addEventListener("load", setZoom);
-  // Ajusta o zoom ao redimensionar a janela
-  window.addEventListener("resize", setZoom);
-</script>
-
-
-
    <!-- Script para abrir e fechar modal de editar perfil -->
 
    <script>

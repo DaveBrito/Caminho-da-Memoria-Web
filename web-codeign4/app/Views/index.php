@@ -14,13 +14,13 @@
 </head>
 <body>
     <div class="page">
-    <div class="navigation-container"> <!-- Adicione esta div container -->
+    <div class="navigation-container">
     <div class="navigation">
         <div class="tab31"><a href="<?= site_url('memorias') ?>">Memórias</a></div>
         <div class="tab32"><a href="<?= site_url('exercicio') ?>">Exercícios</a></div>
         <div class="tab3"><a href="<?= site_url('Login-Register') ?>">Registrar-se/Entrar</a></div>
         <div class="gerenciamento"><a href="<?= site_url('gerenciar-users') ?>">Gerenciamento</a></div>
-        <div class="tab2"><a href="<?= site_url('perfil') ?>">Perfil</a></div>
+        <div class="tab2"><a href="<?= base_url('perfil') ?>">Perfil</a></div>
     </div>
 </div>
 
@@ -31,9 +31,6 @@
     <div class="section">
       <div class="image-container">
         <div class="image">
-          <div class="title2">
-            Seja bem-vindo ao Sistema de Gerenciamento de Cuidadores
-          </div>
           <div class="pagination">
             <div class="rectangle-3343"></div>
             <div class="rectangle-3344"></div>
@@ -194,11 +191,49 @@
             <p>A Caminho da Memória é comprometida em proteger a privacidade...</p>
         </div>
     </div>
-</div> <!-- Fechamento CORRETO da section2 -->
+</div> 
     <img class="logoo-removebg-preview-12" src="<?= base_url('assets/img/logoo-removebg-preview-11.png') ?>" />
     <img class="logoo-removebg-preview-2" src="<?= base_url('assets/img/logoo-removebg-preview-20.png') ?>" />
   </div>
     </div>
     
 </body>
+
+<!-- Scripts relacionados com Events -->
+  <script>
+  // Abertura de 'Ler Mais'
+  function openModal() {
+    document.getElementById("myModal").style.display = "block";
+  }
+
+  // 'Ler Mais'
+  function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+  }
+
+  // Fechar o modal 'Ler Mais' ao clicar fora dele
+  document.getElementById("myModal").addEventListener("click", function (event) {
+    if (event.target === document.getElementById("myModal")) {
+      document.getElementById("myModal").style.display = "none";
+    }
+  });
+
+  // Função para abrir o modal de política de privacidade
+  function openModalPoliticaPrivacidade(event) {
+    event.preventDefault(); // Impede a rolagem para o topo
+    document.getElementById("modalPoliticaPrivacidade").style.display = "block";
+  }
+
+  // Função para fechar o modal de política de privacidade
+  function closeModalPoliticaPrivacidade() {
+    document.getElementById("modalPoliticaPrivacidade").style.display = "none";
+  }
+
+  // Fechar o modal de política de privacidade ao clicar fora dele
+  document.getElementById("modalPoliticaPrivacidade").addEventListener("click", function (event) {
+    if (event.target === document.getElementById("modalPoliticaPrivacidade")) {
+      document.getElementById("modalPoliticaPrivacidade").style.display = "none";
+    }
+  });
+  </script> 
 </html>

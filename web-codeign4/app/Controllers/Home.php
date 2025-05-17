@@ -7,4 +7,9 @@ class Home extends BaseController
     {
         return view('index'); // Carrega a view 'app/Views/home.php'
     }
+    
+    public function perfil()  // Note a letra minúscula
+    {
+        return view('perfil'); // Corresponde a app/Views/perfil.php
+    }
 }
