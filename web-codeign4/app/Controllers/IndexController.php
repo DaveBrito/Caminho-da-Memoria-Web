@@ -1,7 +1,7 @@
 <?php
 namespace App\Controllers;
 
-class Home extends BaseController
+class IndexController extends BaseController
 
 // Controller que permite acessar páginas diretamente pela tela Index do site, 
 // direcionando para cada caminho único.
@@ -30,5 +30,9 @@ class Home extends BaseController
       public function exercicio()  
     {
         return view('exercicio'); 
+    }
+     public function gerenciarusers()  
+    {
+        return view('gerenciarusers'); 
     }
 }

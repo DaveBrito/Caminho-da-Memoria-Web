@@ -5,11 +5,18 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 $routes->group('', ['namespace' => 'App\Controllers'], function($routes) {
-    $routes->get('/', 'Home::index');          // Página inicial
-    $routes->get('perfil', 'Home::perfil');
-    $routes->get('memorias', 'Memorias::index');      // Página de memórias
-    $routes->get('exercicios', 'Exercicios::index');  // Página de exercícios
-    //$routes->get('perfil', 'Perfil::index');          // Página de perfil
-    $routes->get('login', 'Login::index');            // Página de login
+    
+    // Página inicial
+    $routes->get('/', 'IndexController::index');          
+    $routes->get('perfil', 'IndexController::perfil');
+    $routes->get('memorias', 'IndexController::memorias');      
+    $routes->get('exercicio', 'IndexController::exercicio');  
+    $routes->get('loginregister', 'IndexController::loginregister'); 
+    $routes->get('gerenciarusers', 'IndexController::gerenciarusers'); 
+
+    //$routes->get('memorias', 'Memorias::index');      
+    //$routes->get('exercicios', 'Exercicios::index');  
+    //$routes->get('perfil', 'Perfil::index');          
+    //$routes->get('login', 'Login::index');            
    
 });

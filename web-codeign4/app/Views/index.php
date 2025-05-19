@@ -19,7 +19,7 @@
         <div class="tab31"><a href="<?= base_url('memorias') ?>">Memórias</a></div>
         <div class="tab32"><a href="<?= base_url('exercicio') ?>">Exercícios</a></div>
         <div class="tab3"><a href="<?= base_url('loginregister') ?>">Registrar-se/Entrar</a></div>
-        <div class="gerenciamento"><a href="<?= site_url('gerenciar-users') ?>">Gerenciamento</a></div>
+        <div class="gerenciamento"><a href="<?= base_url('gerenciarusers') ?>">Gerenciamento</a></div>
         <div class="tab2"><a href="<?= base_url('perfil') ?>">Perfil</a></div>
     </div>
 </div>

@@ -1,25 +1,5 @@
 <?php 
-include "../config/supabaseConfig.php";
 
-session_start();
-
-// Função para conectar ao Supabase
-function connectToSupabase($url, $key) {
-    $ch = curl_init();
-
-    curl_setopt($ch, CURLOPT_URL, $url . '/rest/v1/');
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($ch, CURLOPT_HTTPHEADER, [
-        'apikey: ' . $key,
-        'Authorization: Bearer ' . $key,
-        'Content-Type: application/json'
-    ]);
-
-    $response = curl_exec($ch);
-    curl_close($ch);
-
-    return $response;
-}
 ?>
 
 <!DOCTYPE html>
@@ -29,14 +9,10 @@ function connectToSupabase($url, $key) {
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=0.8, user-scalable=no">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles/vars.css">
-  <link rel="stylesheet" href="../styles/style-login-register.css">
+    <link rel="stylesheet" href="<?= base_url('assets/style/vars.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/style/style-login-register.css') ?>">
   <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
   <title>Login | Registro</title>
-  <script>
-    const SUPABASE_URL = '<?php echo SUPABASE_URL; ?>';
-    const SUPABASE_KEY = '<?php echo SUPABASE_KEY; ?>';
-  </script>
 </head>
 <body>
   <div class="gerenciar-login-registro">
@@ -50,7 +26,7 @@ function connectToSupabase($url, $key) {
         <div class="tab2"><a href="../views/exercicio.html">Exercícios</a></div>
       </div>
     </div>
-    <img class="logoo-removebg-preview-3" src="../imgs/logoo-removebg-preview-30.png" />
+    <img class="logoo-removebg-preview-3" src="<?= base_url('assets/img/logoo-removebg-preview-30.png') ?>" />
     <div class="section">
       <div class="container">
         <div class="title2" id="texto">Bem-vindo(a) de volta Usuário</div>
@@ -58,7 +34,7 @@ function connectToSupabase($url, $key) {
           Administre cuidadores e familiares de forma eficiente no sistema.
         </div>
       </div>
-      <img class="vector-200" src="../vectors/vector-2000.svg" />
+      <img class="vector-200" src="<?= base_url('vectors/vector-2000.svg') ?>" />
       <div class="tab-group">
         <div class="tab5">
           <button class="title3" id="login">Login</button>
@@ -68,7 +44,7 @@ function connectToSupabase($url, $key) {
         </div>
       </div>
     </div>
-    <img class="section2" src="../vectors/section1.svg" />
+    <img class="section2" src="<?= base_url('vectors/section1.svg') ?>" />
     <div class="section3">
       <div class="container2">
         <div class="title4">Copyright © 2024 Caminho da Memória</div>
@@ -179,7 +155,7 @@ function connectToSupabase($url, $key) {
           </div>
         </div>
       </div>
-      <img class="vector-2002" src="../vectors/vector-2001.svg" />
+      <img class="vector-2002" src="<?= base_url('vectors/vector-2001.svg') ?>" />
     </div>
     <div class="form2" id="form-register">
       <div class="container3">
@@ -222,7 +198,7 @@ function connectToSupabase($url, $key) {
           <button type="button" class="primary2 title10" id="register-button">Registrar</button>
         </div>
       </div>
-      <img class="vector-2003" src="../vectors/vector-2002.svg" />
+      <img class="vector-2003" src="<?= base_url('vectors/vector-2002.svg') ?>" />
     </div>
   </div>
   
@@ -253,7 +229,7 @@ function connectToSupabase($url, $key) {
 <script>
     // Função para ajustar o zoom para 80%
     function setZoom() {
-      document.body.style.zoom = 0.8;
+      document.body.style.zoom = 0.9;
     }
     // Ajusta o zoom ao carregar a página
     window.addEventListener("load", setZoom);
