@@ -79,6 +79,7 @@ menu, ol, ul {
   left: 59%;
   top: 60%;
   z-index: 5; /* Ajuste conforme necessário */
+  white-space: nowrap; /* Impede que o texto quebre em várias linhas */
 }
 .tab a {
   color: black; /* Cor do texto padrão do link */

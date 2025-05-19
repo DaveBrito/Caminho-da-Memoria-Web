@@ -7,8 +7,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" href="../styles/vars.css">
-  <link rel="stylesheet" href="../styles/style-exercicio.css">
+    <link rel="stylesheet" href="<?= base_url('assets/style/vars.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/style/style-exercicio.css') ?>">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
   <title>Exercícios</title>
 </head> 
@@ -24,7 +24,7 @@
         <div class="tab5"><a href="../views/exercicio.html">Exercícios</a></div>
       </div>
     </div>
-    <img class="logoo-removebg-preview-3" src="../imgs/logoo-removebg-preview-30.png" />
+    <img class="logoo-removebg-preview-3" src="<?= base_url('assets/img/logoo-removebg-preview-30.png') ?>" />
     <div class="section">
       <div class="container">
         <div class="title2" id="texto">
@@ -34,16 +34,16 @@
           Administre exercícios de forma eficiente no sistema e pratique-os!
         </div>
       </div>
-      <img class="vector-200" src="../vectors/vector-2000.svg" />
+      <img class="vector-200" src="<?= base_url('vectors/vector-2000.svg') ?>" />
     </div>
     <div class="section2">
       <img
         class="download-premium-png-of-account-png-line-icon-user-symbol-by-aew-about-profile-icon-person-icon-png-person-icon-profile-png-and-profile-3012376-1"
-        src="../imgs/download-premium-png-of-account-png-line-icon-user-symbol-by-aew-about-profile-icon-person-icon-png-person-icon-profile-png-and-profile-3012376-10.png"
+      src="<?= base_url('assets/img/download-premium-png-of-account-png-line-icon-user-symbol-by-aew-about-profile-icon-person-icon-png-person-icon-profile-png-and-profile-3012376-10.png') ?>"
       />
       <img
         class="download-premium-png-of-account-png-line-icon-user-symbol-by-aew-about-profile-icon-person-icon-png-person-icon-profile-png-and-profile-3012376-2"
-        src="../imgs/download-premium-png-of-account-png-line-icon-user-symbol-by-aew-about-profile-icon-person-icon-png-person-icon-profile-png-and-profile-3012376-20.png"
+        src="<?= base_url('assets/img/download-premium-png-of-account-png-line-icon-user-symbol-by-aew-about-profile-icon-person-icon-png-person-icon-profile-png-and-profile-3012376-20.png') ?>"
       />
       <div class="container2">
         <div class="title3">Nome do Usuário</div>
@@ -64,7 +64,7 @@
           <button class="title4">Editar Perfil</button>
         </div>
       </div>
-      <img class="vector-2002" src="../vectors/vector-2001.svg" />
+      <img class="vector-2002" src="<?= base_url('vectors/vector-2001.svg') ?>" />
       <div class="avatar"></div>
     </div>
     <div class="list">
@@ -81,14 +81,14 @@
         <div class="list2">
           <div class="row">
             <div class="item">
-              <img class="learning" src="../imgs/learning0.png" />
+              <img class="learning" src="<?= base_url('assets/img/learning0.png') ?>" />
               <div class="frame-427318906">
                 <div class="title8">#1 Exercício</div>
               </div>
               <div class="subtitle">11/05/2021</div>
             </div>
             <div class="item">
-              <img class="learning" src="../imgs/Exercise.png" />
+              <img class="learning" src="<?= base_url('assets/img/Exercise.png') ?>"  />
               <div class="frame-427318906">
                 <div class="title8">#2 Exercício</div>
               </div>
@@ -97,7 +97,7 @@
           </div>
         </div>
       </div>
-      <img class="vector-2003" src="../vectors/vector-2002.svg" />
+      <img class="vector-2003" src="<?= base_url('vectors/vector-2002.svg') ?>" />
     </div>
     <div class="form" id="adicionar-exercicio">
       <div class="container4">
@@ -142,11 +142,11 @@
           </div>
         </div>
       </div>
-      <img class="vector-2004" src="../vectors/vector-2003.svg" />
+      <img class="vector-2004" src="<?= base_url('vectors/vector-2003.svg') ?>"  />
     </div>
     <div class="section3">
       <div class="section4">
-        <img class="vector-2005" src="../vectors/vector-2004.svg" />
+        <img class="vector-2005" src="<?= base_url('vectors/vector-2004.svg') ?>"  />
         <div class="container5">
           <div class="title11">Copyright © 2024 Caminho da Memória</div>
           <div class="title12"> <a href="#" onclick="openModal(event)">Termos de Uso</a>
@@ -245,7 +245,7 @@
   <script>
     // Função para ajustar o zoom para 80%
     function setZoom() {
-      document.body.style.zoom = 0.8;
+      document.body.style.zoom = 0.9;
     }
     // Ajusta o zoom ao carregar a página
     window.addEventListener("load", setZoom);

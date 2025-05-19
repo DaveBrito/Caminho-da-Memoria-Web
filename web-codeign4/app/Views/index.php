@@ -16,9 +16,9 @@
     <div class="page">
     <div class="navigation-container">
     <div class="navigation">
-        <div class="tab31"><a href="<?= site_url('memorias') ?>">Memórias</a></div>
-        <div class="tab32"><a href="<?= site_url('exercicio') ?>">Exercícios</a></div>
-        <div class="tab3"><a href="<?= site_url('Login-Register') ?>">Registrar-se/Entrar</a></div>
+        <div class="tab31"><a href="<?= base_url('memorias') ?>">Memórias</a></div>
+        <div class="tab32"><a href="<?= base_url('exercicio') ?>">Exercícios</a></div>
+        <div class="tab3"><a href="<?= base_url('loginregister') ?>">Registrar-se/Entrar</a></div>
         <div class="gerenciamento"><a href="<?= site_url('gerenciar-users') ?>">Gerenciamento</a></div>
         <div class="tab2"><a href="<?= base_url('perfil') ?>">Perfil</a></div>
     </div>
@@ -198,7 +198,16 @@
     </div>
     
 </body>
-
+<script>
+  // Função para ajustar o zoom para 80%
+  function setZoom() {
+    document.body.style.zoom = 0.9;
+  }
+  // Ajusta o zoom ao carregar a página
+  window.addEventListener("load", setZoom);
+  // Ajusta o zoom ao redimensionar a janela
+  window.addEventListener("resize", setZoom);
+</script>
 <!-- Scripts relacionados com Events -->
   <script>
   // Abertura de 'Ler Mais'

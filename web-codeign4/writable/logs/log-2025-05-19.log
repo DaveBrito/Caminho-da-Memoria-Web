@@ -1,0 +1,154 @@
+CRITICAL - 2025-05-19 19:47:16 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: ">    <div class="
+[Method: GET, Route: assets/img/logoo-removebg-preview-20.png%20/%3E%20%20%20%20%3Cdiv%20class=]
+in SYSTEMPATH\Router\Router.php on line 739.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('assets/img/logoo-removebg-preview-20.png />    <div class=')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('assets/img/logoo-removebg-preview-20.png />    <div class=')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Davi\\Documents\\Projetos\\Caminho-da-Memoria-Web\\web-codeign4\\public\\index.php')
+CRITICAL - 2025-05-19 20:04:57 --> ErrorException: include(../config/supabaseConfig.php): Failed to open stream: No such file or directory
+[Method: GET, Route: login-register]
+in APPPATH\Views\Login-Register.php on line 2.
+ 1 APPPATH\Views\Login-Register.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(../config/supabaseConfig.php): Failed to open stream: No such file or directory', 'C:\\Users\\Davi\\Documents\\Projetos\\Caminho-da-Memoria-Web\\web-codeign4\\app\\Views\\Login-Register.php', 2)
+ 2 APPPATH\Views\Login-Register.php(2): include()
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\Users\\Davi\\Documents\\Projetos\\Caminho-da-Memoria-Web\\web-codeign4\\app\\Views\\Login-Register.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('login-register', [], true)
+ 6 APPPATH\Controllers\Home.php(22): view('login-register')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->loginRegister()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Davi\\Documents\\Projetos\\Caminho-da-Memoria-Web\\web-codeign4\\public\\index.php')
+CRITICAL - 2025-05-19 20:05:55 --> ErrorException: include(../config/supabaseConfig.php): Failed to open stream: No such file or directory
+[Method: GET, Route: loginRegister]
+in APPPATH\Views\Login-Register.php on line 2.
+ 1 APPPATH\Views\Login-Register.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(../config/supabaseConfig.php): Failed to open stream: No such file or directory', 'C:\\Users\\Davi\\Documents\\Projetos\\Caminho-da-Memoria-Web\\web-codeign4\\app\\Views\\Login-Register.php', 2)
+ 2 APPPATH\Views\Login-Register.php(2): include()
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\Users\\Davi\\Documents\\Projetos\\Caminho-da-Memoria-Web\\web-codeign4\\app\\Views\\Login-Register.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('login-register', [], true)
+ 6 APPPATH\Controllers\Home.php(22): view('login-register')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->loginRegister()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Davi\\Documents\\Projetos\\Caminho-da-Memoria-Web\\web-codeign4\\public\\index.php')
+CRITICAL - 2025-05-19 20:06:11 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "loginRegister.php"
+[Method: GET, Route: loginRegister]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('loginRegister.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('loginRegister', [], true)
+ 3 APPPATH\Controllers\Home.php(22): view('loginRegister')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->loginRegister()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Davi\\Documents\\Projetos\\Caminho-da-Memoria-Web\\web-codeign4\\public\\index.php')
+CRITICAL - 2025-05-19 20:06:16 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "loginRegister.php"
+[Method: GET, Route: loginRegister]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('loginRegister.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('loginRegister', [], true)
+ 3 APPPATH\Controllers\Home.php(22): view('loginRegister')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->loginRegister()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Davi\\Documents\\Projetos\\Caminho-da-Memoria-Web\\web-codeign4\\public\\index.php')
+CRITICAL - 2025-05-19 20:07:22 --> ParseError: syntax error, unexpected token "-", expecting "("
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 20.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\Davi\\Documents\\Projetos\\Caminho-da-Memoria-Web\\web-codeign4\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Davi\\Documents\\Projetos\\Caminho-da-Memoria-Web\\web-codeign4\\public\\index.php')
+CRITICAL - 2025-05-19 20:08:14 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "loginRegister.php"
+[Method: GET, Route: loginRegister]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('loginRegister.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('loginRegister', [], true)
+ 3 APPPATH\Controllers\Home.php(22): view('loginRegister')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->loginRegister()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Davi\\Documents\\Projetos\\Caminho-da-Memoria-Web\\web-codeign4\\public\\index.php')
+CRITICAL - 2025-05-19 20:14:41 --> ErrorException: include(../config/supabaseConfig.php): Failed to open stream: No such file or directory
+[Method: GET, Route: loginRegister]
+in APPPATH\Views\loginRegister.php on line 2.
+ 1 APPPATH\Views\loginRegister.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(../config/supabaseConfig.php): Failed to open stream: No such file or directory', 'C:\\Users\\Davi\\Documents\\Projetos\\Caminho-da-Memoria-Web\\web-codeign4\\app\\Views\\loginRegister.php', 2)
+ 2 APPPATH\Views\loginRegister.php(2): include()
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\Users\\Davi\\Documents\\Projetos\\Caminho-da-Memoria-Web\\web-codeign4\\app\\Views\\loginRegister.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('loginRegister', [], true)
+ 6 APPPATH\Controllers\Home.php(27): view('loginRegister')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->loginRegister()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Davi\\Documents\\Projetos\\Caminho-da-Memoria-Web\\web-codeign4\\public\\index.php')
+CRITICAL - 2025-05-19 20:17:16 --> ErrorException: include(../config/supabaseConfig.php): Failed to open stream: No such file or directory
+[Method: GET, Route: loginregister]
+in APPPATH\Views\loginregister.php on line 2.
+ 1 APPPATH\Views\loginregister.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(../config/supabaseConfig.php): Failed to open stream: No such file or directory', 'C:\\Users\\Davi\\Documents\\Projetos\\Caminho-da-Memoria-Web\\web-codeign4\\app\\Views\\loginregister.php', 2)
+ 2 APPPATH\Views\loginregister.php(2): include()
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\Users\\Davi\\Documents\\Projetos\\Caminho-da-Memoria-Web\\web-codeign4\\app\\Views\\loginregister.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('loginregister', [], true)
+ 6 APPPATH\Controllers\Home.php(27): view('loginregister')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->loginregister()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Davi\\Documents\\Projetos\\Caminho-da-Memoria-Web\\web-codeign4\\public\\index.php')
+CRITICAL - 2025-05-19 21:14:41 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: ">    <"
+[Method: GET, Route: %3E%20%20%20%20%3C/div%3E%20%20%20%20%3Cdiv%20class=]
+in SYSTEMPATH\Router\Router.php on line 739.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('>    </div>    <div class=')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('>    </div>    <div class=')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Davi\\Documents\\Projetos\\Caminho-da-Memoria-Web\\web-codeign4\\public\\index.php')
+CRITICAL - 2025-05-19 21:19:54 --> ErrorException: include(../config/supabaseConfig.php): Failed to open stream: No such file or directory
+[Method: GET, Route: loginregister]
+in APPPATH\Views\loginregister.php on line 2.
+ 1 APPPATH\Views\loginregister.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(../config/supabaseConfig.php): Failed to open stream: No such file or directory', 'C:\\Users\\Davi\\Documents\\Projetos\\Caminho-da-Memoria-Web\\web-codeign4\\app\\Views\\loginregister.php', 2)
+ 2 APPPATH\Views\loginregister.php(2): include()
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\Users\\Davi\\Documents\\Projetos\\Caminho-da-Memoria-Web\\web-codeign4\\app\\Views\\loginregister.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('loginregister', [], true)
+ 6 APPPATH\Controllers\Home.php(27): view('loginregister')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->loginregister()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Davi\\Documents\\Projetos\\Caminho-da-Memoria-Web\\web-codeign4\\public\\index.php')

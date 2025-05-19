@@ -2,17 +2,15 @@
 
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=0.8, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles/vars.css">
-  <link rel="stylesheet" href="../styles/style-memorias.css">
-  
+  <link rel="stylesheet" href="<?= base_url('assets/style/vars.css') ?>">
+  <link rel="stylesheet" href="<?= base_url('assets/style/style-memorias.css') ?>">
   <title>Gerenciar Memórias</title>
-
 </head>
 <body>
   <div class="gerenciar-users">
@@ -26,7 +24,7 @@
         <div class="tab2"><a href="../views/exercicio.html">Exercícios</a></div>
       </div>
     </div>
-    <img class="logoo-removebg-preview-3" src="../imgs/logoo-removebg-preview-30.png" />
+    <img class="logoo-removebg-preview-3" src="<?= base_url('assets/img/logoo-removebg-preview-30.png') ?>" />
     <div class="section">
       <div class="container">
         <div class="title2"id="texto">Bem-vindo ao Gerenciamento de Memórias</div>
@@ -34,12 +32,12 @@
           Administre memórias de forma eficiente no sistema.
         </div>
       </div>
-      <img class="vector-200" src="../vectors/vector-2000.svg" />
+      <img class="vector-200" src="<?= base_url('vectors/vector-2000.svg') ?>" />
     </div>
     <div class="section2">
       <img
         class="download-premium-png-of-account-png-line-icon-user-symbol-by-aew-about-profile-icon-person-icon-png-person-icon-profile-png-and-profile-3012376-1"
-        src="../imgs/download-premium-png-of-account-png-line-icon-user-symbol-by-aew-about-profile-icon-person-icon-png-person-icon-profile-png-and-profile-3012376-10.png"
+        src="<?= base_url('assets/img/download-premium-png-of-account-png-line-icon-user-symbol-by-aew-about-profile-icon-person-icon-png-person-icon-profile-png-and-profile-3012376-10.png') ?>"
       />
       <div class="avatar"></div>
       <div class="container2">
@@ -65,7 +63,7 @@
         </div>
         </a>
       </div>
-      <img class="vector-2002" src="../vectors/vector-2001.svg" />
+      <img class="vector-2002" src="<?= base_url('vectors/vector-2001.svg') ?>" />
     </div>
     <div class="list">
       <div class="container3">
@@ -112,7 +110,7 @@
           <div class="item">
             <div class="frame">
               <div class="icon">
-                <img src="../imgs/Head With Brain.png"/>
+                <img src="<?= base_url('assets/img/Head With Brain.png') ?>"/>
               </div>
             </div>
             <div class="frame-427318906">
@@ -124,7 +122,7 @@
           <div class="item">
             <div class="frame">
               <div class="icon">
-                <img src="../imgs/Brain.png"/>
+                <img src="<?= base_url('assets/img/Brain.png') ?>"/>
               </div>
             </div>
             <div class="frame-427318906">
@@ -135,7 +133,7 @@
           </div>
         </div>
       </div>
-      <img class="vector-2003" src="../vectors/vector-2002.svg" />
+      <img class="vector-2003" src="<?= base_url('vectors/vector-2002.svg') ?>" />
     </div>
     <div class="form" id="adicionar-usuario">
       <div class="container4">
@@ -184,10 +182,10 @@
           </div>
         </div>
       </form>
-      <img class="vector-2004" src="../vectors/vector-2003.svg" />
+      <img class="vector-2004" src="<?= base_url('vectors/vector-2003.svg') ?>" />
     </div>
     <div class="section3">
-      <img class="image-6" src="../imgs/image-60 copy 2.png" />
+      <img class="image-6" src="<?= base_url('assets/img/image-60 copy 2.png') ?>" />
       <div class="container5">
         <div class="title10">Copyright © 2024 Empresa</div>
         <div class="title11"> <a href="#" onclick="openModal(event)">Termos de Uso</a>
@@ -285,7 +283,7 @@
 <script>
   // Função para ajustar o zoom para 80%
   function setZoom() {
-    document.body.style.zoom = 0.8;
+    document.body.style.zoom = 0.9;
   }
   // Ajusta o zoom ao carregar a página
   window.addEventListener("load", setZoom);
