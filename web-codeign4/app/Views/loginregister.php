@@ -44,7 +44,7 @@
         </div>
       </div>
     </div>
-    <img class="section2" src="<?= base_url('vectors/section1.svg') ?>" />
+    <img class="section2" src="<?= base_url('vectors/vector-2000.svg') ?>" />
     <div class="section3">
       <div class="container2">
         <div class="title4">Copyright © 2024 Caminho da Memória</div>
