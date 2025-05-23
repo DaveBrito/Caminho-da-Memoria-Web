@@ -131,12 +131,12 @@
         <div class="row2">
           <div class="item">
             <div class="frame">
-              <a href="<a href="<?= site_url('gerenciar-users') ?>">
-              <div class="icon">👩‍⚕️</div>
-            </a>
+              <a href="<?= site_url('gerenciarusers') ?>"> 
+                <div class="icon">👩‍⚕️</div>
+              </a> 
             </div>
             <div class="frame-4273189062">
-              <div class="title7"><a href="<?= site_url('gerenciar-users') ?>">Gerencie Usuários</a></div>
+              <div class="title7"><a href="<?= site_url('gerenciarusers') ?>">Gerencie Usuários</a></div>
             </div>
           </div>
           <div class="item">
@@ -153,12 +153,12 @@
           </div>
           <div class="item">
             <div class="frame">
-              <a href="<?= base_url('views/exercicio.html') ?>">
+              <a href="<?= site_url('exercicio') ?>">
               <div class="icon">🧠</div>
               </div>
             </a>
             <div class="frame-4273189062">
-              <div class="title7"> <a href="<?= base_url('views/exercicio.html') ?>">Pratique Exercícios</a></div>
+              <div class="title7"> <a href="<?= site_url('exercicio') ?>">Pratique Exercícios</a></div>
             </div>
           </div>
         </div>
@@ -201,7 +201,7 @@
 <script>
   // Função para ajustar o zoom para 80%
   function setZoom() {
-    document.body.style.zoom = 0.9;
+    document.body.style.zoom = 1.0;
   }
   // Ajusta o zoom ao carregar a página
   window.addEventListener("load", setZoom);

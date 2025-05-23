@@ -38,12 +38,8 @@
     </div>
     <div class="section2">
       <img
-        class="download-premium-png-of-account-png-line-icon-user-symbol-by-aew-about-profile-icon-person-icon-png-person-icon-profile-png-and-profile-3012376-1"
-      src="<?= base_url('assets/img/download-premium-png-of-account-png-line-icon-user-symbol-by-aew-about-profile-icon-person-icon-png-person-icon-profile-png-and-profile-3012376-10.png') ?>"
-      />
-      <img
         class="download-premium-png-of-account-png-line-icon-user-symbol-by-aew-about-profile-icon-person-icon-png-person-icon-profile-png-and-profile-3012376-2"
-        src="<?= base_url('assets/img/download-premium-png-of-account-png-line-icon-user-symbol-by-aew-about-profile-icon-person-icon-png-person-icon-profile-png-and-profile-3012376-20.png') ?>"
+        src="<?= base_url('assets/img/perfil.png') ?>"
       />
       <div class="container2">
         <div class="title3">Nome do Usuário</div>
@@ -65,7 +61,7 @@
         </div>
       </div>
       <img class="vector-2002" src="<?= base_url('vectors/vector-2001.svg') ?>" />
-      <div class="avatar"></div>
+      
     </div>
     <div class="list">
       <div class="container3">
