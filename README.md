@@ -8,12 +8,10 @@ Nosso sistema web foi criado com o objetivo de oferecer suporte prático e acess
 
 - Armazenamento e Organização de Memórias 
 
-- Guarde fotos, vídeos (**TALVEZ**) que capturam momentos especiais.
+- Guarde fotos que capturam momentos especiais.
 - Organize memórias para facilitar o acesso.
 
 ### Gerenciamento de Usuários 🙍‍♀️
-
-- Múltiplos perfis que permite que familiares e cuidadores colaborem no acompanhamento das atividades e informações do usuário.
 - Ferramentas para monitorar o progresso, registrar interações e garantir que as necessidades individuais sejam atendidas.
 ### Exercícios Cognitivos Personalizados 🧠
 
@@ -21,10 +19,10 @@ Nosso sistema web foi criado com o objetivo de oferecer suporte prático e acess
 
 ### Acessibilidade e Simplicidade
 
-- Interface intuitiva, adaptada às necessidades de pessoas com dificuldades cognitivas, incluindo fontes maiores, botões claros e navegação simplificada.
+- Interface simples e intuitiva, adaptada às necessidades de pessoas com dificuldades cognitivas, incluindo fontes maiores, botões claros e navegação simplificada.
 
 ## Tecnologias Utilizadas
-O desenvolvimento deste sistema utilizou um conjunto de tecnologias essenciais, cuidadosamente selecionadas para garantir uma solução eficiente, funcional e acessível. Cada ferramenta desempenhou um papel específico no processo, desde o planejamento visual até a implementação e testes.
+O desenvolvimento deste sistema utilizou um conjunto de tecnologias essenciais, cuidadosamente selecionadas para garantir uma solução eficiente, funcional e acessível. Cada ferramenta desempenhou um papel específico no processo, desde o planejamento visual até a implementação e testes unitários.
 
 | Tecnologia   | Descrição       | Uso no Projeto                           |
 | :---------- | :--------- | :---------------------------------- |
@@ -32,7 +30,7 @@ O desenvolvimento deste sistema utilizou um conjunto de tecnologias essenciais, 
 | CSS | Linguagem de estilo para a apresentação de documentos HTML. |Estilização e layout da interface. |
 | PHP |Linguagem de script de servidor usada principalmente para desenvolvimento web. | Utilizada para o back-end, gerenciando a lógica do servidor e a interação com o banco de dados. |
 | Figma |Ferramenta de design colaborativo para a criação de interfaces. |Utilizada para o design e prototipagem das interfaces. |
-| XAMPP |Plataforma de servidor que inclui Apache, MySQL, PHP e Perl. |Utlizado o servidor web local para o desenvolvimento. |
+| CodeIgniter 4 |Plataforma de servidor que inclui Apache, MySQL, PHP e Perl. |Utlizado o servidor web local para o desenvolvimento. |
 
 
 
@@ -44,7 +42,28 @@ O desenvolvimento deste sistema utilizou um conjunto de tecnologias essenciais, 
 | Firebase       |Integrado ao sistema como uma solução moderna e confiável para gerenciar autenticação de usuários e o envio de e-mails de redefinição de senha. |
 | SupaBase       | Banco de dados no funcionamento do sistema, garantindo que todas as informações sejam armazenadas, gerenciadas e recuperadas de forma eficiente e segura.|
 
+## Pré Requisitos
 
+Antes de executar/clonar o projeto, certifique-se de que as seguintes ferramentas estão instaladas em sua máquina:
+
+* ![Node.js](https://nodejs.org/pt)
+* ![PHP](https://www.php.net/downloads.php) V 8+
+* ![Composer](https://getcomposer.org/) – Gerenciador de dependências para PHP
+
+OBS: ![XAMPP](https://www.apachefriends.org/pt_br/download.html) é uma alternativa mais simples e rápido para adquirir o PHP, caso ainda não tenha..
+
+## 📥 Clone + Dependências
+Faça o clone do projeto Web.
+
+```bash 
+https://github.com/DaveBrito/Caminho-da-Memoria-Web.git
+```
+
+Para executar, será necessário entrar na pasta onde está o CodeIgniter, ```web-codeign4```.
+Ao entrar na pasta correto onde encontra-se o projeto, rode apenas um ```composer install``` para instalar todos os pacotes importantes/necessários que foram integrados durante o desenvolvimento.
+### inicialização do Projeto
+Após instaladas as bibliotecas, já será possível executar todo o projeto, rodando apenas ```php spark serve``` no terminal.
+ 
 
 ## Equipe de Desenvolvimento
 Venho agradecer pela Equipe o empenho e dedicação que tiveram durante o processo de criação do sistema. Um projeto que tem sua continuação no modelo Mobile, no repositório do  Sr.**[WESLEY](https://github.com/WesleyS08)**
