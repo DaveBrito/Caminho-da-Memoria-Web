@@ -1,5 +1,15 @@
 {
+  "name": "web-codeign4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "php spark serve",
+    "browsersync": "node bs-config.js",
+    "dev": "concurrently \"npm run serve\" \"npm run browsersync\""
+  },
   "devDependencies": {
-    "browser-sync": "^3.0.4"
+    "browser-sync": "^3.0.4",
+    "concurrently": "^9.2.0"
   }
 }
