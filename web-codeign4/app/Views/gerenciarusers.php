@@ -250,18 +250,6 @@
 
 
 <script>
-  // Função para ajustar o zoom para 80%
-  function setZoom() {
-    document.body.style.zoom = 0.9;
-  }
-  // Ajusta o zoom ao carregar a página
-  window.addEventListener("load", setZoom);
-  // Ajusta o zoom ao redimensionar a janela
-  window.addEventListener("resize", setZoom);
-</script>
-
-
-<script>
   // Função para abrir o modal
 function openModal(event) {
   event.preventDefault(); // Previne o comportamento padrão do link

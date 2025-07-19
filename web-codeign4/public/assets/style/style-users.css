@@ -157,7 +157,7 @@ body {
   width: 1100px;
   height: 144px;
   position: absolute;
-  left: 280px;
+  left: 480px;
   top: 60px;
 }
 @keyframes typing {
@@ -272,7 +272,7 @@ body {
   width: 1440px;
   height: 339px;
   position: absolute;
-  left: 130px;
+  left: 330px;
   top: 24%;
   overflow: hidden;
 }
@@ -429,7 +429,7 @@ body {
   width: 1440px;
   height: 380px;
   position: absolute;
-  left: 280px;
+  left: 380px;
   top: 40%;
   overflow: hidden;
 }
@@ -500,6 +500,7 @@ body {
   justify-content: flex-start;
   align-self: stretch;
   left: 34%;
+  top: 20%;
   flex-shrink: 0;
   position: relative;
 }
@@ -507,18 +508,17 @@ body {
   padding: 12px 0px 12px 0px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 50px;
   align-items: center;
   justify-content: center;
   flex: 1;
   position: relative;
 }
 .frame {
-  background: rgba(0, 0, 0, 0.05);
   border-radius: 50px;
   flex-shrink: 0;
   width: 100px;
-  height: 100px;
+  height: 10px;
   position: relative;
 }
 .icon {
@@ -598,7 +598,7 @@ body {
   justify-content: center;
   width: 1490px;
   position: absolute;
-  left: 197px;
+  left: 12%;
   top: 60%;
   overflow: hidden;
 }

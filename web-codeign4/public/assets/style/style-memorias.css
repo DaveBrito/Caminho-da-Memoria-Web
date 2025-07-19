@@ -232,7 +232,7 @@ menu, ol, ul {
   width: 1100px;
   height: 144px;
   position: absolute;
-  left: 200px;
+  left: 400px;
   top: 60px;
 }
 @keyframes typing {
@@ -347,7 +347,7 @@ menu, ol, ul {
   width: 1440px;
   height: 339px;
   position: absolute;
-  left: 130px;
+  left: 330px;
   top: 24%;
   overflow: hidden;
 }
@@ -498,9 +498,8 @@ menu, ol, ul {
   width: 1440px;
   height: 380px;
   position: absolute;
-  left: 100px;
-  top: 40%;
-  overflow: hidden;
+  left: 400px;
+  top: 44%;
 }
 .container3 {
   flex: 1;
@@ -514,7 +513,7 @@ menu, ol, ul {
   width: 160px;
   height: 48px;
   position: absolute;
-  left: 190%;
+  left: 70%;
   top: 15px;
 }
 .title6 {
@@ -555,11 +554,11 @@ menu, ol, ul {
 .row {
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  gap: 190px;
   align-items: flex-start;
   justify-content: flex-start;
   align-self: stretch;
-  left: 34%;
+  left: 14%;
   flex-shrink: 0;
   position: relative;
 }
@@ -567,7 +566,7 @@ menu, ol, ul {
   padding: 12px 0px 12px 0px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
   align-items: center;
   justify-content: center;
   flex: 1;
@@ -658,7 +657,7 @@ menu, ol, ul {
   justify-content: center;
   width: 1440px;
   position: absolute;
-  left: 60px;
+  left: 260px;
   top: 60%;
   overflow: hidden;
 }
@@ -675,7 +674,7 @@ menu, ol, ul {
 .list3 {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 60px;
   align-items: center;
   justify-content: center;
   align-self: stretch;
@@ -910,7 +909,7 @@ menu, ol, ul {
   justify-content: center;
   height: 100px;
   position: absolute;
-  left: 370px;
+  left: 620px;
   top: 90px;
 }
 .title10 {

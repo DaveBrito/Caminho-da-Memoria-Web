@@ -114,7 +114,6 @@
               </div>
             </div>
             <div class="frame-427318906">
-              <div class="title8">Cuidador 1</div>
               <div class="subtitle">Memória #1</div>
             </div>
             <div class="subtitle2">11/05/2021</div>
@@ -126,7 +125,6 @@
               </div>
             </div>
             <div class="frame-427318906">
-              <div class="title8">Familiar 2</div>
               <div class="subtitle">Memória #2</div>
             </div>
             <div class="subtitle2">21/06/2021</div>
@@ -280,16 +278,6 @@
   </script>
 
 
-<script>
-  // Função para ajustar o zoom para 80%
-  function setZoom() {
-    document.body.style.zoom = 0.9;
-  }
-  // Ajusta o zoom ao carregar a página
-  window.addEventListener("load", setZoom);
-  // Ajusta o zoom ao redimensionar a janela
-  window.addEventListener("resize", setZoom);
-</script>
 
        <!-- Script para abrir e fechar modal de visualizar memória -->
 <script>

@@ -423,7 +423,7 @@
   font-style: italic;
   position: absolute;
   left: 409px;
-  top: 28%;
+  top: 78%;
   width: 956px;
   height: 238px;
   white-space: nowrap; /* Impede que o texto quebre em várias linhas */
@@ -437,7 +437,7 @@
   justify-content: center;
   position: relative; /* Alterado de absolute para relative */
   overflow: hidden;
-  top: 170px; /* Ajuste a posição conforme necessário */
+  top: 260px; /* Ajuste a posição conforme necessário */
 }
 .container {
   display: flex;
